@@ -1,0 +1,126 @@
+<surf>
+    <app windowname="SolarThermoPro" titlename="Thermodynamic properties for solar applications" version="0.1" description="" company="CIEMAT-PSA" conf_integrator="false" conf_experiment="false" conf_outputs="false" section_color="#404244" title_color="#d55401" background_color="#edf2f6" font_title_color="#ffffff" logo=":logo.png" icon=":icon.png" steady="true" experiment_text="Fluids"></app>  
+    <!-- logo=":logo.png" icon=":icon.png"  background_color="#edf2f6" title_color="#2b3443" section_color="#6f7e95" font_title_color="#ffffff" font_section_color="#ffffff" -->
+    <geometry height = "700" width = "1000" pos_hslider = "0.5"  pos_vslider = "0.6"></geometry>
+    <authors>
+        <author name="Javier Bonilla" email="javier.bonilla@psa.es" website="http://www.psa.es" company="CIEMAT-PSA" role="Models, simulations and tool design"></author>
+    </authors>      
+    <experiment name="Hitec" fmufile=":fmu_Hitec" fmuname="SolarThermoPro_Test_MoltenSalt_HitecReview" description = "Hitec" group="Molten salt">       
+        <graph name="Density"     xaxis="Temperature (ºC)" yaxis="Density (kg/m3)">
+            <variable name="rho_Kirst" x="TdegC" linestyle="2" description="Kirst et al. (1940)" ignored_val="0"></variable>
+            <variable name="rho_Janz" x="TdegC" linestyle="2" description="Janz and Tomkins (1981)" ignored_val="0"></variable>
+            <variable name="rho_Yang" x="TdegC" linestyle="2" description="Yang and Garimella (2010)" ignored_val="0"></variable>
+            <variable name="rho_Siegel" x="TdegC" linestyle="2" description="Siegel et al. (2011)" ignored_val="0"></variable>
+            <variable name="rho_Wu" x="TdegC" linestyle="2"  linecolor="#FF0000" description="Wu et al. (2012)" ignored_val="0"></variable>
+            <variable name="rho_Boerema" x="TdegC" linestyle="2"  linecolor="#FFFF00" description="Boerema et al. (2012)" ignored_val="0"></variable>
+            <variable name="rho_Serrano"  x="TdegC" linestyle="2" linecolor="#005500" description="Serrano et al. (2013)" ignored_val="0"></variable>
+        </graph>
+        <graph name="Dynamic viscosity"     xaxis="Temperature (ºC)" yaxis="Dynamic viscosity (Pa s)">
+            <variable name="v_Kirst" x="TdegC" linestyle="2" description="Kirst et al. (1940)" ignored_val="0"></variable>
+            <variable name="v_Janz" x="TdegC" linestyle="2" description="Janz and Tomkins (1981)" ignored_val="0"></variable>
+            <variable name="v_Gaune" x="TdegC" linestyle="2" description="Gaune (1982)" ignored_val="0"></variable>
+            <variable name="v_Yang" x="TdegC" linestyle="2" description="Yang and Garimella (2010)" ignored_val="0"></variable>
+            <variable name="v_Chen" x="TdegC" linestyle="2" linecolor="#FF0000" description="Chen et al. (2011)" ignored_val="0"></variable>
+            <variable name="v_Siegel" x="TdegC" linestyle="2" linecolor="#FFFF00" description="Siegel et al. (2011)" ignored_val="0"></variable>
+            <variable name="v_Wu" x="TdegC" linestyle="2" linecolor="#005500" description="Wu et al. (2012)" ignored_val="0"></variable>
+            <variable name="v_Boerema" x="TdegC" linestyle="2" linecolor="#FF5500" description="Boerema et al. (2012)" ignored_val="0"></variable>
+        </graph>        
+        <graph name="Thermal conductivity"      xaxis="Temperature (ºC)" yaxis="Thermal conductivity (W/(m K))">
+            <variable name="k_Janz" x="TdegC" linestyle="2" description="Janz and Tomkins (1981)" ignored_val="0"></variable>
+            <variable name="k_Santini" x="TdegC" linestyle="2" description="Santini et al. (1984)" ignored_val="0"></variable>
+            <variable name="k_Yang" x="TdegC" linestyle="2" description="Yang and Garimella (2010)" ignored_val="0"></variable>
+            <variable name="k_Siegel" x="TdegC" linestyle="2" description="Siegel et al. (2011)" ignored_val="0"></variable>
+            <variable name="k_Wu" x="TdegC" linestyle="2" linecolor="#FF0000" description="Wu et al. (2012)" ignored_val="0"></variable>
+        </graph>        
+        <graph name="Specific heat capacity"     xaxis="Temperature (ºC)" yaxis="Specific heat capacity (J/(kg K))">
+            <variable name="cp_Janz" x="TdegC" linestyle="2" description="Janz and Tomkins (1981)" ignored_val="0"></variable>
+            <variable name="cp_Yang" x="TdegC" linestyle="2" description="Yang and Garimella (2010)" ignored_val="0"></variable>
+            <variable name="cp_Wu" x="TdegC" linestyle="2" description="Wu et al. (2012)" ignored_val="0"></variable>
+            <variable name="cp_Boerema" x="TdegC" linestyle="2" description="Boerema et al. (2012)" ignored_val="0"></variable>
+            <variable name="cp_Serrano" x="TdegC" linestyle="2" linecolor="#FFFF00" description="Serrano et al. (2013)" ignored_val="0"></variable>
+            <variable name="cp_Proposed" x="TdegC" linestyle="2" linecolor="#FF0000" description="HYSOL (2017)" ignored_val="0"></variable>
+        </graph>        
+        <diagram  description="Hitec molten salt thermodynamic properties from different authors.
+- Density.
+- Specific heat capacity.
+- Dynamic viscosity.
+- Thermal conductivity."></diagram>   
+    </experiment>        
+    <experiment name="Hitec XL" fmufile=":fmu_HitecXL" fmuname="SolarThermoPro_Test_MoltenSalt_HitecXL" description = "Hitec XL" group="Molten salt">        
+        <graph name="Density"     xaxis="Temperature (ºC)" yaxis="Density (kg/m3)"><variable name="d" x="TdegC" description="Density" ignored_val="0"></variable></graph>
+        <graph name="Specific enthalpy"     xaxis="Temperature (ºC)" yaxis="Specific enthalpy (J/kg)"><variable name="h" x="TdegC" description="Specific enthalpy" linecolor="#99ca53" ignored_val="0"></variable></graph>
+        <graph name="Specific heat capacity"   xaxis="Temperature (ºC)" yaxis="Specific heat capacity (J/(kg K))"><variable name="cp" x="TdegC" description="Specific heat capacity" linecolor="#f6a625" ignored_val="0"></variable></graph>
+        <graph name="Dynamic viscosity" xaxis="Temperature (ºC)" yaxis="Dynamic viscosity (Pa s)"><variable name="v" x="TdegC" description="Dynamic viscosity" linecolor="#6d5fd5" ignored_val="0"></variable></graph>
+        <graph name="Thermal conductivity"     xaxis="Temperature (ºC)" yaxis="Thermal conductivity (W/(m K))"><variable name="k" x="TdegC" description="Thermal conductivity" linecolor="#bf593e" ignored_val="0"></variable></graph>  
+        <diagram  description="Hitec XL thermodynamic properties as a function of temperature.
+- Density.
+- Specific enthlapy.                 
+- Specific heat capacity.
+- Dynamic viscosity.
+- Thermal conductivity."></diagram>                
+    </experiment>       
+    <experiment name="Solar salt" fmufile=":fmu_SolarSalt" fmuname="SolarThermoPro_Test_MoltenSalt_SolarSalt" description = "Solar salt" group="Molten salt">        
+        <graph name="Density"     xaxis="Temperature (ºC)" yaxis="Density (kg/m3)"><variable name="d" x="TdegC" description="Density" ignored_val="0"></variable></graph>
+        <graph name="Specific enthalpy"     xaxis="Temperature (ºC)" yaxis="Specific enthalpy (J/kg)"><variable name="h" x="TdegC" description="Specific enthalpy" linecolor="#99ca53" ignored_val="0"></variable></graph>
+        <graph name="Specific heat capacity"   xaxis="Temperature (ºC)" yaxis="Specific heat capacity (J/(kg K))"><variable name="cp" x="TdegC" description="Specific heat capacity" linecolor="#f6a625" ignored_val="0"></variable></graph>
+        <graph name="Dynamic viscosity" xaxis="Temperature (ºC)" yaxis="Dynamic viscosity (Pa s)"><variable name="v" x="TdegC" description="Dynamic viscosity" linecolor="#6d5fd5" ignored_val="0"></variable></graph>
+        <graph name="Thermal conductivity"     xaxis="Temperature (ºC)" yaxis="Thermal conductivity (W/(m K))"><variable name="k" x="TdegC" description="Thermal conductivity" linecolor="#bf593e" ignored_val="0"></variable></graph>        
+        <diagram  description="Solar salt thermodynamic properties as a function of temperature.
+- Density.
+- Specific enthlapy.
+- Specific heat capacity.
+- Dynamic viscosity.
+- Thermal conductivity."></diagram>                
+    </experiment>     
+    <experiment name="Therminol 55" fmufile=":fmu_Therminol55" fmuname="SolarThermoPro_Test_ThermalOil_Therminol55" description = "Therminol 55" group="Thermal oil">
+        <graph name="Density"     xaxis="Temperature (ºC)" yaxis="Density (kg/m3)"><variable name="d" x="TdegC" description="Density" ignored_val="0"></variable></graph>
+        <graph name="Specific enthalpy"     xaxis="Temperature (ºC)" yaxis="Specific enthalpy (J/kg)"><variable name="h" x="TdegC" description="Specific enthalpy" linecolor="#99ca53" ignored_val="0"></variable></graph>
+        <graph name="Specific heat capacity"   xaxis="Temperature (ºC)" yaxis="Specific heat capacity (J/(kg K))"><variable name="cp" x="TdegC" description="Specific heat capacity" linecolor="#f6a625" ignored_val="0"></variable></graph>
+        <graph name="Dynamic viscosity" xaxis="Temperature (ºC)" yaxis="Dynamic viscosity (Pa s)"><variable name="v" x="TdegC" description="Dynamic viscosity" linecolor="#6d5fd5" ignored_val="0"></variable></graph>
+        <graph name="Thermal conductivity"     xaxis="Temperature (ºC)" yaxis="Thermal conductivity (W/(m K))"><variable name="k" x="TdegC" description="Thermal conductivity" linecolor="#bf593e" ignored_val="0"></variable></graph>
+        <resources width_name="110" width_document ="145"  pos_hslider = "0.6">
+            <resource type="url" name="Website" document="Therminol 55" link="http://www.therminol.com/products/Therminol-55" description="Therminol 55 is a synthetic heat transfer fluid used in moderate temperature applications. Therminol 55 fluid is designed for use in non-pressurized /low-pressure, indirect heating systems. It delivers efficient, dependable, uniform process heat with no need for high pressures."></resource>
+            <resource type="url" name="PDF" document="Specification sheet" link="http://blueoceanoil.com/wp-content/uploads/2015/04/therminol_55.pdf" description="Online Therminol 55 specification sheet in PDF format."></resource>            
+        </resources>            
+        <diagram  description="Therminol 55 thermodynamic properties as a function of temperature.
+- Density.
+- Specific enthlapy.
+- Specific heat capacity.
+- Dynamic viscosity.
+- Thermal conductivity."></diagram>
+    </experiment>
+    <experiment name="Therminol 59" fmufile=":fmu_Therminol59" fmuname="SolarThermoPro_Test_ThermalOil_Therminol59" description = "Therminol 59" group="Thermal oil">
+        <graph name="Density"     xaxis="Temperature (ºC)" yaxis="Density (kg/m3)"><variable name="d" x="TdegC" description="Density" ignored_val="0"></variable></graph>
+        <graph name="Specific enthalpy"     xaxis="Temperature (ºC)" yaxis="Specific enthalpy (J/kg)"><variable name="h" x="TdegC" description="Specific enthalpy" linecolor="#99ca53" ignored_val="0"></variable></graph>
+        <graph name="Specific heat capacity"   xaxis="Temperature (ºC)" yaxis="Specific heat capacity (J/(kg K))"><variable name="cp" x="TdegC" description="Specific heat capacity" linecolor="#f6a625" ignored_val="0"></variable></graph>
+        <graph name="Dynamic viscosity" xaxis="Temperature (ºC)" yaxis="Dynamic viscosity (Pa s)"><variable name="v" x="TdegC" description="Dynamic viscosity" linecolor="#6d5fd5" ignored_val="0"></variable></graph>
+        <graph name="Thermal conductivity"     xaxis="Temperature (ºC)" yaxis="Thermal conductivity (W/(m K))"><variable name="k" x="TdegC" description="Thermal conductivity" linecolor="#bf593e" ignored_val="0"></variable></graph>
+        <resources width_name="110" width_document ="145"  pos_hslider = "0.6">
+            <resource type="url" name="Website" document="Therminol 59" link="http://www.therminol.com/products/Therminol-59" description="Therminol 59 is a synthetic heat transfer fluid with excellent low temperature pumping characteristics and thermal stability."></resource>            
+            <resource type="url" name="PDF" document="Specification sheet" link="http://twt.mpei.ac.ru/TTHB/HEDH/HTF-59.PDF" description="Online Therminol 59 specification sheet in PDF format."></resource>            
+        </resources>
+        <diagram  description="Therminol 59 thermodynamic properties as a function of temperature.
+- Density.
+- Specific enthlapy.
+- Specific heat capacity.
+- Dynamic viscosity.
+- Thermal conductivity."></diagram>        
+    </experiment>        
+    <experiment name="Therminol VP" fmufile=":fmu_TherminolVP1" fmuname="SolarThermoPro_Test_ThermalOil_TherminolVP1" description = "Therminol VP1" group="Thermal oil">        
+        <graph name="Density"     xaxis="Temperature (ºC)" yaxis="Density (kg/m3)"><variable name="d" x="TdegC" description="Density" ignored_val="0"></variable></graph>
+        <graph name="Specific enthalpy"     xaxis="Temperature (ºC)" yaxis="Specific enthalpy (J/kg)"><variable name="h" x="TdegC" description="Specific enthalpy" linecolor="#99ca53" ignored_val="0"></variable></graph>
+        <graph name="Specific heat capacity"   xaxis="Temperature (ºC)" yaxis="Specific heat capacity (J/(kg K))"><variable name="cp" x="TdegC" description="Specific heat capacity" linecolor="#f6a625" ignored_val="0"></variable></graph>
+        <graph name="Dynamic viscosity" xaxis="Temperature (ºC)" yaxis="Dynamic viscosity (Pa s)"><variable name="v" x="TdegC" description="Dynamic viscosity" linecolor="#6d5fd5" ignored_val="0"></variable></graph>
+        <graph name="Thermal conductivity"     xaxis="Temperature (ºC)" yaxis="Thermal conductivity (W/(m K))"><variable name="k" x="TdegC" description="Thermal conductivity" linecolor="#bf593e" ignored_val="0"></variable></graph>
+        <resources width_name="110" width_document ="145"  pos_hslider = "0.6">
+            <resource type="url" name="Website" document="Therminol VP1" link="http://www.therminol.com/products/Therminol-VP1" description="Therminol VP-1 heat transfer fluid is an ultra-high temperature synthetic heat transfer fluid designed to meet the demanding requirements of vapor phase systems or liquid phase systems."></resource>
+            <resource type="url" name="PDF" document="Specification sheet" link="http://twt.mpei.ac.ru/tthb/hedh/htf-vp1.pdf" description="Online Therminol VP-1 specification sheet in PDF format."></resource>                  
+        </resources>                    
+        <diagram  description="Therminol VP1 thermodynamic properties as a function of temperature.
+- Density.
+- Specific enthlapy.
+- Specific heat capacity.
+- Dynamic viscosity.
+- Thermal conductivity."></diagram>        
+    </experiment>             
+</surf>

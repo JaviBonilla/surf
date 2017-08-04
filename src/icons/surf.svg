@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg4138"
+   viewBox="0 0 515.00001 500.00001"
+   height="500"
+   width="515"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="surf.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="995"
+     id="namedview10"
+     showgrid="false"
+     inkscape:zoom="0.96"
+     inkscape:cx="238.01671"
+     inkscape:cy="277.85884"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4138" />
+  <defs
+     id="defs4140" />
+  <metadata
+     id="metadata4143">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     inkscape:connector-curvature="0"
+     id="path3695"
+     style="fill:#1ebee6;fill-opacity:1"
+     d="m 170.58276,54.41253 c 47.92763,-0.0912 96.2153,96.02368 95.34037,140.8056 C 263.0039,344.69699 107.62826,455.32215 1.04073,500.76255 l 512.58577,-0.4772 C 516.23995,353.45705 424.17785,60.29657 301.48958,8.60275 260.15579,-8.81228 187.61826,-7.55778 170.81774,54.50419" />
+  <text
+     sodipodi:linespacing="1000%"
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="-4.2780895"
+     y="326.45285"
+     id="text4726"
+     transform="matrix(0.9999476,0.0102367,-0.0102367,0.9999476,0,0)"><tspan
+       id="tspan4728"
+       x="-4.2780895"
+       y="326.45285"
+       style="font-size:281.25px">Surf</tspan></text>
+  <text
+     sodipodi:linespacing="1000%"
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     x="319.21445"
+     y="326.74213"
+     id="text4726-3"
+     transform="matrix(0.9999476,0.0102367,-0.0102367,0.9999476,0,0)"><tspan
+       id="tspan4728-6"
+       x="319.21445"
+       y="326.74213"
+       style="font-size:281.25px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">r</tspan></text>
+</svg>

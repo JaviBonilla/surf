@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fmiModelDescription
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  fmiVersion="2.0"
+  modelName="SolarThermoPro.Test.MoltenSalt.HitecXL"
+  guid="{b0b7ed0f-5733-40d3-988c-eedd6ca7cc26}"
+  generationTool="Dymola Version 2017 FD01 (64-bit), 2016-10-11 (requires license to execute)"
+  generationDateAndTime="2017-07-13T08:01:19Z"
+  variableNamingConvention="structured"
+  numberOfEventIndicators="4">
+  <ModelExchange
+    modelIdentifier="SolarThermoPro_Test_MoltenSalt_HitecXL"
+    canGetAndSetFMUstate="true"
+    providesDirectionalDerivative="true"/>
+  <CoSimulation
+    modelIdentifier="SolarThermoPro_Test_MoltenSalt_HitecXL"
+    canHandleVariableCommunicationStepSize="true"
+    canInterpolateInputs="true"
+    maxOutputDerivativeOrder="1"
+    canGetAndSetFMUstate="true"
+    providesDirectionalDerivative="true"/>
+  <UnitDefinitions>
+    <Unit
+      name="J/(kg.K)">
+      <BaseUnit m="2"
+        s="-2"
+        K="-1"/>
+    </Unit>
+    <Unit
+      name="J/kg">
+      <BaseUnit m="2"
+        s="-2"/>
+    </Unit>
+    <Unit
+      name="Pa.s">
+      <BaseUnit kg="1"
+        m="-1"
+        s="-1"/>
+    </Unit>
+    <Unit
+      name="W/(m.K)">
+      <BaseUnit kg="1"
+        m="1"
+        s="-3"
+        K="-1"/>
+    </Unit>
+    <Unit
+      name="degC">
+      <BaseUnit K="1"
+        offset="273.15"/>
+    </Unit>
+    <Unit
+      name="kg/m3">
+      <BaseUnit kg="1"
+        m="-3"/>
+    </Unit>
+  </UnitDefinitions>
+  <TypeDefinitions>
+    <SimpleType
+      name="Modelica.Media.Interfaces.Types.AbsolutePressure">
+      <Real
+        quantity="Pressure"
+        unit="Pa"
+        min="0.0"
+        max="100000000.0"
+        nominal="100000.0"/>
+    </SimpleType>
+    <SimpleType
+      name="Modelica.Media.Interfaces.Types.Temperature">
+      <Real
+        quantity="ThermodynamicTemperature"
+        unit="K"
+        min="1.0"
+        max="10000.0"
+        nominal="300.0"/>
+    </SimpleType>
+    <SimpleType
+      name="Modelica.SIunits.Conversions.NonSIunits.Pressure_bar">
+      <Real
+        quantity="Pressure"
+        unit="bar"/>
+    </SimpleType>
+    <SimpleType
+      name="Modelica.SIunits.Conversions.NonSIunits.Temperature_degC">
+      <Real
+        quantity="ThermodynamicTemperature"
+        unit="degC"/>
+    </SimpleType>
+    <SimpleType
+      name="Modelica.SIunits.Density">
+      <Real
+        quantity="Density"
+        unit="kg/m3"
+        min="0.0"/>
+    </SimpleType>
+    <SimpleType
+      name="Modelica.SIunits.DynamicViscosity">
+      <Real
+        quantity="DynamicViscosity"
+        unit="Pa.s"
+        min="0.0"/>
+    </SimpleType>
+    <SimpleType
+      name="Modelica.SIunits.Pressure">
+      <Real
+        quantity="Pressure"
+        unit="Pa"/>
+    </SimpleType>
+    <SimpleType
+      name="Modelica.SIunits.SpecificEnthalpy">
+      <Real
+        quantity="SpecificEnergy"
+        unit="J/kg"/>
+    </SimpleType>
+    <SimpleType
+      name="Modelica.SIunits.SpecificHeatCapacity">
+      <Real
+        quantity="SpecificHeatCapacity"
+        unit="J/(kg.K)"/>
+    </SimpleType>
+    <SimpleType
+      name="Modelica.SIunits.Temperature">
+      <Real
+        quantity="ThermodynamicTemperature"
+        unit="K"
+        min="0.0"
+        nominal="300.0"/>
+    </SimpleType>
+    <SimpleType
+      name="Modelica.SIunits.ThermalConductivity">
+      <Real
+        quantity="ThermalConductivity"
+        unit="W/(m.K)"/>
+    </SimpleType>
+  </TypeDefinitions>
+  <DefaultExperiment startTime="0.0"
+    stopTime="1.0"
+    tolerance="0.0001"/>
+  <ModelVariables>
+    <!-- Index for next variable = 1 -->
+    <ScalarVariable
+      name="TdegC"
+      valueReference="335544320"
+      causality="output">
+      <Real
+        declaredType="Modelica.SIunits.Conversions.NonSIunits.Temperature_degC"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 2 -->
+    <ScalarVariable
+      name="d"
+      valueReference="335544321"
+      causality="output">
+      <Real
+        declaredType="Modelica.SIunits.Density"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 3 -->
+    <ScalarVariable
+      name="h"
+      valueReference="335544322"
+      causality="output">
+      <Real
+        declaredType="Modelica.SIunits.SpecificEnthalpy"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 4 -->
+    <ScalarVariable
+      name="v"
+      valueReference="335544323"
+      causality="output">
+      <Real
+        declaredType="Modelica.SIunits.DynamicViscosity"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 5 -->
+    <ScalarVariable
+      name="k"
+      valueReference="335544324"
+      causality="output">
+      <Real
+        declaredType="Modelica.SIunits.ThermalConductivity"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 6 -->
+    <ScalarVariable
+      name="cp"
+      valueReference="335544325"
+      causality="output">
+      <Real
+        declaredType="Modelica.SIunits.SpecificHeatCapacity"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 7 -->
+    <ScalarVariable
+      name="TdegC_min"
+      valueReference="100663296"
+      variability="constant">
+      <Real
+        declaredType="Modelica.SIunits.Conversions.NonSIunits.Temperature_degC"
+        start="133"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 8 -->
+    <ScalarVariable
+      name="TdegC_max"
+      valueReference="100663297"
+      variability="constant">
+      <Real
+        declaredType="Modelica.SIunits.Conversions.NonSIunits.Temperature_degC"
+        start="500"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 9 -->
+    <ScalarVariable
+      name="nullValue"
+      valueReference="100663298"
+      variability="constant">
+      <Real start="0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 10 -->
+    <ScalarVariable
+      name="TdegC_start"
+      valueReference="100663303"
+      description="Initial temperature (ºC)"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.SIunits.Conversions.NonSIunits.Temperature_degC"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 11 -->
+    <ScalarVariable
+      name="TdegC_stop"
+      valueReference="100663304"
+      description="Final temperature (ºC)"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.SIunits.Conversions.NonSIunits.Temperature_degC"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 12 -->
+    <ScalarVariable
+      name="Tstart"
+      valueReference="16777216"
+      description="Initial temperature (ºC)"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.SIunits.Conversions.NonSIunits.Temperature_degC"
+        start="133"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 13 -->
+    <ScalarVariable
+      name="Tstop"
+      valueReference="16777217"
+      description="Final temperature (ºC)"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.SIunits.Conversions.NonSIunits.Temperature_degC"
+        start="500"/>
+    </ScalarVariable>
+  </ModelVariables>
+  <ModelStructure>
+    <Outputs>
+      <Unknown index="1"
+        dependencies=""
+        dependenciesKind=""/>
+      <Unknown index="2"
+        dependencies=""
+        dependenciesKind=""/>
+      <Unknown index="3"
+        dependencies=""
+        dependenciesKind=""/>
+      <Unknown index="4"
+        dependencies=""
+        dependenciesKind=""/>
+      <Unknown index="5"
+        dependencies=""
+        dependenciesKind=""/>
+      <Unknown index="6"
+        dependencies=""
+        dependenciesKind=""/>
+    </Outputs>
+    <InitialUnknowns>
+      <Unknown index="1"
+        dependencies="12 13"
+        dependenciesKind="dependent dependent"/>
+      <Unknown index="2"
+        dependencies="12 13"
+        dependenciesKind="dependent dependent"/>
+      <Unknown index="3"
+        dependencies="12 13"
+        dependenciesKind="dependent dependent"/>
+      <Unknown index="4"
+        dependencies="12 13"
+        dependenciesKind="dependent dependent"/>
+      <Unknown index="5"
+        dependencies="12 13"
+        dependenciesKind="dependent dependent"/>
+      <Unknown index="6"
+        dependencies="12 13"
+        dependenciesKind="dependent dependent"/>
+    </InitialUnknowns>
+  </ModelStructure>
+</fmiModelDescription>

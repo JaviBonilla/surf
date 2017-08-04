@@ -1,0 +1,68 @@
+
+\documentclass{modelica}
+
+\usepackage{textcomp}
+
+\hypersetup{%
+	pdftitle  = {EXAMPLE 1-3 Heat Loss from Heating Ducts in a Basement},
+	pdfauthor = {Javier Bonilla},
+        pdfsubject = {Heat and Mass Transfer - A Practical Approach},
+        pdfkeywords = {Heat transfer, mass transfer, thermodynamics},
+	colorlinks,
+	linkcolor=black,
+	urlcolor=black,
+	citecolor=black,
+	pdfpagelayout = SinglePage,
+	pdfcreator = pdflatex,
+	pdfproducer = pdflatex}
+
+% begin the document
+\begin{document}
+
+\thispagestyle{empty}
+\date{} % <--- leave date empty
+
+\section*{EXAMPLE 1-3 Heat Loss from Heating Ducts in a Basement}
+
+\subsection*{Modelica code}
+
+
+\begin{lstlisting}[mathescape=true] 
+model Example_1_3 "Heat Loss from Heating Ducts in a Basement"
+  import Modelica.SIunits;
+  import Modelica.SIunits.Conversions;
+  import Modelica.SIunits.Conversions.NonSIunits;
+
+  constant Real R = 287 "Gas constant ((Pa m^3)/(Kg K))";
+
+  parameter SIunits.Length               len(min=0) =         5           "Lenght (m)";
+  parameter SIunits.Length               L1(min=0) =          0.20        "Side1 L. (m)";
+  parameter SIunits.Length               L2(min=0) =          0.25        "Side2 L. (m)";
+  parameter SIunits.Pressure             p(min=0) =           100*10^3    "Pres. (Pa)";
+  parameter NonSIunits.Temperature_degC  T_in(min=-273.15) =  60          "Inlet T (C)";
+  parameter NonSIunits.Temperature_degC  T_out(min=-273.15) = 54          "Outlet T (C)";
+  parameter SIunits.Velocity             v(min=0) =           5           "Vel. (m/s)";
+  parameter SIunits.SpecificHeatCapacity cp(min=0) =          1007        "(J/(Kg K))";
+  parameter SIunits.Efficiency           e(min=0,max=1) =     0.80        "Effic. (%)";
+  parameter Real                         cost_gas(min=0) =    1.60        "(dol./therm)";
+  parameter SIunits.Energy               therm(min=0) =       105500*10^3 "1 therm in J";
+
+  output SIunits.Area                  A     "Area (m^2)";
+  output SIunits.Density               rho   "Density (kg/m^3)";
+  output SIunits.MassFlowRate          m_dot "Mass flow rate (kg/s)";
+  output SIunits.TemperatureDifference dT    "Temperature difference (K)";
+  output SIunits.HeatFlowRate          Q     "Heat flow rate (W)";
+  output Real                          cost  "Cost (dollar/h)";
+
+equation 
+   rho   = p/(R*Conversions.from_degC(T_in));
+   A     = L1*L2;
+   m_dot = rho*v*A;
+   dT    = T_in - T_out;
+   Q     = m_dot *cp * dT;
+   cost  = (Q*3600*cost_gas)/(e*therm);
+  
+end Example_1_3;  
+\end{lstlisting}
+
+\end{document}

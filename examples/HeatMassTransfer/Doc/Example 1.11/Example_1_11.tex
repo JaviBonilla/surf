@@ -1,0 +1,69 @@
+
+\documentclass{modelica}
+
+\usepackage{textcomp}
+
+\hypersetup{%
+	pdftitle  = {EXAMPLE 1-11 Heat Transfer between Two Isothermal Plates},
+	pdfauthor = {Javier Bonilla},
+        pdfsubject = {Heat and Mass Transfer - A Practical Approach},
+        pdfkeywords = {Heat transfer, mass transfer, thermodynamics},
+	colorlinks,
+	linkcolor=black,
+	urlcolor=black,
+	citecolor=black,
+	pdfpagelayout = SinglePage,
+	pdfcreator = pdflatex,
+	pdfproducer = pdflatex}
+
+% begin the document
+\begin{document}
+
+\thispagestyle{empty}
+\date{} % <--- leave date empty
+
+\section*{EXAMPLE 1-11 Heat Transfer between Two Isothermal Plates}
+
+\subsection*{Modelica code}
+
+
+\begin{lstlisting}[mathescape=true] 
+model Example_1_11 "Heat Transfer between Two Isothermal Plates"
+  import Modelica.Constants;
+  import Modelica.SIunits;
+
+  parameter SIunits.Temperature         T1 =                   300     "Plate 1 T (K)";
+  parameter SIunits.Temperature         T2 =                   200     "Plate 2 T (K)";
+  parameter SIunits.Length              L(min=0) =             0.01    "Lenght (m)";
+  parameter SIunits.Area                A(min=0) =             1       "Area (m^2)";
+  parameter Real                        epsilon(min=0,max=1) = 1       "Emissivity (-)";
+  parameter SIunits.ThermalConductivity k_air(min=0) =         0.0219  "Air con";
+  parameter SIunits.ThermalConductivity k_ure(min=0) =         0.026   "Urethane";
+  parameter SIunits.ThermalConductivity k_sup(min=0) =         0.00002 "Superinsulation";
+
+  output SIunits.HeatFlowRate Q_cond_a  "Heat flow rate (W)";
+  output SIunits.HeatFlowRate Q_cond_c  "Heat flow rate (W)";
+  output SIunits.HeatFlowRate Q_cond_d  "Heat flow rate (W)";
+  output SIunits.HeatFlowRate Q_rad     "Heat flow rate (W)";
+  output SIunits.HeatFlowRate Q_a       "Heat flow rate (W)";
+  output SIunits.HeatFlowRate Q_b       "Heat flow rate (W)";
+  output SIunits.HeatFlowRate Q_c       "Heat flow rate (W)";
+  output SIunits.HeatFlowRate Q_d       "Heat flow rate (W)";
+
+  Real Q_cond_par;
+
+equation 
+  Q_cond_par = A*(T1-T2)/L;
+  Q_cond_a   = k_air*Q_cond_par;
+  Q_cond_c   = k_ure*Q_cond_par;
+  Q_cond_d   = k_sup*Q_cond_par;
+  Q_rad      = epsilon*Constants.sigma*A*(T1^4-T2^4);
+  Q_a        = Q_cond_a + Q_rad;
+  Q_b        = Q_rad;
+  Q_c        = Q_cond_c;
+  Q_d        = Q_cond_d;
+  
+end Example_1_11;  
+\end{lstlisting}
+
+\end{document}

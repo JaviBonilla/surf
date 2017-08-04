@@ -1,0 +1,276 @@
+<surf>
+<app windowname="TES tank simulator" titlename="Dynamic Thermal Energy Storage Tank Simulator" version="0.1" description="" company="CIEMAT-PSA" logo=":logo.png" icon=":icon.png"  background_color="#edf2f6" title_color="#2b3443" section_color="#6f7e95" font_title_color="#ffffff" font_section_color="#ffffff" conf_integrator="true" conf_experiment="false" conf_outputs="true"></app>
+<geometry height = "700" width = "1000" pos_hslider = "0.5"  pos_vslider = "0.6"></geometry>
+<authors>
+    <author name="Javier Bonilla" email="javier.bonilla@psa.es" website="http://www.psa.es" company="CIEMAT-PSA" role="Model development, simulations and tool design"></author>
+    <author name="Margarita M. Rodríguez" email="margarita.rodriguez@psa.es" website="http://www.psa.es" company="CIEMAT-PSA" role="Model development  and experimental campaign"></author>
+    <author name="Lidia Roca" email="lidia.roca@psa.es" website="http://www.psa.es" company="CIEMAT-PSA" role="Model development"></author>
+    <author name="Alberto de la Calle" email="alberto.delacallealonso@csiro.au" website="http://www.csiro.au" company="CSIRO" role="Model development"></author>
+    <author name="Loreto Valenzuela" email="loreto.valenzuela@psa.es" website="http://www.psa.es" company="CIEMAT-PSA" role="Model development"></author>
+</authors>    
+<experiment name="Charging" fmufile=":fmufile_charging" inputfile=":inputfile_charging" fmuname="TSFLib_Tests_Tanks_HotTank_simu_0tank_0charging" description = "Charging process">
+    <parameters columns="name,value,description" sizes="125,60,175">
+    <!--<parameters columns="name,value,description,type,min,max" sizes="125,60,100,125,40,40">-->        
+        <!--<parameter name="Tstart" value="583.1"></parameter>-->
+    </parameters>   
+    <inputs reduction="7" timekind="1" start="39000" stop="57595" intervals="0" timevar="Time">
+        <input name="Exp_data.TTH1" kind="2" value="Exp_data.TTH1"></input>
+        <input name="Exp_data.TTH2" kind="2" value="Exp_data.TTH2"></input>
+        <input name="Exp_data.TTH3" kind="2" value="Exp_data.TTH3"></input>
+        <input name="Exp_data.TTH4" kind="2" value="Exp_data.TTH4"></input>
+        <input name="Exp_data.TTH5" kind="2" value="Exp_data.TTH5"></input>
+        <input name="Exp_data.TTH6" kind="2" value="Exp_data.TTH6"></input>
+        <input name="Exp_data.TTH7" kind="2" value="Exp_data.TTH7"></input>        
+        <input name="Exp_data.Tamb" kind="2" value="Exp_data.Tamb"></input>
+        <input name="Exp_data.Lv_hot_tank" kind="2" value="Exp_data.Lv_hot_tank"></input>
+        <input name="Exp_data.mdot_ms_in" kind="2" value="Exp_data.mdot_ms_in"></input>
+        <input name="Exp_data.T_ms_in" kind="2" value="Exp_data.T_ms_in"></input>
+        <input name="Exp_data.T_ms_out" kind="2" value="Exp_data.T_ms_out"></input>
+        <input name="Exp_data.p_ms_in" kind="2" value="Exp_data.p_ms_out"></input>
+    </inputs>
+    <graphs>
+        <graph name = "Inlet molten salt" xaxis="Simulation time (s)" yaxis="Temperature (ºC)">
+            <variable name="Tms_in" description="Temperature"></variable>
+            <variable name="mdot_ms_in" description="Mass flow rate" yalign="right" yaxis="Mass flow rate (kg/s)" linestyle="2"></variable>
+        </graph>
+        <graph name = "Levels" xaxis="Simulation time (s)" yaxis="Level (m)">
+            <variable name="level_exp" description="Exp. level" yalign="left" yaxis="Level (m)"></variable>
+            <variable name="level_sim" description="Sim. level"></variable>            
+            <variable name="level_H2_H7" description="Th. 1 &amp; 2" linestyle="2"></variable>
+            <variable name="level_H3_H4" description="Th. 3 &amp; 4" linestyle="3"></variable>
+            <variable name="level_H5_H6" description="Th. 5 &amp; 6" linestyle="4"></variable>            
+        </graph>    
+        <graph name = "Molten salt temperature"  xaxis="Simulation time (s)" yaxis="Temperature (ºC)">
+            <variable name="Tms_sim" description="Simulated temp."></variable>
+            <variable name="Th1_ms" description="Th. 1" linestyle="2" ignored_val="309.6"></variable>
+            <variable name="Th2_ms" description="Th. 2" linestyle="2" ignored_val="309.6"></variable>
+            <variable name="Th3_ms" description="Th. 3" linestyle="2" ignored_val="309.6"></variable>
+            <variable name="Th4_ms" description="Th. 4" linestyle="2" ignored_val="309.6"></variable>
+            <variable name="Th5_ms" description="Th. 5" linestyle="2" linecolor="#FF0000" ignored_val="309.6"></variable>
+            <variable name="Th6_ms" description="Th. 6" linestyle="2" linecolor="#FFFF00" ignored_val="309.6"></variable>
+        </graph>
+        <graph name = "Gas temperature"  xaxis="Simulation time (s)" yaxis="Temperature (ºC)">
+            <variable name="Tgas_sim"  description="Simulated temp."></variable>
+            <variable name="Th1_gas" description="Th. 1" linestyle="2" ignored_val="309.6"></variable>
+            <variable name="Th2_gas" description="Th. 2" linestyle="2" ignored_val="309.6"></variable>
+            <variable name="Th3_gas" description="Th. 3" linestyle="2" ignored_val="309.6"></variable>
+            <variable name="Th4_gas" description="Th. 4" linestyle="2" ignored_val="309.6"></variable>
+            <variable name="Th5_gas" description="Th. 5" linestyle="2" linecolor="#FF0000" ignored_val="309.6"></variable>
+            <variable name="Th6_gas" description="Th. 6" linestyle="2" linecolor="#FFFF00" ignored_val="309.6"></variable>            
+        </graph>    
+        <graph name = "Pressure"  xaxis="Simulation time (s)" yaxis="Pressure (mbar)">
+            <variable name="p"  description="Controlled pressure"></variable>     
+            <variable name="pg_th"  description="Indirect experimental pressure" linestyle="2" ignored_val="49.5"></variable>
+        </graph>               
+        <graph name = "Molten salt heat flow rates"  xaxis="Simulation time (s)" yaxis="Percentage (%)">
+            <variable name="per_Q_rad_l_pg"  description="Qrad_l_pg" linestyle="4"></variable>
+            <variable name="per_Q_conv_l_f"  description="Qconv_l_f" linestyle="4"></variable>
+            <variable name="per_Q_conv_l_w"  description="Qconv_l_w" linestyle="4"></variable>
+            <variable name="per_Q_conv_l_p"  description="Qconv_l_p" linestyle="4"></variable>
+            <variable name="per_Q_rad_l_wl"  description="Qrad_l_wl" linestyle="4"></variable>
+            <variable name="per_Q_rad_l_wg"  description="Qrad_l_wg" linestyle="4" linecolor="#FF0000"></variable>
+            <variable name="per_Q_rad_l_pl"  description="Qrad_l_pl" linestyle="4" linecolor="#FFFF00"></variable>
+            <variable name="per_Q_rad_l_pg"  description="Qrad_l_pg" linestyle="4" linecolor="#005500"></variable>
+            <variable name="per_Q_rad_l_f"  description="Qrad_l_f" linestyle="4" linecolor="#FF5500"></variable>
+            <variable name="per_Q_rad_l_r"  description="Qrad_l_r" linestyle="4" linecolor="#00007F"></variable>
+        </graph>         
+        <graph name = "Gas heat flow rates"  xaxis="Simulation time (s)" yaxis="Percentage (%)">
+            <variable name="per_Q_conv_g_l"  description="Qconv_g_l" linestyle="4"></variable>
+            <variable name="per_Q_conv_g_w"  description="Qconv_g_w" linestyle="4"></variable>
+            <variable name="per_Q_conv_g_p"  description="Qconv_g_p" linestyle="4"></variable>
+            <variable name="per_Q_conv_g_r"  description="Qconv_g_r" linestyle="4"></variable>
+            <variable name="per_Q_conv_g_f"  description="Qconv_g_f" linestyle="4"></variable>
+        </graph>         
+    </graphs>
+    <resources width_name="110" width_document ="145"  pos_hslider = "0.6">
+        <resource type="url" name="Facility description" document="MOSA facility" link="http://www.psa.es/en/instalaciones/almacenamiento/mosa.php" description="Molten Salt Test Loop for Thermal Energy Systems facility description"></resource>    
+        <resource type="file" name="Tank dimensions" document="Dimensions" link=":dimensions.pdf" 
+        description="The cylindrical vertical hot molten salt tank has an inclined base in order to facility its drainage. It is equipped with a level meter, six thermocouples (Th1 to Th6), a vertical pump, thermal insulation, an electrical wall heat tracing system as well as immersed electrical heaters. For the sake of clarity the sketch is not at scale, for instance the floor inclination is much lower and the pump is closer to the tank floor."></resource>
+        <resource type="file" name="Tank heat transfer" document="Heat transfer processes" link=":heatTransfer.pdf" 
+        description="The models considers two control volumes: liqud and gas. All heat transfer processes (conduction, convection and radiation) considerd in the model are described in this figure. That is heat transfer between liquid, gas, dry and wet walls, floor, roof, insulation, foundation, ground and ambient."></resource>
+    </resources>        
+    <integration solver="8" abstolerance="1e-4" reltolerance="1e-4" order="4" stepsize="1e-4"></integration>    
+    <outputs kind="0" number="500" step="0.1"></outputs>
+    <diagram  pos_hslider = "0.25" thumbnail=":diagram_min_charging.svg" picture=":diagram.svg" 
+             description="The model is subjected to several inlet mass flow rate steps in this experiment. The tank is empty at the beginning of the simulation. The tank metallic structure and gas temperatures are kept at a certain temperature by means of the heat tracing system in order to prevent molten salt freezing when feeding the tank. This temperature value is an initial condition of the model. This simulation is performed in less than 5 seconds. 
+            
+Horizontal lines point out the position in height of the thermocouples. Molten salt temperature figures show experimental (thermocouples immersed in molten salts) and simulated molten salt temperatures. Notice that there is no experimental molten salt temperature until the tank level reaches the first thermocouple position. Gas temperature figure shows experimental and simulated gas temperatures. Notice that the molten salt level reaches the last thermocouple at the end of the simulation, therefore there are no available measurements for gas temperature, because the temperatures from the highest-placed thermocouples correspond to molten salt temperatures in this situation.
+            
+There is a good agreement between experimental and simulated level and molten salt temperature. The gas temperature is slightly underestimated, the root mean square difference between the closest experimental (thermocouple 5) and simulated temperatures is 2.75 ºC. The gas temperature dynamics properly match the experimental ones.
+            
+Although the tank pressure cannot be directly measured, since there is no instrumentation in the tank. The assumed constant controlled value can be compared with a calculated pressure value from experimental data. The ideal-gas equation of state  is applied to perform this calculation. Measured temperature values, together with the initial gas temperature and volume, are also required. The measured temperature corresponds to that from the thermocouple 5. It can be seen that  the calculated pressure is closed to the assumed controlled pressure.
+            
+Molten salt heat flow rate figure shows the molten salt heat exchange in percentage  with the remaining components inside the tank, i.e. the rate of heat exchange in percentage with floor, dry wall, wet wall, dry pump,  wet pump and roof depending on the heat transfer process: convection or radiation. Gas heat flow rate figure shows the same information but for the gas. A positive heat flow rate means heat leaving the control volume, whereas negative ones mean heat entering the control volume.">
+        <link type="text" id="TLiquid"  variable="Tms_sim" units="ºC"></link>
+        <link type="text" id="TGas"  variable="Tgas_sim" units="ºC"></link>
+        <link type="text" id="Level"  variable="level_sim" units="m"></link>
+        <link type="text" id="TAmb"  variable="Tamb" units="ºC"></link>
+        <link type="text" id="TGround"  variable="TGround" units="ºC"></link>
+        <link type="text" id="Tf"  variable="Tf" units="ºC"></link>
+        <link type="text" id="Twi"  variable="Twi" units="ºC"></link>
+        <link type="text" id="Tdi"  variable="Tdi" units="ºC"></link>
+        <link type="text" id="Tww"  variable="Tww" units="ºC"></link>
+        <link type="text" id="Tdw"  variable="Tdw" units="ºC"></link>
+        <link type="text" id="Twp"  variable="Twp" units="ºC"></link>
+        <link type="text" id="Tdp"  variable="Tdp" units="ºC"></link>
+        <link type="text" id="Tri"  variable="Tri" units="ºC"></link>
+        <link type="text" id="Trw"  variable="Trw" units="ºC"></link>
+        <link type="assign" id="liquid" property="height" variable="level_sim"></link>
+        
+        <!--<link type="assign" id="level" property="sodipodi:cy" pro_min="397.0033" pro_max="87.616875" variable="level_exp" var_min="0" var_max="4"></link>--> 
+    </diagram>    
+</experiment>
+<experiment name="Discharging" fmufile=":fmufile_discharging" inputfile=":inputfile_discharging" fmuname="TSFLib_Tests_Tanks_HotTank_simu_0tank_0discharging" description = "Discharging process">
+    <parameters columns="name,value,description" sizes="125,60,175">
+    </parameters>   
+    <inputs reduction="7" timekind="1" start="33000" stop="47800" intervals="0" timevar="Time">
+        <input name="Exp_data.TTH1" kind="2" value="Exp_data.TTH1"></input>
+        <input name="Exp_data.TTH2" kind="2" value="Exp_data.TTH2"></input>
+        <input name="Exp_data.TTH3" kind="2" value="Exp_data.TTH3"></input>
+        <input name="Exp_data.TTH4" kind="2" value="Exp_data.TTH4"></input>
+        <input name="Exp_data.TTH5" kind="2" value="Exp_data.TTH5"></input>
+        <input name="Exp_data.TTH6" kind="2" value="Exp_data.TTH6"></input>
+        <input name="Exp_data.TTH7" kind="2" value="Exp_data.TTH7"></input>        
+        <input name="Exp_data.Tamb" kind="2" value="Exp_data.Tamb"></input>
+        <input name="Exp_data.Lv_hot_tank" kind="2" value="Exp_data.Lv_hot_tank"></input>
+        <input name="Exp_data.mdot_ms_in" kind="2" value="Exp_data.mdot_ms_in"></input>
+        <input name="Exp_data.T_ms_in" kind="2" value="Exp_data.T_ms_in"></input>
+        <input name="Exp_data.T_ms_out" kind="2" value="Exp_data.T_ms_out"></input>
+        <input name="Exp_data.p_ms_in" kind="2" value="Exp_data.p_ms_out"></input>
+    </inputs>
+    <graphs>
+        <graph name = "Outlet molten salt" xaxis="Simulation time (s)" yaxis="Temperature (ºC)">
+            <variable name="Tms_in" description="Temperature"></variable>
+            <variable name="mdot_ms_in" description="Mass flow rate" yalign="right" yaxis="Mass flow rate (kg/s)" linestyle="2"></variable>
+        </graph>
+        <graph name = "Levels" xaxis="Simulation time (s)" yaxis="Level (m)">
+            <variable name="level_exp" description="Exp. level" yalign="left" yaxis="Level (m)"></variable>
+            <variable name="level_sim" description="Sim. level"></variable>            
+            <variable name="level_H2_H7" description="Th. 1 &amp; 2" linestyle="2"></variable>
+            <variable name="level_H3_H4" description="Th. 3 &amp; 4" linestyle="3"></variable>
+            <variable name="level_H5_H6" description="Th. 5 &amp; 6" linestyle="4"></variable>            
+        </graph>    
+        <graph name = "Molten salt temperature"  xaxis="Simulation time (s)" yaxis="Temperature (ºC)">
+            <variable name="Tms_sim" description="Simulated temp."></variable>
+            <variable name="Th1_ms" description="Th. 1" linestyle="2" ignored_val="355"></variable>
+            <variable name="Th2_ms" description="Th. 2" linestyle="2" ignored_val="355"></variable>
+            <variable name="Th3_ms" description="Th. 3" linestyle="2" ignored_val="355"></variable>
+            <variable name="Th4_ms" description="Th. 4" linestyle="2" ignored_val="355"></variable>
+            <variable name="Th5_ms" description="Th. 5" linestyle="2" linecolor="#FF0000" ignored_val="355"></variable>
+            <variable name="Th6_ms" description="Th. 6" linestyle="2" linecolor="#FFFF00" ignored_val="355"></variable>
+        </graph>
+        <graph name = "Gas temperature"  xaxis="Simulation time (s)" yaxis="Temperature (ºC)">
+            <variable name="Tgas_sim"  description="Simulated temp."></variable>
+            <variable name="Th1_gas" description="Th. 1" linestyle="2" ignored_val="355"></variable>
+            <variable name="Th2_gas" description="Th. 2" linestyle="2" ignored_val="355"></variable>
+            <variable name="Th3_gas" description="Th. 3" linestyle="2" ignored_val="355"></variable>
+            <variable name="Th4_gas" description="Th. 4" linestyle="2" ignored_val="355"></variable>
+            <variable name="Th5_gas" description="Th. 5" linestyle="2" linecolor="#FF0000" ignored_val="355"></variable>
+            <variable name="Th6_gas" description="Th. 6" linestyle="2" linecolor="#FFFF00" ignored_val="355"></variable>            
+        </graph>    
+    </graphs>
+    <resources width_name="110" width_document ="145"  pos_hslider = "0.6">
+        <resource type="url" name="Facility description" document="MOSA facility" link="http://www.psa.es/en/instalaciones/almacenamiento/mosa.php" description="Molten Salt Test Loop for Thermal Energy Systems facility description"></resource>    
+        <resource type="file" name="Tank dimensions" document="Dimensions" link=":dimensions.pdf" 
+        description="The cylindrical vertical hot molten salt tank has an inclined base in order to facility its drainage. It is equipped with a level meter, six thermocouples (Th1 to Th6), a vertical pump, thermal insulation, an electrical wall heat tracing system as well as immersed electrical heaters. For the sake of clarity the sketch is not at scale, for instance the floor inclination is much lower and the pump is closer to the tank floor."></resource>
+        <resource type="file" name="Tank heat transfer" document="Heat transfer processes" link=":heatTransfer.pdf" 
+        description="The models considers two control volumes: liqud and gas. All heat transfer processes (conduction, convection and radiation) considerd in the model are described in this figure. That is heat transfer between liquid, gas, dry and wet walls, floor, roof, insulation, foundation, ground and ambient."></resource>
+    </resources>            
+    <integration solver="8" abstolerance="1e-4" reltolerance="1e-4" order="4" stepsize="1e-4"></integration>    
+    <outputs kind="0" number="500" step="0.1"></outputs>
+    <diagram  pos_hslider = "0.25" thumbnail=":diagram_min_discharging.svg" picture=":diagram.svg" 
+             description="The tank discharging process was also simulated and compared against experimental data. The outlet molten salt mass flow rate and temperature are shown. Experimental and simulated levels, molten salt and gas temperatures are also shown. Simulation results agree with experimental data as shown in figures. Thermocouples exhibit a dynamic behavior related to the thermowells where they are installed. This behavior has nothing to do with the gas temperature dynamics, after that transients the dynamics are similar to those from the model. This simulation was also fast, it took less than 4 seconds.">
+        <link type="text" id="TLiquid"  variable="Tms_sim" units="ºC"></link>
+        <link type="text" id="TGas"  variable="Tgas_sim" units="ºC"></link>
+        <link type="text" id="Level"  variable="level_sim" units="m"></link>
+        <link type="text" id="TAmb"  variable="Tamb" units="ºC"></link>
+        <link type="text" id="TGround"  variable="TGround" units="ºC"></link>
+        <link type="text" id="Tf"  variable="Tf" units="ºC"></link>
+        <link type="text" id="Twi"  variable="Twi" units="ºC"></link>
+        <link type="text" id="Tdi"  variable="Tdi" units="ºC"></link>
+        <link type="text" id="Tww"  variable="Tww" units="ºC"></link>
+        <link type="text" id="Tdw"  variable="Tdw" units="ºC"></link>
+        <link type="text" id="Twp"  variable="Twp" units="ºC"></link>
+        <link type="text" id="Tdp"  variable="Tdp" units="ºC"></link>
+        <link type="text" id="Tri"  variable="Tri" units="ºC"></link>
+        <link type="text" id="Trw"  variable="Trw" units="ºC"></link>
+        <link type="assign" id="liquid" property="height" variable="level_sim"></link>
+    </diagram>        
+</experiment>    
+<experiment name="Thermal losses" fmufile=":fmufile_losses" inputfile=":inputfile_losses" fmuname="TSFLib_Tests_Tanks_HotTank_simu_0tank_0losses" description = "Thermal losses">
+    <parameters columns="name,value,description" sizes="125,60,175">
+    </parameters>   
+    <inputs timekind="1" start="14400" stop="100800" intervals="0" timevar="Time">
+        <input name="Exp_data.Tamb" kind="2" value="Exp_data.Tamb"></input>
+        <input name="Exp_data.mdot_ms_in" kind="2" value="Exp_data.mdot_ms_in"></input>
+        <input name="depth_96" kind="2" value="depth_96"></input>
+        <input name="depth_338" kind="2" value="depth_338"></input>
+        <input name="depth_656" kind="2" value="depth_656"></input>
+        <input name="depth_985" kind="2" value="depth_985"></input>
+        <input name="depth_1310" kind="2" value="depth_1310"></input>
+        <input name="depth_1638" kind="2" value="depth_1638"></input>
+        <input name="depth_1958" kind="2" value="depth_1958"></input>
+        <input name="depth_2292" kind="2" value="depth_2292"></input>
+        <input name="depth_2608" kind="2" value="depth_2608"></input>
+        <input name="depth_2905" kind="2" value="depth_2905"></input>
+        <input name="depth_3226" kind="2" value="depth_3226"></input>
+        <input name="depth_3556" kind="2" value="depth_3556"></input>
+        <input name="depth_3862" kind="2" value="depth_3862"></input>
+        <input name="depth_4182" kind="2" value="depth_4182"></input>
+        <input name="depth_4504" kind="2" value="depth_4504"></input>
+    </inputs>  
+    <graphs>  
+        <graph name = "Molten salt temperature"  xaxis="Simulation time (s)" yaxis="Temperature (ºC)">
+            <variable name="Tms_sim" description="Simulated temp."></variable>
+            <variable name="Texp_656" description="Th. (656 mm)" linestyle="2"></variable>
+            <variable name="Texp_985" description="Th. (985 mm)" linestyle="2"></variable>
+            <variable name="Texp_1310" description="Th. (1310 mm)" linestyle="2"></variable>
+            <variable name="Texp_1638" description="Th. (1638 mm)" linestyle="2"></variable>
+            <variable name="Texp_1958" description="Th. (1958 mm)" linestyle="2" linecolor="#FF0000"></variable>
+            <variable name="Texp_2292" description="Th. (2292 mm)" linestyle="2" linecolor="#FFFF00"></variable>
+            <variable name="Texp_2608" description="Th. (2608 mm)" linestyle="2" linecolor="#0000FF"></variable>
+            <variable name="Texp_2905" description="Th. (2905 mm)" linestyle="2" linecolor="#005500"></variable>            
+        </graph>
+        <graph name = "Gas temperature"  xaxis="Simulation time (s)" yaxis="Temperature (ºC)">
+            <variable name="Tgas_sim"  description="Simulated temp."></variable>
+            <variable name="Texp_3226" description="Th. (3226 mm)" linestyle="2"></variable>
+            <variable name="Texp_3556" description="Th. (3556 mm)" linestyle="2"></variable>
+            <variable name="Texp_3862" description="Th. (3862 mm)" linestyle="2"></variable>
+            <variable name="Texp_4182" description="Th. (4182 mm)" linestyle="2"></variable>
+            <variable name="Texp_4504" description="Th. (4505 mm)" linestyle="2" linecolor="#FF0000"></variable>       
+        </graph>    
+    </graphs>    
+    <resources width_name="110" width_document ="145"  pos_hslider = "0.6">
+        <resource type="url" name="Facility description" document="MOSA facility" link="http://www.psa.es/en/instalaciones/almacenamiento/mosa.php" description="Molten Salt Test Loop for Thermal Energy Systems facility description"></resource>    
+        <resource type="file" name="Tank dimensions" document="Dimensions" link=":dimensions.pdf" 
+        description="The cylindrical vertical hot molten salt tank has an inclined base in order to facility its drainage. It is equipped with a level meter, six thermocouples (Th1 to Th6), a vertical pump, thermal insulation, an electrical wall heat tracing system as well as immersed electrical heaters. For the sake of clarity the sketch is not at scale, for instance the floor inclination is much lower and the pump is closer to the tank floor."></resource>
+        <resource type="file" name="Tank heat transfer" document="Heat transfer processes" link=":heatTransfer.pdf" 
+        description="The models considers two control volumes: liqud and gas. All heat transfer processes (conduction, convection and radiation) considerd in the model are described in this figure. That is heat transfer between liquid, gas, dry and wet walls, floor, roof, insulation, foundation, ground and ambient."></resource>
+    </resources>            
+    <integration solver="8" abstolerance="1e-4" reltolerance="1e-4" order="4" stepsize="1e-4"></integration>    
+    <outputs kind="0" number="6" step="0.1"></outputs>
+    <diagram  pos_hslider = "0.25" thumbnail=":diagram_min_losses.svg" picture=":diagram.svg" 
+             description="The experiment described in this section was conducted in order to estimate thermal losses in the tank. Thermal losses rate is an important factor in TES systems because molten salts must be kept above a certain minimum temperature in order to prevent their freezing. The developed tank model provides a unique mean molten salt temperature, however molten salts close to the tank floor may have a slightly lower temperature. Nevertheless, the mean temperature value provided by the model can be used as a reference for estimating the lowest molten salt tank temperature.
+
+            A flanged thermocouple tree was installed in the tank for this experiment. Several thermocouples at different heights measure molten salt and gas temperatures. The molten salt was heated and then stored in the tank, which was left at rest during 24 hours. The initial molten salt level was 3 meters, whereas the initial mean molten salt temperature was about 337.4 ºC.
+             
+             A simulation was performed in the same conditions that the experiment in order to validate the model ability to predict thermal losses. The simulation results were compared against experimental data. The first figure shows simulated and experimental molten salt temperatures during the experiment. Same information but for the gas is shown in the second one. Experimental temperatures, as shown in both pictures' legends, account for the position of the thermocouple with respect to the tank floor in millimeters. It can be seen that there is a good agreement predicting thermal losses. The simulated gas temperature exhibits a slightly fast dynamic behavior than the real system. Like previous simulations, only a few seconds are required to perform it.">
+        <link type="text" id="TLiquid"  variable="Tms_sim" units="ºC"></link>
+        <link type="text" id="TGas"  variable="Tgas_sim" units="ºC"></link>
+        <link type="text" id="Level"  variable="level_sim" units="m"></link>
+        <link type="text" id="TAmb"  variable="Tamb" units="ºC"></link>
+        <link type="text" id="TGround"  variable="TGround" units="ºC"></link>
+        <link type="text" id="Tf"  variable="Tf" units="ºC"></link>
+        <link type="text" id="Twi"  variable="Twi" units="ºC"></link>
+        <link type="text" id="Tdi"  variable="Tdi" units="ºC"></link>
+        <link type="text" id="Tww"  variable="Tww" units="ºC"></link>
+        <link type="text" id="Tdw"  variable="Tdw" units="ºC"></link>
+        <link type="text" id="Twp"  variable="Twp" units="ºC"></link>
+        <link type="text" id="Tdp"  variable="Tdp" units="ºC"></link>
+        <link type="text" id="Tri"  variable="Tri" units="ºC"></link>
+        <link type="text" id="Trw"  variable="Trw" units="ºC"></link>
+        <link type="assign" id="liquid" property="height" variable="level_sim"></link>
+    </diagram>
+</experiment>    
+</surf>
+

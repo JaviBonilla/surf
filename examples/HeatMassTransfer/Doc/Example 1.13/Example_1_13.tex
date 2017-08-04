@@ -1,0 +1,52 @@
+
+\documentclass{modelica}
+
+\usepackage{textcomp}
+
+\hypersetup{%
+	pdftitle  = {EXAMPLE 1-13 Heating of a Plate by Solar Energy},
+	pdfauthor = {Javier Bonilla},
+        pdfsubject = {Heat and Mass Transfer - A Practical Approach},
+        pdfkeywords = {Heat transfer, mass transfer, thermodynamics},
+	colorlinks,
+	linkcolor=black,
+	urlcolor=black,
+	citecolor=black,
+	pdfpagelayout = SinglePage,
+	pdfcreator = pdflatex,
+	pdfproducer = pdflatex}
+
+% begin the document
+\begin{document}
+
+\thispagestyle{empty}
+\date{} % <--- leave date empty
+
+\section*{EXAMPLE 1-13 Heating of a Plate by Solar Energy}
+
+\subsection*{Modelica code}
+
+
+\begin{lstlisting}[mathescape=true] 
+model Example_1_13 "Heating of a Plate by Solar Energy"
+  import Modelica.SIunits;
+  import Modelica.SIunits.Conversions.NonSIunits;
+
+  parameter SIunits.HeatFlux                  Irr(min=0) =           700  "Solar";
+  parameter Real                              alpha(min=0,max=1) =   0.6  "Abs.  (-)";
+  parameter SIunits.CoefficientOfHeatTransfer h(min=0) =             50   "(W/(m^2 K))";
+  parameter NonSIunits.Temperature_degC       T_surr(min=-273.15) =  25   "Surr. T (C)";
+
+  output SIunits.EnergyFlowRate      E_gain "Energy gained (J/m^2)";
+  output SIunits.EnergyFlowRate      E_lost "Energy lost (J/m^2)";
+  output NonSIunits.Temperature_degC T_s    "Plate surface temperature (C)";
+
+equation 
+  E_gain = alpha*Irr;
+  E_lost = h*(T_s-T_surr);
+  E_gain = E_lost;
+  
+end Example_1_13;  
+\end{lstlisting}
+
+\end{document}

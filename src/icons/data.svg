@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 16 16"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="data.svg">
+  <metadata
+     id="metadata14">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="709"
+     id="namedview12"
+     showgrid="false"
+     inkscape:zoom="26.787377"
+     inkscape:cx="8.4219048"
+     inkscape:cy="8.6698676"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs3051">
+    <style
+       type="text/css"
+       id="current-color-scheme">
+      .ColorScheme-Text {
+        color:#4d4d4d;
+      }
+      .ColorScheme-Highlight {
+        color:#3daee9;
+      }
+      </style>
+  </defs>
+  <g
+     transform="matrix(1.6010294,0,0,1.3328682,-679.95966,-711.45027)"
+     id="g6">
+    <path
+       style="color:#4d4d4d;fill:currentColor;fill-opacity:1;stroke:none"
+       d="m 424.71,545.79 0,-12 10,0 0,9 -3,3 z m 1,-1 5,0 0,-3 3,0 0,-7 -8,0 z"
+       class="ColorScheme-Text"
+       id="path8"
+       inkscape:connector-curvature="0" />
+    <path
+       style="color:#3daee9;fill:currentColor;fill-opacity:1;stroke:none"
+       d="m 426.71,535.79 6,0 0,2 -6,0 z"
+       class="ColorScheme-Highlight"
+       id="path10"
+       inkscape:connector-curvature="0" />
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="4.6791329"
+     y="9.3629322"
+     id="text4142"
+     sodipodi:linespacing="1000%"><tspan
+       sodipodi:role="line"
+       id="tspan4144"
+       x="4.6791329"
+       y="9.3629322" /></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:7.5px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+     x="4.6459475"
+     y="10.922643"
+     id="text4146"
+     sodipodi:linespacing="1000%"><tspan
+       sodipodi:role="line"
+       id="tspan4148"
+       x="4.6459475"
+       y="10.922643" /></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:12.39859486px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="2.035166"
+     y="10.317339"
+     id="text4150"
+     sodipodi:linespacing="1000%"
+     transform="scale(1.0101357,0.98996601)"><tspan
+       sodipodi:role="line"
+       id="tspan4152"
+       x="2.035166"
+       y="10.317339"
+       style="font-size:6.25px">DAT</tspan></text>
+</svg>

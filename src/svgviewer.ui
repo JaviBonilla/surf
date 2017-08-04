@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SVGViewer</class>
+ <widget class="QMainWindow" name="SVGViewer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>780</width>
+    <height>564</height>
+   </rect>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::CustomContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Model diagram</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout"/>
+  </widget>
+  <action name="actionClipboard">
+   <property name="icon">
+    <iconset resource="internal.qrc">
+     <normaloff>:/icons/document-export.svg</normaloff>:/icons/document-export.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Copy diagram</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="internal.qrc">
+     <normaloff>:/icons/document-save.svg</normaloff>:/icons/document-save.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Save diagram</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="internal.qrc"/>
+ </resources>
+ <connections/>
+</ui>

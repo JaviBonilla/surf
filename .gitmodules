@@ -1,0 +1,3 @@
+[submodule "src/FMI_common"]
+	path = src/FMI_common
+	url = git@gitlab.com:ciemat-psa/FMI_common.git

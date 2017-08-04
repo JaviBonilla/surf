@@ -1,0 +1,47 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file alias="configfile">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/surf-config.xml</file>
+    <file alias="logo">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/resources/fire_icon.png</file>
+    <file alias="icon">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/resources/fire_icon.png</file>
+    <file alias="BHT_Chapter1.mo">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/Modelica/HMT_Chapter1.mo</file>    
+    <file alias="fmu_example_1_1">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/FMU_Windows/HMT_0Chapter1_Example_01_01.fmu</file>
+    <file alias="fmu_example_1_2">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/FMU_Windows/HMT_0Chapter1_Example_01_02.fmu</file>
+    <file alias="fmu_example_1_3">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/FMU_Windows/HMT_0Chapter1_Example_01_03.fmu</file>
+    <file alias="fmu_example_1_4">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/FMU_Windows/HMT_0Chapter1_Example_01_04.fmu</file>
+    <file alias="fmu_example_1_5">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/FMU_Windows/HMT_0Chapter1_Example_01_05.fmu</file>
+    <file alias="fmu_example_1_6">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/FMU_Windows/HMT_0Chapter1_Example_01_06.fmu</file>
+    <file alias="fmu_example_1_7">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/FMU_Windows/HMT_0Chapter1_Example_01_07.fmu</file>
+    <file alias="fmu_example_1_8">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/FMU_Windows/HMT_0Chapter1_Example_01_08.fmu</file>
+    <file alias="fmu_example_1_9">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/FMU_Windows/HMT_0Chapter1_Example_01_09.fmu</file>
+    <file alias="fmu_example_1_10">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/FMU_Windows/HMT_0Chapter1_Example_01_010.fmu</file>
+    <file alias="fmu_example_1_11">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/FMU_Windows/HMT_0Chapter1_Example_01_011.fmu</file>
+    <file alias="fmu_example_1_13">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/FMU_Windows/HMT_0Chapter1_Example_01_013.fmu</file>
+    <file alias="fmu_example_1_14">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/FMU_Windows/HMT_0Chapter1_Example_01_014.fmu</file>    
+    <file alias="diagram_1_1">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/resources/Example1_1.svg</file>
+    <file alias="diagram_1_2">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/resources/Example1_2.svg</file>
+    <file alias="diagram_1_3">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/resources/Example1_3.svg</file>
+    <file alias="diagram_1_4">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/resources/Example1_4.svg</file>
+    <file alias="diagram_1_5">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/resources/Example1_5.svg</file>
+    <file alias="diagram_1_6">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/resources/Example1_6.svg</file>    
+    <file alias="diagram_1_7">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/resources/Example1_7.svg</file>
+    <file alias="diagram_1_8">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/resources/Example1_8.svg</file>
+    <file alias="diagram_1_9">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/resources/Example1_9.svg</file>
+    <file alias="diagram_1_10">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/resources/Example1_10.svg</file>
+    <file alias="diagram_1_11">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/resources/Example1_11.svg</file>
+    <file alias="diagram_1_13">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/resources/Example1_13.svg</file>    
+    <file alias="diagram_1_14">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/resources/Example1_14.svg</file>
+    <file alias="example1_1.pdf">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/Doc/Example 1.1/Example_1_1.pdf</file>
+    <file alias="example1_2.pdf">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/Doc/Example 1.2/Example_1_2.pdf</file>
+    <file alias="example1_3.pdf">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/Doc/Example 1.3/Example_1_3.pdf</file>
+    <file alias="example1_4.pdf">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/Doc/Example 1.4/Example_1_4.pdf</file>
+    <file alias="example1_5.pdf">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/Doc/Example 1.5/Example_1_5.pdf</file>
+    <file alias="example1_6.pdf">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/Doc/Example 1.6/Example_1_6.pdf</file>
+    <file alias="example1_7.pdf">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/Doc/Example 1.7/Example_1_7.pdf</file>
+    <file alias="example1_8.pdf">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/Doc/Example 1.8/Example_1_8.pdf</file>
+    <file alias="example1_9.pdf">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/Doc/Example 1.9/Example_1_9.pdf</file>
+    <file alias="example1_10.pdf">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/Doc/Example 1.10/Example_1_10.pdf</file>
+    <file alias="example1_11.pdf">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/Doc/Example 1.11/Example_1_11.pdf</file>
+    <file alias="example1_13.pdf">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/Doc/Example 1.13/Example_1_13.pdf</file>
+    <file alias="example1_14.pdf">/home/javi/Documents/Git/Surf/Surf/examples/HeatMassTransfer/Doc/Example 1.14/Example_1_14.pdf</file>
+</qresource>
+</RCC>

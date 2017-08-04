@@ -1,0 +1,1747 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg:svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="300"
+   height="350"
+   viewBox="0 0 300 350"
+   id="svg5144"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="Example1_6.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="995"
+     id="namedview370"
+     showgrid="false"
+     inkscape:zoom="21.279902"
+     inkscape:cx="120.87095"
+     inkscape:cy="173.12029"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5144" />
+  <svg:defs
+     id="defs5146">
+    <svg:linearGradient
+       href="#XMLID_6_"
+       id="linearGradient6271"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(2.5378,0,0,1.5449,493.19,-190.44)"
+       x1="135.31"
+       y1="578.98999"
+       x2="186.52"
+       y2="527.78998" />
+    <svg:linearGradient
+       id="XMLID_6_"
+       y2="438.14001"
+       gradientUnits="userSpaceOnUse"
+       y1="507.35001"
+       x2="106.52"
+       x1="37.305">
+      <svg:stop
+         id="stop4313"
+         style="stop-color:#005f19"
+         offset="0" />
+      <svg:stop
+         id="stop4315"
+         style="stop-color:#bfff5f"
+         offset="1" />
+      <midPointStop
+         style="stop-color:#005F19"
+         offset="0" />
+      <midPointStop
+         style="stop-color:#005F19"
+         offset="0.5" />
+      <midPointStop
+         style="stop-color:#BFFF5F"
+         offset="1" />
+    </svg:linearGradient>
+    <svg:filter
+       id="filter6064"
+       style="color-interpolation-filters:sRGB">
+      <svg:feGaussianBlur
+         id="feGaussianBlur6066"
+         stdDeviation="1.0342624" />
+    </svg:filter>
+    <svg:filter
+       id="filter6060"
+       style="color-interpolation-filters:sRGB">
+      <svg:feGaussianBlur
+         id="feGaussianBlur6062"
+         stdDeviation="0.84808242" />
+    </svg:filter>
+    <svg:linearGradient
+       href="#linearGradient5260"
+       id="linearGradient6273"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.52919,-0.92314,0.92347,-0.52937,888.5,1403)"
+       x1="613.03003"
+       y1="309.95999"
+       x2="587.34998"
+       y2="326.51001" />
+    <svg:linearGradient
+       id="linearGradient5260">
+      <svg:stop
+         id="stop5262"
+         style="stop-color:#56fb38"
+         offset="0" />
+      <svg:stop
+         id="stop5278"
+         style="stop-color:#2e8f2a"
+         offset=".56609" />
+      <svg:stop
+         id="stop5264"
+         style="stop-color:#56a738;stop-opacity:0"
+         offset="1" />
+    </svg:linearGradient>
+    <svg:linearGradient
+       href="#linearGradient5260"
+       id="linearGradient6275"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.8284,-0.66782,0.66805,0.8287,177.97,815.24)"
+       x1="613.03003"
+       y1="309.95999"
+       x2="586.32001"
+       y2="327.64999" />
+    <svg:linearGradient
+       href="#linearGradient5324"
+       id="linearGradient6277"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0639,-0.015682,0.01568,1.0643,260.01,353.36)"
+       x1="613.03003"
+       y1="309.95999"
+       x2="581.42999"
+       y2="326.64999" />
+    <svg:linearGradient
+       id="linearGradient5324">
+      <svg:stop
+         id="stop5326"
+         style="stop-color:#56fb38"
+         offset="0" />
+      <svg:stop
+         id="stop5328"
+         style="stop-color:#2e8f2a"
+         offset=".61834" />
+      <svg:stop
+         id="stop5330"
+         style="stop-color:#56a738;stop-opacity:0"
+         offset="1" />
+    </svg:linearGradient>
+    <svg:linearGradient
+       href="#XMLID_6_"
+       id="linearGradient6279"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-2.5378,0,0,1.5449,1189.5,-190.44)"
+       x1="135.31"
+       y1="578.98999"
+       x2="186.52"
+       y2="527.78998" />
+    <svg:filter
+       id="filter6076"
+       style="color-interpolation-filters:sRGB">
+      <svg:feGaussianBlur
+         id="feGaussianBlur6078"
+         stdDeviation="1.0305934" />
+    </svg:filter>
+    <svg:filter
+       id="filter6072"
+       style="color-interpolation-filters:sRGB">
+      <svg:feGaussianBlur
+         id="feGaussianBlur6074"
+         stdDeviation="0.85239837" />
+    </svg:filter>
+    <svg:linearGradient
+       href="#linearGradient5352"
+       id="linearGradient6281"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.9165,-0.54061,-0.54079,0.91683,1496.7,705.43)"
+       x1="613.03003"
+       y1="309.95999"
+       x2="578.92999"
+       y2="325.17999" />
+    <svg:linearGradient
+       id="linearGradient5352">
+      <svg:stop
+         id="stop5354"
+         style="stop-color:#56fb38"
+         offset="0" />
+      <svg:stop
+         id="stop5356"
+         style="stop-color:#2e8f2a"
+         offset=".79902" />
+      <svg:stop
+         id="stop5358"
+         style="stop-color:#56a738;stop-opacity:0"
+         offset="1" />
+    </svg:linearGradient>
+    <svg:linearGradient
+       href="#linearGradient5340"
+       id="linearGradient6283"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.9165,-0.54061,-0.54079,0.91683,1508,699.7)"
+       x1="608.98999"
+       y1="311.81"
+       x2="593.42999"
+       y2="325.67001" />
+    <svg:linearGradient
+       id="linearGradient5340">
+      <svg:stop
+         id="stop5342"
+         style="stop-color:#56fb38"
+         offset="0" />
+      <svg:stop
+         id="stop5344"
+         style="stop-color:#2e8f2a"
+         offset=".70687" />
+      <svg:stop
+         id="stop5346"
+         style="stop-color:#56a738;stop-opacity:0"
+         offset="1" />
+    </svg:linearGradient>
+    <svg:linearGradient
+       href="#linearGradient5360"
+       id="linearGradient6285"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.29386,-1.0227,-1.023,0.29397,1307.8,1182.8)"
+       x1="608.98999"
+       y1="311.81"
+       x2="588.96002"
+       y2="333.35001" />
+    <svg:linearGradient
+       id="linearGradient5360">
+      <svg:stop
+         id="stop5362"
+         style="stop-color:#56fb38"
+         offset="0" />
+      <svg:stop
+         id="stop5364"
+         style="stop-color:#2e8f2a"
+         offset=".89643" />
+      <svg:stop
+         id="stop5366"
+         style="stop-color:#56a738;stop-opacity:0"
+         offset="1" />
+    </svg:linearGradient>
+    <svg:radialGradient
+       href="#linearGradient14755"
+       id="radialGradient6287"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.2172,0.022628,-0.0072488,0.38992,4.1317,71.915)"
+       cx="14.207"
+       cy="221.03999"
+       r="8.2518997" />
+    <svg:linearGradient
+       id="linearGradient14755">
+      <svg:stop
+         id="stop14757"
+         style="stop-color:#000000"
+         offset="0" />
+      <svg:stop
+         id="stop14759"
+         style="stop-color:#000000;stop-opacity:.16216"
+         offset=".55844" />
+      <svg:stop
+         id="stop14761"
+         style="stop-color:#000000;stop-opacity:0"
+         offset="1" />
+    </svg:linearGradient>
+    <svg:filter
+       id="filter14747"
+       style="color-interpolation-filters:sRGB">
+      <svg:feGaussianBlur
+         id="feGaussianBlur14749"
+         stdDeviation="0.12024479" />
+    </svg:filter>
+    <svg:radialGradient
+       id="radialGradient18184"
+       href="#linearGradient14755"
+       gradientUnits="userSpaceOnUse"
+       cy="221.03999"
+       cx="14.207"
+       gradientTransform="matrix(1.2172,0.022628,-0.0072488,0.38992,4.1317,71.915)"
+       r="8.2518997" />
+    <svg:filter
+       id="filter6815"
+       style="color-interpolation-filters:sRGB">
+      <svg:feGaussianBlur
+         id="feGaussianBlur6817"
+         stdDeviation="1.0305934" />
+    </svg:filter>
+    <svg:filter
+       id="filter6819"
+       style="color-interpolation-filters:sRGB">
+      <svg:feGaussianBlur
+         id="feGaussianBlur6821"
+         stdDeviation="0.85239837" />
+    </svg:filter>
+    <svg:filter
+       id="filter6857"
+       style="color-interpolation-filters:sRGB">
+      <svg:feGaussianBlur
+         id="feGaussianBlur6859"
+         stdDeviation="1.0342624" />
+    </svg:filter>
+    <svg:filter
+       id="filter6861"
+       style="color-interpolation-filters:sRGB">
+      <svg:feGaussianBlur
+         id="feGaussianBlur6863"
+         stdDeviation="0.84808242" />
+    </svg:filter>
+    <svg:linearGradient
+       id="linearGradient26198"
+       y2="54.43"
+       href="#linearGradient3098-1"
+       gradientUnits="userSpaceOnUse"
+       x2="106.29"
+       gradientTransform="matrix(-4.0943,-1.1832,2.9727,4.4541,847.26,-59.895)"
+       y1="52.200001"
+       x1="97.845001" />
+    <svg:linearGradient
+       id="linearGradient3098-1">
+      <svg:stop
+         id="stop3100-3"
+         style="stop-color:#9e2612"
+         offset="0" />
+      <svg:stop
+         id="stop3102-5"
+         style="stop-color:#bd5032"
+         offset="1" />
+    </svg:linearGradient>
+    <svg:linearGradient
+       id="linearGradient26200"
+       y2="42.625"
+       href="#linearGradient3098-1"
+       gradientUnits="userSpaceOnUse"
+       x2="66.561996"
+       gradientTransform="matrix(-4.0943,-1.1832,2.9727,4.4541,752.3,30.008)"
+       y1="16.562"
+       x1="49" />
+    <svg:linearGradient
+       id="linearGradient26202"
+       y2="108.47"
+       gradientUnits="userSpaceOnUse"
+       x2="195.36"
+       gradientTransform="translate(359.48,-2.1179)"
+       y1="90.139"
+       x1="204.64999">
+      <svg:stop
+         id="stop23157"
+         style="stop-color:#a17636"
+         offset="0" />
+      <svg:stop
+         id="stop23159"
+         style="stop-color:#af7c7c;stop-opacity:.43243"
+         offset="1" />
+    </svg:linearGradient>
+    <svg:radialGradient
+       id="radialGradient16155"
+       gradientUnits="userSpaceOnUse"
+       cy="776"
+       cx="-504.06"
+       gradientTransform="matrix(1,0,0,1.3818,0,-296.27)"
+       r="15.55">
+      <svg:stop
+         id="stop3966"
+         style="stop-color:#6a3c1d"
+         offset="0" />
+      <svg:stop
+         id="stop3968"
+         style="stop-color:#8f5127"
+         offset="1" />
+    </svg:radialGradient>
+    <svg:linearGradient
+       id="linearGradient16157"
+       y2="463.85999"
+       href="#linearGradient3417"
+       gradientUnits="userSpaceOnUse"
+       x2="484.91"
+       y1="463.85999"
+       x1="299.76001" />
+    <svg:linearGradient
+       id="linearGradient3417">
+      <svg:stop
+         id="stop3419"
+         style="stop-color:#4e9a06"
+         offset="0" />
+      <svg:stop
+         id="stop3421"
+         style="stop-color:#73d216"
+         offset="1" />
+    </svg:linearGradient>
+    <svg:filter
+       id="filter7885"
+       style="color-interpolation-filters:sRGB">
+      <svg:feGaussianBlur
+         id="feGaussianBlur7887"
+         stdDeviation="3.8635419" />
+    </svg:filter>
+    <svg:linearGradient
+       id="linearGradient16159"
+       y2="480.39001"
+       href="#linearGradient3417"
+       gradientUnits="userSpaceOnUse"
+       x2="279.92001"
+       y1="480.39001"
+       x1="99.185997" />
+    <svg:filter
+       id="filter7889"
+       style="color-interpolation-filters:sRGB">
+      <svg:feGaussianBlur
+         id="feGaussianBlur7891"
+         stdDeviation="3.8635419" />
+    </svg:filter>
+    <svg:linearGradient
+       id="linearGradient16161"
+       y2="403.25"
+       href="#linearGradient3417"
+       gradientUnits="userSpaceOnUse"
+       x2="251.27"
+       y1="403.25"
+       x1="59.511002" />
+    <svg:filter
+       id="filter7897"
+       style="color-interpolation-filters:sRGB">
+      <svg:feGaussianBlur
+         id="feGaussianBlur7899"
+         stdDeviation="3.8635419" />
+    </svg:filter>
+    <svg:linearGradient
+       id="linearGradient16163"
+       y2="438.51001"
+       href="#linearGradient3417"
+       gradientUnits="userSpaceOnUse"
+       x2="632.58002"
+       y1="438.51001"
+       x1="438.62" />
+    <svg:filter
+       id="filter7881"
+       style="color-interpolation-filters:sRGB">
+      <svg:feGaussianBlur
+         id="feGaussianBlur7883"
+         stdDeviation="3.8635419" />
+    </svg:filter>
+    <svg:linearGradient
+       id="linearGradient16165"
+       y2="323.89999"
+       href="#linearGradient3417"
+       gradientUnits="userSpaceOnUse"
+       x2="368.09"
+       y1="323.89999"
+       x1="187.35001" />
+    <svg:filter
+       id="filter7893"
+       style="color-interpolation-filters:sRGB">
+      <svg:feGaussianBlur
+         id="feGaussianBlur7895"
+         stdDeviation="3.8635419" />
+    </svg:filter>
+    <svg:linearGradient
+       id="linearGradient8358"
+       y2="599.35999"
+       gradientUnits="userSpaceOnUse"
+       x2="276.06"
+       gradientTransform="matrix(0.8221,0,0,0.8221,-1008.9,172.51)"
+       y1="599.35999"
+       x1="252.34">
+      <svg:stop
+         id="stop3296"
+         style="stop-color:#c87137"
+         offset="0" />
+      <svg:stop
+         id="stop3298"
+         style="stop-color:#c87137;stop-opacity:0"
+         offset="1" />
+    </svg:linearGradient>
+    <svg:filter
+       id="filter7982"
+       style="color-interpolation-filters:sRGB">
+      <svg:feGaussianBlur
+         id="feGaussianBlur7984"
+         stdDeviation="0.970605" />
+    </svg:filter>
+    <svg:linearGradient
+       id="linearGradient8360"
+       y2="496.51999"
+       gradientUnits="userSpaceOnUse"
+       x2="245.88"
+       gradientTransform="matrix(0.8221,0,0,0.8221,-944.38,202.4)"
+       y1="496.51999"
+       x1="124.16">
+      <svg:stop
+         id="stop3233"
+         style="stop-color:#55d400"
+         offset="0" />
+      <svg:stop
+         id="stop3235"
+         style="stop-color:#55d400;stop-opacity:0"
+         offset="1" />
+    </svg:linearGradient>
+    <svg:filter
+       id="filter7974"
+       style="color-interpolation-filters:sRGB">
+      <svg:feGaussianBlur
+         id="feGaussianBlur7976"
+         stdDeviation="1.8810689" />
+    </svg:filter>
+    <svg:linearGradient
+       id="linearGradient8362"
+       y2="531.40997"
+       gradientUnits="userSpaceOnUse"
+       x2="198"
+       gradientTransform="matrix(0.8221,0,0,0.8221,-942.97,201.69)"
+       y1="531.40997"
+       x1="140.38">
+      <svg:stop
+         id="stop3225"
+         style="stop-color:#92dacd;stop-opacity:1"
+         offset="0" />
+      <svg:stop
+         id="stop3227"
+         style="stop-color:#00d400;stop-opacity:0"
+         offset="1" />
+    </svg:linearGradient>
+    <svg:filter
+       id="filter7954"
+       style="color-interpolation-filters:sRGB">
+      <svg:feGaussianBlur
+         id="feGaussianBlur7956"
+         stdDeviation="0.22511983" />
+    </svg:filter>
+    <svg:linearGradient
+       href="#XMLID_6_"
+       id="linearGradient9969"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(2.5378,0,0,1.5449,493.19,-190.44)"
+       x1="135.31"
+       y1="578.98999"
+       x2="186.52"
+       y2="527.78998" />
+    <svg:linearGradient
+       href="#linearGradient5260"
+       id="linearGradient9971"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.52919,-0.92314,0.92347,-0.52937,888.5,1403)"
+       x1="613.03003"
+       y1="309.95999"
+       x2="587.34998"
+       y2="326.51001" />
+    <svg:linearGradient
+       href="#linearGradient5260"
+       id="linearGradient9973"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.8284,-0.66782,0.66805,0.8287,177.97,815.24)"
+       x1="613.03003"
+       y1="309.95999"
+       x2="586.32001"
+       y2="327.64999" />
+    <svg:linearGradient
+       href="#linearGradient5324"
+       id="linearGradient9975"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0639,-0.015682,0.01568,1.0643,260.01,353.36)"
+       x1="613.03003"
+       y1="309.95999"
+       x2="581.42999"
+       y2="326.64999" />
+    <svg:linearGradient
+       href="#XMLID_6_"
+       id="linearGradient9977"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-2.5378,0,0,1.5449,1189.5,-190.44)"
+       x1="135.31"
+       y1="578.98999"
+       x2="186.52"
+       y2="527.78998" />
+    <svg:linearGradient
+       href="#linearGradient5352"
+       id="linearGradient9979"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.9165,-0.54061,-0.54079,0.91683,1496.7,705.43)"
+       x1="613.03003"
+       y1="309.95999"
+       x2="578.92999"
+       y2="325.17999" />
+    <svg:linearGradient
+       href="#linearGradient5340"
+       id="linearGradient9981"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.9165,-0.54061,-0.54079,0.91683,1508,699.7)"
+       x1="608.98999"
+       y1="311.81"
+       x2="593.42999"
+       y2="325.67001" />
+    <svg:linearGradient
+       href="#linearGradient5360"
+       id="linearGradient9983"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.29386,-1.0227,-1.023,0.29397,1307.8,1182.8)"
+       x1="608.98999"
+       y1="311.81"
+       x2="588.96002"
+       y2="333.35001" />
+    <svg:filter
+       id="filter68738"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter4187"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend4189"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter4191"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend4193"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter4195"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend4197"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter4199"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend4201"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-0"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-9"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter4205"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend4207"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-0-6"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-9-1"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter4211"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend4213"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:radialGradient
+       id="radialGradient16155-6"
+       gradientUnits="userSpaceOnUse"
+       cy="776"
+       cx="-504.06"
+       gradientTransform="matrix(1,0,0,1.3818,0,-296.27)"
+       r="15.55">
+      <svg:stop
+         id="stop3966-7"
+         style="stop-color:#6a3c1d"
+         offset="0" />
+      <svg:stop
+         id="stop3968-5"
+         style="stop-color:#8f5127"
+         offset="1" />
+    </svg:radialGradient>
+    <svg:filter
+       id="filter68738-5"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-6"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter4367"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend4369"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-3"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-60"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-5-2"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-6-6"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter4444"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend4446"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-5-2-0"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-6-6-2"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter4485"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend4487"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-5-2-0-2"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-6-6-2-8"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter4526"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend4528"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-5-2-9"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-6-6-7"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter4532"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend4534"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:radialGradient
+       id="radialGradient16155-6-6"
+       gradientUnits="userSpaceOnUse"
+       cy="776"
+       cx="-504.06"
+       gradientTransform="matrix(1,0,0,1.3818,0,-296.27)"
+       r="15.55">
+      <svg:stop
+         id="stop3966-7-7"
+         style="stop-color:#6a3c1d"
+         offset="0" />
+      <svg:stop
+         id="stop3968-5-5"
+         style="stop-color:#8f5127"
+         offset="1" />
+    </svg:radialGradient>
+    <svg:filter
+       id="filter68738-56"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter5064"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend5066"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-5-2-0-9"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-6-6-2-3"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter5105"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend5107"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-56-1"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2-8"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter5146"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend5148"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-56-1-3"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2-8-5"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-56-1-3-9"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2-8-5-1"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-56-1-3-0"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2-8-5-9"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-56-1-3-0-0"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2-8-5-9-6"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-56-1-3-1"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2-8-5-8"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-56-1-3-2"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2-8-5-0"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-56-1-3-92"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2-8-5-2"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-56-1-3-2-3"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2-8-5-0-6"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-56-1-3-0-9"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2-8-5-9-4"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-56-1-3-10"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2-8-5-6"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-56-1-3-10-6"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2-8-5-6-1"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-56-1-3-10-0"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2-8-5-6-4"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-56-1-3-10-1"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2-8-5-6-7"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-56-1-3-10-2"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2-8-5-6-6"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-56-1-3-10-61"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2-8-5-6-5"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-56-1-3-10-6-9"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2-8-5-6-1-0"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-56-1-3-10-6-9-7"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2-8-5-6-1-0-7"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-56-1-3-10-6-9-7-5"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2-8-5-6-1-0-7-9"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-56-1-3-10-61-7"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2-8-5-6-5-7"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-56-1-3-10-9"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2-8-5-6-48"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-56-1-3-0-9-9"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2-8-5-9-4-6"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-56-1-3-10-6-9-7-56"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2-8-5-6-1-0-7-1"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-56-1-3-10-61-1"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2-8-5-6-5-5"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-56-1-3-10-6-9-7-5-1"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2-8-5-6-1-0-7-9-0"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-56-1-3-10-61-7-3"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2-8-5-6-5-7-0"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-56-1-3-10-6-4"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2-8-5-6-1-4"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-56-1-3-10-6-9-75"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2-8-5-6-1-0-9"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:filter
+       id="filter68738-56-1-3-10-2-6"
+       style="color-interpolation-filters:sRGB">
+      <svg:feBlend
+         id="feBlend68740-2-8-5-6-6-2"
+         in2="BackgroundImage"
+         mode="darken" />
+    </svg:filter>
+    <svg:linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="43.02409"
+       x2="150.59563"
+       y1="42.54332"
+       x1="2.4421711"
+       id="linearGradient4500"
+       xlink:href="#linearGradient8362" />
+    <svg:linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="43.02409"
+       x2="150.59563"
+       y1="42.54332"
+       x1="2.4421711"
+       id="linearGradient4500-3"
+       xlink:href="#linearGradient8362"
+       gradientTransform="matrix(1.0000195,0,0,0.99025872,0.16230736,277.71927)" />
+    <svg:linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="188.74657"
+       x2="119.4778"
+       y1="188.74657"
+       x1="33.08926"
+       id="linearGradient5088"
+       xlink:href="#linearGradient8358" />
+    <svg:linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="43.02409"
+       x2="150.59563"
+       y1="42.54332"
+       x1="2.4421711"
+       id="linearGradient4500-3-3"
+       xlink:href="#linearGradient8362"
+       gradientTransform="matrix(1.0000195,0,0,0.99025872,0.21535264,0.47502191)" />
+  </svg:defs>
+  <svg:metadata
+     id="metadata5149">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </svg:metadata>
+  <svg:rect
+     rx="0"
+     y="184.60036"
+     x="33.240643"
+     height="8.2924137"
+     width="86.085777"
+     id="rect4314-3-3-6-5"
+     style="opacity:1;fill:#000000;fill-opacity:0.06179775;fill-rule:evenodd;stroke:#000000;stroke-width:0.30276355;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+  <svg:rect
+     rx="0"
+     y="33.968185"
+     x="2.4725454"
+     height="18.223568"
+     width="148.04564"
+     id="rect4314-3-3-6-53-5"
+     style="opacity:1;fill:url(#linearGradient4500-3-3);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.58858871;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+  <svg:rect
+     rx="0"
+     y="52.177185"
+     x="120.00925"
+     height="258.85522"
+     width="30.084871"
+     id="rect4314-3-3-3"
+     style="opacity:1;fill:#ffe680;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+  <svg:rect
+     rx="0"
+     y="52.169525"
+     x="2.6663513"
+     height="258.85522"
+     width="30.084871"
+     id="rect4314-3-3"
+     style="opacity:1;fill:#ffe680;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+  <svg:rect
+     rx="0"
+     y="311.21243"
+     x="2.4194903"
+     height="18.223568"
+     width="148.04564"
+     id="rect4314-3-3-6-53"
+     style="opacity:1;fill:url(#linearGradient4500-3);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.58858871;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+  <svg:g
+     transform="matrix(0.13515755,0,0,0.10446114,124.53136,144.28524)"
+     id="g8562">
+    <svg:path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -603.28666,428.83466 c 0.9373,-10.29654 -1.9543,-26.72528 -11.0481,-30.30842 -10.3109,-4.06288 -16.1271,9.08902 -18.8412,17.31589 -3.4527,10.46575 -5.8501,31.6348 5.4819,34.008 9.6434,2.01955 11.9679,-15.93918 11.2515,-25.60659"
+       id="path27202" />
+    <svg:path
+       id="path27200"
+       d="m -616.47476,429.28538 c 0.9372,-10.29655 -1.9544,-26.72528 -11.0481,-30.30843 -10.311,-4.06286 -16.1271,9.08904 -18.8412,17.3159 -3.4528,10.46574 -5.8502,31.6348 5.4819,34.00802 9.6434,2.01953 11.9678,-15.93919 11.2514,-25.6066"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <svg:path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -629.90676,430.68616 c 0.9372,-10.29655 -1.9544,-26.72528 -11.048,-30.30842 -10.3111,-4.06288 -16.1272,9.08903 -18.8412,17.31589 -3.4528,10.46574 -5.8502,31.63481 5.4819,34.00802 9.6433,2.01953 11.9677,-15.93919 11.2513,-25.6066 -0.7196,-9.7191 -5.4049,-25.62318 -15.1634,-26.23833 -13.1245,-0.82731 -14.812,31.58456 -18.3892,32.84431"
+       id="path27197" />
+    <svg:path
+       id="path27204"
+       d="m -576.94976,429.0031 c 0.9373,-10.29654 -1.9543,-26.72528 -11.0481,-30.30842 -10.3109,-4.06288 -16.1271,9.08902 -18.8412,17.31589 -3.4527,10.46575 -5.8501,31.6348 5.4819,34.008 9.6434,2.01955 11.9679,-15.93918 11.2515,-25.60659"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <svg:path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -590.13786,429.45382 c 0.9372,-10.29655 -1.9544,-26.72528 -11.0481,-30.30843 -10.311,-4.06286 -16.1271,9.08904 -18.8412,17.3159 -3.4528,10.46574 -5.8502,31.6348 5.4819,34.00802 9.6434,2.01953 11.9678,-15.93919 11.2514,-25.6066"
+       id="path27206" />
+    <svg:path
+       id="path27208"
+       d="m -550.45296,428.95377 c 0.9373,-10.29654 -1.9543,-26.72528 -11.0481,-30.30842 -10.3109,-4.06288 -16.1271,9.08902 -18.8412,17.31589 -3.4527,10.46575 -5.8501,31.6348 5.4819,34.008 9.6434,2.01955 11.9679,-15.93918 11.2515,-25.60659"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <svg:path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -563.64106,429.40449 c 0.9372,-10.29655 -1.9544,-26.72528 -11.0481,-30.30843 -10.311,-4.06286 -16.1271,9.08904 -18.8412,17.3159 -3.4528,10.46574 -5.8502,31.6348 5.4819,34.00802 9.6434,2.01953 11.9678,-15.93919 11.2514,-25.6066"
+       id="path27210" />
+    <svg:path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -524.11606,429.12221 c 0.9373,-10.29654 -1.9543,-26.72528 -11.0481,-30.30842 -10.3109,-4.06288 -16.1271,9.08902 -18.8412,17.31589 -3.4527,10.46575 -5.8501,31.6348 5.4819,34.008 9.6434,2.01955 11.9679,-15.93918 11.2515,-25.60659"
+       id="path27212" />
+    <svg:path
+       id="path27214"
+       d="m -537.30416,429.57293 c 0.9372,-10.29655 -1.9544,-26.72528 -11.0481,-30.30843 -10.311,-4.06286 -16.1271,9.08904 -18.8412,17.3159 -3.4528,10.46574 -5.8502,31.6348 5.4819,34.00802 9.6434,2.01953 11.9678,-15.93919 11.2514,-25.6066"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <svg:path
+       id="path27216"
+       d="m -511.28666,428.83466 c 0.9373,-10.29654 -1.9543,-26.72528 -11.0481,-30.30842 -10.3109,-4.06288 -16.1271,9.08902 -18.8412,17.31589 -3.4527,10.46575 -5.8501,31.6348 5.4819,34.008 9.6434,2.01955 11.9679,-15.93918 11.2515,-25.60659"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <svg:path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -484.94976,429.0031 c 0.9373,-10.29654 -1.9543,-26.72528 -11.0481,-30.30842 -10.3109,-4.06288 -16.1271,9.08902 -18.8412,17.31589 -3.4527,10.46575 -5.8501,31.6348 5.4819,34.008 9.6434,2.01955 11.9679,-15.93918 11.2515,-25.60659"
+       id="path27218" />
+    <svg:path
+       id="path27220"
+       d="m -498.13786,429.45382 c 0.9372,-10.29655 -1.9544,-26.72528 -11.0481,-30.30843 -10.311,-4.06286 -16.1271,9.08904 -18.8412,17.3159 -3.4528,10.46574 -5.8502,31.6348 5.4819,34.00802 9.6434,2.01953 11.9678,-15.93919 11.2514,-25.6066"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <svg:path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -458.45296,428.95377 c 0.9373,-10.29654 -1.9543,-26.72528 -11.0481,-30.30842 -10.3109,-4.06288 -16.1271,9.08902 -18.8412,17.31589 -3.4527,10.46575 -5.8501,31.6348 5.4819,34.008 9.6434,2.01955 11.9679,-15.93918 11.2515,-25.60659"
+       id="path27222" />
+    <svg:path
+       id="path27224"
+       d="m -471.64106,429.40449 c 0.9372,-10.29655 -1.9544,-26.72528 -11.0481,-30.30843 -10.311,-4.06286 -16.1271,9.08904 -18.8412,17.3159 -3.4528,10.46574 -5.8502,31.6348 5.4819,34.00802 9.6434,2.01953 11.9678,-15.93919 11.2514,-25.6066"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <svg:path
+       id="path27226"
+       d="m -432.11606,429.12221 c 0.9373,-10.29654 -1.9543,-26.72528 -11.0481,-30.30842 -10.3109,-4.06288 -16.1271,9.08902 -18.8412,17.31589 -3.4527,10.46575 -5.8501,31.6348 5.4819,34.008 9.6434,2.01955 11.9679,-15.93918 11.2515,-25.60659"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <svg:path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -445.30416,429.57293 c 0.9372,-10.29655 -1.9544,-26.72528 -11.0481,-30.30843 -10.311,-4.06286 -16.1271,9.08904 -18.8412,17.3159 -3.4528,10.46574 -5.8502,31.6348 5.4819,34.00802 9.6434,2.01953 11.9678,-15.93919 11.2514,-25.6066"
+       id="path27228" />
+    <svg:path
+       id="path27252"
+       d="m -419.28666,428.83466 c 0.9373,-10.29654 -1.9543,-26.72528 -11.0481,-30.30842 -10.3109,-4.06288 -16.1271,9.08902 -18.8412,17.31589 -3.4527,10.46575 -5.8501,31.6348 5.4819,34.008 9.6434,2.01955 11.9679,-15.93918 11.2515,-25.60659"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <svg:path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -392.94976,429.0031 c 0.9373,-10.29654 -1.9543,-26.72528 -11.0481,-30.30842 -10.3109,-4.06288 -16.1271,9.08902 -18.8412,17.31589 -3.4527,10.46575 -5.8501,31.6348 5.4819,34.008 9.6434,2.01955 11.9679,-15.93918 11.2515,-25.60659"
+       id="path27254" />
+    <svg:path
+       id="path27256"
+       d="m -406.13786,429.45382 c 0.9372,-10.29655 -1.9544,-26.72528 -11.0481,-30.30843 -10.311,-4.06286 -16.1271,9.08904 -18.8412,17.3159 -3.4528,10.46574 -5.8502,31.6348 5.4819,34.00802 9.6434,2.01953 11.9678,-15.93919 11.2514,-25.6066"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <svg:path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -366.45296,428.95377 c 0.9373,-10.29654 -1.9543,-26.72528 -11.0481,-30.30842 -10.3109,-4.06288 -16.1271,9.08902 -18.8412,17.31589 -3.4527,10.46575 -5.8501,31.6348 5.4819,34.008 9.6434,2.01955 11.9679,-15.93918 11.2515,-25.60659"
+       id="path27258" />
+    <svg:path
+       id="path27260"
+       d="m -379.64106,429.40449 c 0.9372,-10.29655 -1.9544,-26.72528 -11.0481,-30.30843 -10.311,-4.06286 -16.1271,9.08904 -18.8412,17.3159 -3.4528,10.46574 -5.8502,31.6348 5.4819,34.00802 9.6434,2.01953 11.9678,-15.93919 11.2514,-25.6066"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <svg:path
+       id="path27262"
+       d="m -340.11606,429.12221 c 0.9373,-10.29654 -1.9543,-26.72528 -11.0481,-30.30842 -10.3109,-4.06288 -16.1271,9.08902 -18.8412,17.31589 -3.4527,10.46575 -5.8501,31.6348 5.4819,34.008 9.6434,2.01955 11.9679,-15.93918 11.2515,-25.60659"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <svg:path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -353.30416,429.57293 c 0.9372,-10.29655 -1.9544,-26.72528 -11.0481,-30.30843 -10.311,-4.06286 -16.1271,9.08904 -18.8412,17.3159 -3.4528,10.46574 -5.8502,31.6348 5.4819,34.00802 9.6434,2.01953 11.9678,-15.93919 11.2514,-25.6066"
+       id="path27264" />
+    <svg:path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -327.28666,428.83466 c 0.9373,-10.29654 -1.9543,-26.72528 -11.0481,-30.30842 -10.3109,-4.06288 -16.1271,9.08902 -18.8412,17.31589 -3.4527,10.46575 -5.8501,31.6348 5.4819,34.008 9.6434,2.01955 11.9679,-15.93918 11.2515,-25.60659"
+       id="path27266" />
+    <svg:path
+       id="path27268"
+       d="m -300.94976,429.0031 c 0.9373,-10.29654 -1.9543,-26.72528 -11.0481,-30.30842 -10.3109,-4.06288 -16.1271,9.08902 -18.8412,17.31589 -3.4527,10.46575 -5.8501,31.6348 5.4819,34.008 9.6434,2.01955 11.9679,-15.93918 11.2515,-25.60659"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <svg:path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -314.13786,429.45382 c 0.9372,-10.29655 -1.9544,-26.72528 -11.0481,-30.30843 -10.311,-4.06286 -16.1271,9.08904 -18.8412,17.3159 -3.4528,10.46574 -5.8502,31.6348 5.4819,34.00802 9.6434,2.01953 11.9678,-15.93919 11.2514,-25.6066"
+       id="path27270" />
+    <svg:path
+       id="path27272"
+       d="m -274.45296,428.95377 c 0.9373,-10.29654 -1.9543,-26.72528 -11.0481,-30.30842 -10.3109,-4.06288 -16.1271,9.08902 -18.8412,17.31589 -3.4527,10.46575 -5.8501,31.6348 5.4819,34.008 9.6434,2.01955 11.9679,-15.93918 11.2515,-25.60659"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <svg:path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -287.64106,429.40449 c 0.9372,-10.29655 -1.9544,-26.72528 -11.0481,-30.30843 -10.311,-4.06286 -16.1271,9.08904 -18.8412,17.3159 -3.4528,10.46574 -5.8502,31.6348 5.4819,34.00802 9.6434,2.01953 11.9678,-15.93919 11.2514,-25.6066"
+       id="path27274" />
+    <svg:path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -248.11606,429.12221 c 0.9373,-10.29654 -1.9543,-26.72528 -11.0481,-30.30842 -10.3109,-4.06288 -16.1271,9.08902 -18.8412,17.31589 -3.4527,10.46575 -5.8501,31.6348 5.4819,34.008 9.6434,2.01955 11.9679,-15.93918 11.2515,-25.60659"
+       id="path27276" />
+    <svg:path
+       id="path27278"
+       d="m -261.30416,429.57293 c 0.9372,-10.29655 -1.9544,-26.72528 -11.0481,-30.30843 -10.311,-4.06286 -16.1271,9.08904 -18.8412,17.3159 -3.4528,10.46574 -5.8502,31.6348 5.4819,34.00802 9.6434,2.01953 11.9678,-15.93919 11.2514,-25.6066"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <svg:path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -221.61076,429.45909 c 0.9373,-10.29654 -1.9543,-26.72528 -11.0481,-30.30842 -10.3109,-4.06288 -16.1271,9.08902 -18.8412,17.31589 -3.4527,10.46575 -5.8501,31.6348 5.4819,34.008 9.6434,2.01955 11.9679,-15.93918 11.2515,-25.60659"
+       id="path27280" />
+    <svg:path
+       id="path27282"
+       d="m -234.79886,429.90981 c 0.9372,-10.29655 -1.9544,-26.72528 -11.0481,-30.30843 -10.311,-4.06286 -16.1271,9.08904 -18.8412,17.3159 -3.4528,10.46574 -5.8502,31.6348 5.4819,34.00802 9.6434,2.01953 11.9678,-15.93919 11.2514,-25.6066"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <svg:path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -208.78136,429.17154 c 0.9373,-10.29654 -1.9543,-26.72528 -11.0481,-30.30842 -10.3109,-4.06288 -16.1271,9.08902 -18.8412,17.31589 -3.4527,10.46575 -5.8501,31.6348 5.4819,34.008 9.6434,2.01955 11.9679,-15.93918 11.2515,-25.60659"
+       id="path27284" />
+    <svg:path
+       id="path27286"
+       d="m -182.44446,429.33998 c 0.9373,-10.29654 -1.9543,-26.72528 -11.0481,-30.30842 -10.3109,-4.06288 -16.1271,9.08902 -18.8412,17.31589 -3.4527,10.46575 -5.8501,31.6348 5.4819,34.008 9.6434,2.01955 11.9679,-15.93918 11.2515,-25.60659"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <svg:path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -195.63256,429.7907 c 0.9372,-10.29655 -1.9544,-26.72528 -11.0481,-30.30843 -10.311,-4.06286 -16.1271,9.08904 -18.8412,17.3159 -3.4528,10.46574 -5.8502,31.6348 5.4819,34.00802 9.6434,2.01953 11.9678,-15.93919 11.2514,-25.6066"
+       id="path27288" />
+    <svg:path
+       id="path27290"
+       d="m -155.94766,429.29065 c 0.9373,-10.29654 -1.9543,-26.72528 -11.0481,-30.30842 -10.3109,-4.06288 -16.1271,9.08902 -18.8412,17.31589 -3.4527,10.46575 -5.8501,31.6348 5.4819,34.008 9.6434,2.01955 11.9679,-15.93918 11.2515,-25.60659"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <svg:path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -169.13576,429.74137 c 0.9372,-10.29655 -1.9544,-26.72528 -11.0481,-30.30843 -10.311,-4.06286 -16.1271,9.08904 -18.8412,17.3159 -3.4528,10.46574 -5.8502,31.6348 5.4819,34.00802 9.6434,2.01953 11.9678,-15.93919 11.2514,-25.6066"
+       id="path27292" />
+    <svg:path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -129.61076,429.45909 c 0.9373,-10.29654 -1.9543,-26.72528 -11.0481,-30.30842 -10.3109,-4.06288 -16.1271,9.08902 -18.8412,17.31589 -3.4527,10.46575 -5.8501,31.6348 5.4819,34.008 9.6434,2.01955 11.9679,-15.93918 11.2515,-25.60659"
+       id="path27294" />
+    <svg:path
+       id="path27296"
+       d="m -142.79886,429.90981 c 0.9372,-10.29655 -1.9544,-26.72528 -11.0481,-30.30843 -10.311,-4.06286 -16.1271,9.08904 -18.8412,17.3159 -3.4528,10.46574 -5.8502,31.6348 5.4819,34.00802 9.6434,2.01953 11.9678,-15.93919 11.2514,-25.6066"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <svg:path
+       id="path27298"
+       d="m -116.78136,429.17154 c 0.9373,-10.29654 -1.9543,-26.72528 -11.0481,-30.30842 -10.3109,-4.06288 -16.1271,9.08902 -18.8412,17.31589 -3.4527,10.46575 -5.8501,31.6348 5.4819,34.008 9.6434,2.01955 11.9679,-15.93918 11.2515,-25.60659"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <svg:path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -90.444463,429.33998 c 0.9373,-10.29654 -1.9543,-26.72528 -11.048097,-30.30842 -10.3109,-4.06288 -16.1271,9.08902 -18.8412,17.31589 -3.4527,10.46575 -5.8501,31.6348 5.4819,34.008 9.6434,2.01955 11.9679,-15.93918 11.2515,-25.60659"
+       id="path27300" />
+    <svg:path
+       id="path27302"
+       d="m -103.63256,429.7907 c 0.9372,-10.29655 -1.9544,-26.72528 -11.0481,-30.30843 -10.311,-4.06286 -16.1271,9.08904 -18.8412,17.3159 -3.4528,10.46574 -5.8502,31.6348 5.4819,34.00802 9.6434,2.01953 11.9678,-15.93919 11.2514,-25.6066"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <svg:path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -63.947663,429.29065 c 0.9373,-10.29654 -1.9543,-26.72528 -11.0481,-30.30842 -10.3109,-4.06288 -16.1271,9.08902 -18.8412,17.31589 -3.4527,10.46575 -5.8501,31.6348 5.4819,34.008 9.6434,2.01955 11.9679,-15.93918 11.2515,-25.60659"
+       id="path27304" />
+    <svg:path
+       id="path27306"
+       d="m -77.135763,429.74137 c 0.9372,-10.29655 -1.9544,-26.72528 -11.0481,-30.30843 -10.311,-4.06286 -16.127097,9.08904 -18.841197,17.3159 -3.4528,10.46574 -5.8502,31.6348 5.4819,34.00802 9.643397,2.01953 11.967797,-15.93919 11.251397,-25.6066"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <svg:path
+       id="path27308"
+       d="m -37.610763,429.45909 c 0.9373,-10.29654 -1.9543,-26.72528 -11.0481,-30.30842 -10.3109,-4.06288 -16.1271,9.08902 -18.8412,17.31589 -3.4527,10.46575 -5.8501,31.6348 5.4819,34.008 9.6434,2.01955 11.9679,-15.93918 11.2515,-25.60659"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <svg:path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -50.798863,429.90981 c 0.9372,-10.29655 -1.9544,-26.72528 -11.0481,-30.30843 -10.311,-4.06286 -16.1271,9.08904 -18.8412,17.3159 -3.4528,10.46574 -5.8502,31.6348 5.4819,34.00802 9.6434,2.01953 11.9678,-15.93919 11.2514,-25.6066"
+       id="path27310" />
+  </svg:g>
+  <svg:text
+     id="text3342-3-9-7-6"
+     y="110.16406"
+     x="45.939129"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-56-1-3)"
+     xml:space="preserve"><svg:tspan
+       style="font-size:17.5px"
+       y="110.16406"
+       x="45.939129"
+       id="tspan3344-6-1-9-2">Sample</svg:tspan></svg:text>
+  <svg:text
+     id="text3342-3-9-7-6-2"
+     y="262.14505"
+     x="45.723873"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-56-1-3-9)"
+     xml:space="preserve"><svg:tspan
+       style="font-size:17.5px"
+       y="262.14505"
+       x="45.723873"
+       id="tspan3344-6-1-9-2-7">Sample</svg:tspan></svg:text>
+  <svg:text
+     id="text3342-3-9-7-6-3"
+     y="181.32278"
+     x="38.69585"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-56-1-3-0)"
+     xml:space="preserve"><svg:tspan
+       style="font-size:15px"
+       y="181.32278"
+       x="38.69585"
+       id="tspan3344-6-1-9-2-6">Resistance</svg:tspan></svg:text>
+  <svg:text
+     id="text3342-3-9-7-6-3-2"
+     y="206.02849"
+     x="52.044933"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-56-1-3-0-0)"
+     xml:space="preserve"><svg:tspan
+       style="font-size:15px"
+       y="206.02849"
+       x="52.044933"
+       id="tspan3344-6-1-9-2-6-6">Heater</svg:tspan></svg:text>
+  <svg:text
+     transform="matrix(0.00326122,-0.99999468,0.99999468,0.00326122,-131.84534,387.7041)"
+     id="text3342-3-9-7-6-7"
+     y="153.608"
+     x="196.01408"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-56-1-3-1)"
+     xml:space="preserve"><svg:tspan
+       style="font-size:17.5px"
+       y="153.608"
+       x="196.01408"
+       id="tspan3344-6-1-9-2-9">Insulation</svg:tspan></svg:text>
+  <svg:text
+     id="text3342-3-9-7-6-23"
+     y="28.902544"
+     x="26.836067"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-56-1-3-2)"
+     xml:space="preserve"><svg:tspan
+       style="font-size:17.5px"
+       y="28.902544"
+       x="26.836067"
+       id="tspan3344-6-1-9-2-75">Cooling fluid</svg:tspan></svg:text>
+  <svg:text
+     id="text3342-3-9-7-6-23-1"
+     y="344.33206"
+     x="28.254803"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-56-1-3-2-3)"
+     xml:space="preserve"><svg:tspan
+       style="font-size:17.5px"
+       y="344.33206"
+       x="28.254803"
+       id="tspan3344-6-1-9-2-75-2">Cooling fluid</svg:tspan></svg:text>
+  <svg:path
+     id="path4451"
+     d="m 185.91193,187.85435 -66.83529,1.14352"
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3, 3;stroke-dashoffset:0;stroke-opacity:1" />
+  <svg:ellipse
+     ry="2.1246736"
+     rx="2.1248527"
+     cy="100.70736"
+     cx="120.10325"
+     id="path4318"
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.11899662px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <svg:ellipse
+     ry="2.1246736"
+     rx="2.1248527"
+     cy="121.89922"
+     cx="120.02837"
+     id="path4318-9"
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.11899662px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <svg:path
+     id="path4451-3"
+     d="m 184.98133,100.03843 -65.43757,0.11752"
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+  <svg:path
+     id="path4451-3-1"
+     d="m 185.33301,121.80451 -65.43763,0.0701"
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+  <svg:text
+     id="text3342-3-9-7-6-3-7"
+     y="71.843346"
+     x="156.52435"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-56-1-3-0-9)"
+     xml:space="preserve"><svg:tspan
+       style="font-size:15px"
+       y="71.843346"
+       x="156.52435"
+       id="tspan3344-6-1-9-2-6-8">Thermocouple</svg:tspan></svg:text>
+  <svg:path
+     id="path4472"
+     d="m 184.35334,101.55823 0.28677,17.94225"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:path
+     d="m 182.24459,105.84675 1.19944,-2.37862 0.99572,-2.53997 0.9378,2.56711 1.14508,2.41155 -2.13722,-0.18851 z"
+     id="path5357-9-2-9"
+     style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.5284434;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:path
+     d="m 186.56175,115.26698 -1.1235,2.41541 -0.91477,2.57024 -1.01864,-2.53612 -1.22089,-2.37407 2.14212,0.12072 z"
+     id="path5357-9-2-9-5"
+     style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.5284434;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:path
+     id="path4472-0"
+     d="m 184.36549,123.86005 0.26247,61.95328"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:path
+     d="m 182.12189,128.46485 1.19944,-2.37862 0.99572,-2.53997 0.9378,2.56711 1.14508,2.41155 -2.13722,-0.18851 z"
+     id="path5357-9-2-9-3"
+     style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.5284434;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:path
+     d="m 186.63332,181.61277 -1.1235,2.41541 -0.91477,2.57024 -1.01864,-2.53612 -1.22089,-2.37407 2.14212,0.12072 z"
+     id="path5357-9-2-9-5-6"
+     style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.5284434;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:text
+     id="text3342-3-9-7-6-32"
+     y="115.90057"
+     x="190.80826"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-56-1-3-10)"
+     xml:space="preserve"><svg:tspan
+       style="font-size:17.5px"
+       y="115.90057"
+       x="190.80826"
+       id="tspan3344-6-1-9-2-0">L </svg:tspan></svg:text>
+  <svg:text
+     id="text3342-3-9-7-6-32-5"
+     y="158.12701"
+     x="191.00157"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-56-1-3-10-6)"
+     xml:space="preserve"><svg:tspan
+       style="font-size:17.5px"
+       y="158.12701"
+       x="191.00157"
+       id="tspan3344-6-1-9-2-0-5">a</svg:tspan></svg:text>
+  <svg:path
+     id="path4472-4"
+     d="m 146.08714,42.926117 -18.02897,0.196518"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.90185827;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:path
+     d="m 130.06439,47.010376 -3.91295,-2.191625 -4.17917,-1.820623 4.2293,-1.703978 3.97375,-2.082162 -0.31638,3.895558 z"
+     id="path5357-9-2-9-7"
+     style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.91550124;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:path
+     id="path4472-4-3"
+     d="M 117.31484,43.211473 99.285878,43.407991"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.90185827;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:path
+     d="m 101.2921,47.295732 -3.912952,-2.191625 -4.17917,-1.820623 4.2293,-1.703978 3.973742,-2.082162 -0.31637,3.895558 z"
+     id="path5357-9-2-9-7-0"
+     style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.91550124;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:path
+     id="path4472-4-3-6"
+     d="M 88.09725,43.084488 70.06828,43.281006"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.90185827;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:path
+     d="m 72.0745,47.168747 -3.91295,-2.191625 -4.17917,-1.820623 4.2293,-1.703978 3.97375,-2.082162 -0.31638,3.895558 z"
+     id="path5357-9-2-9-7-0-8"
+     style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.91550124;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:path
+     id="path4472-4-3-3"
+     d="m 59.020685,43.084487 -18.02897,0.196518"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.90185827;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:path
+     d="m 42.997935,47.168746 -3.91295,-2.191625 -4.17917,-1.820623 4.2293,-1.703978 3.97375,-2.082162 -0.31638,3.895558 z"
+     id="path5357-9-2-9-7-0-1"
+     style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.91550124;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:path
+     id="path4472-4-3-6-4"
+     d="M 29.803095,42.957502 11.774125,43.15402"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.90185827;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:path
+     d="m 13.780345,47.041761 -3.9129506,-2.191625 -4.17917,-1.820623 4.2293,-1.703978 3.9737506,-2.082162 -0.31638,3.895558 z"
+     id="path5357-9-2-9-7-0-8-9"
+     style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.91550124;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:path
+     id="path4472-4-2"
+     d="m 147.68161,319.74274 -18.02897,0.19652"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.90185827;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:path
+     d="m 131.65886,323.827 -3.91295,-2.19163 -4.17917,-1.82062 4.2293,-1.70398 3.97375,-2.08216 -0.31638,3.89556 z"
+     id="path5357-9-2-9-7-06"
+     style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.91550124;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:path
+     id="path4472-4-3-8"
+     d="m 118.90931,320.0281 -18.02896,0.19651"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.90185827;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:path
+     d="m 102.88657,324.11236 -3.912952,-2.19163 -4.17917,-1.82062 4.2293,-1.70398 3.973742,-2.08216 -0.31637,3.89556 z"
+     id="path5357-9-2-9-7-0-9"
+     style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.91550124;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:path
+     id="path4472-4-3-6-2"
+     d="m 89.691718,319.90111 -18.02897,0.19652"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.90185827;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:path
+     d="m 73.668968,323.98537 -3.91295,-2.19162 -4.17917,-1.82063 4.2293,-1.70398 3.97375,-2.08216 -0.31638,3.89556 z"
+     id="path5357-9-2-9-7-0-8-6"
+     style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.91550124;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:path
+     id="path4472-4-3-3-6"
+     d="m 60.615148,319.90111 -18.028965,0.19652"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.90185827;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:path
+     d="m 44.592403,323.98537 -3.91295,-2.19163 -4.17917,-1.82062 4.2293,-1.70398 3.97375,-2.08216 -0.31638,3.89556 z"
+     id="path5357-9-2-9-7-0-1-4"
+     style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.91550124;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:path
+     id="path4472-4-3-6-4-9"
+     d="m 31.397563,319.77413 -18.02897,0.19651"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.90185827;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:path
+     d="m 15.374813,323.85838 -3.91295,-2.19162 -4.17917,-1.82062 4.2293,-1.70398 3.97375,-2.08216 -0.31638,3.89555 z"
+     id="path5357-9-2-9-7-0-8-9-5"
+     style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.91550124;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:text
+     id="text3342-3-9-7-6-32-2"
+     y="137.25458"
+     x="235.05281"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-56-1-3-10-1)"
+     xml:space="preserve"><svg:tspan
+       style="font-size:17.5px"
+       y="137.25458"
+       x="235.05281"
+       id="tspan3344-6-1-9-2-0-72" /></svg:text>
+  <svg:text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-56-1-3-10-1)"
+     x="235.05281"
+     y="137.25458"
+     id="text5145"><svg:tspan
+       id="tspan5147"
+       x="235.05281"
+       y="137.25458"
+       style="font-size:17.5px" /></svg:text>
+  <svg:text
+     id="text3342-3-9-7-6-32-1"
+     y="94.647865"
+     x="190.2888"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-56-1-3-10-2)"
+     xml:space="preserve"><svg:tspan
+       style="font-size:17.5px"
+       y="94.647865"
+       x="190.2888"
+       id="tspan3344-6-1-9-2-0-0">ΔT<svg:tspan
+   id="tspan5175"
+   style="font-size:64.99999762%;baseline-shift:sub">1</svg:tspan>=</svg:tspan></svg:text>
+  <svg:text
+     id="text3342-3-9-7-6-32-9"
+     y="116.22089"
+     x="219.72952"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-56-1-3-10-61)"
+     xml:space="preserve"><svg:tspan
+       style="font-size:17.5px"
+       y="116.22089"
+       x="219.72952"
+       id="tspan3344-6-1-9-2-0-4">=</svg:tspan></svg:text>
+  <svg:text
+     id="dT1"
+     y="93.589294"
+     x="231.47783"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-56-1-3-10-6-9)"
+     xml:space="preserve"><svg:tspan
+       style="font-size:17.5px"
+       y="93.589294"
+       x="231.47783"
+       id="tspan3344-6-1-9-2-0-5-1">10 ºC</svg:tspan></svg:text>
+  <svg:text
+     id="L1"
+     y="114.60291"
+     x="232.00201"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-56-1-3-10-6-9-7)"
+     xml:space="preserve"><svg:tspan
+       style="font-size:17.5px"
+       y="114.60291"
+       x="232.00201"
+       id="tspan3344-6-1-9-2-0-5-1-1">0.005 m</svg:tspan></svg:text>
+  <svg:path
+     id="path4472-0-5"
+     d="m 184.54654,189.88081 0.26247,61.95328"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:path
+     d="m 182.30294,194.48561 1.19944,-2.37862 0.99572,-2.53997 0.9378,2.56711 1.14508,2.41155 -2.13722,-0.18851 z"
+     id="path5357-9-2-9-3-6"
+     style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.5284434;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:path
+     d="m 186.81437,247.63353 -1.1235,2.41541 -0.91477,2.57024 -1.01864,-2.53612 -1.22089,-2.37407 2.14212,0.12072 z"
+     id="path5357-9-2-9-5-6-3"
+     style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.5284434;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:ellipse
+     ry="2.1246736"
+     rx="2.1248527"
+     cy="254.69449"
+     cx="120.50858"
+     id="path4318-1"
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.11899662px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <svg:ellipse
+     ry="2.1246736"
+     rx="2.1248527"
+     cy="275.88635"
+     cx="120.4337"
+     id="path4318-9-2"
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.11899662px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <svg:path
+     id="path4451-3-9"
+     d="m 185.38667,254.02557 -65.43757,0.11752"
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+  <svg:path
+     id="path4451-3-1-3"
+     d="m 185.73835,275.38243 -65.43763,0.0701"
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+  <svg:path
+     id="path4472-9"
+     d="m 184.75868,255.54537 0.28677,17.94225"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:path
+     d="m 182.64993,259.83389 1.19944,-2.37862 0.99572,-2.53997 0.9378,2.56711 1.14508,2.41155 -2.13722,-0.18851 z"
+     id="path5357-9-2-9-0"
+     style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.5284434;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:path
+     d="m 186.96709,269.25412 -1.1235,2.41541 -0.91477,2.57024 -1.01864,-2.53612 -1.22089,-2.37407 2.14212,0.12072 z"
+     id="path5357-9-2-9-5-8"
+     style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.5284434;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <svg:text
+     id="text3342-3-9-7-6-32-8"
+     y="269.88773"
+     x="191.21359"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-56-1-3-10-9)"
+     xml:space="preserve"><svg:tspan
+       style="font-size:17.5px"
+       y="269.88773"
+       x="191.21359"
+       id="tspan3344-6-1-9-2-0-50">L </svg:tspan></svg:text>
+  <svg:text
+     id="text3342-3-9-7-6-3-7-3"
+     y="309.90527"
+     x="157.22295"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-56-1-3-0-9-9)"
+     xml:space="preserve"><svg:tspan
+       style="font-size:15px"
+       y="309.90527"
+       x="157.22295"
+       id="tspan3344-6-1-9-2-6-8-8">Thermocouple</svg:tspan></svg:text>
+  <svg:text
+     id="text3342-3-9-7-6-32-9-9"
+     y="270.26453"
+     x="218.70419"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-56-1-3-10-61-1)"
+     xml:space="preserve"><svg:tspan
+       style="font-size:17.5px"
+       y="270.26453"
+       x="218.70419"
+       id="tspan3344-6-1-9-2-0-4-8">=</svg:tspan></svg:text>
+  <svg:text
+     id="L2"
+     y="268.64655"
+     x="230.97668"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-56-1-3-10-6-9-7-56)"
+     xml:space="preserve"><svg:tspan
+       style="font-size:17.5px"
+       y="268.64655"
+       x="230.97668"
+       id="tspan3344-6-1-9-2-0-5-1-1-8">0.005 m</svg:tspan></svg:text>
+  <svg:text
+     id="text3342-3-9-7-6-32-5-4"
+     y="223.16458"
+     x="191.35797"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-56-1-3-10-6-4)"
+     xml:space="preserve"><svg:tspan
+       style="font-size:17.5px"
+       y="223.16458"
+       x="191.35797"
+       id="tspan3344-6-1-9-2-0-5-4">a</svg:tspan></svg:text>
+  <svg:text
+     id="text3342-3-9-7-6-32-1-1"
+     y="290.6792"
+     x="189.4115"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-56-1-3-10-2-6)"
+     xml:space="preserve"><svg:tspan
+       style="font-size:17.5px"
+       y="290.6792"
+       x="189.4115"
+       id="tspan3344-6-1-9-2-0-0-7">ΔT<svg:tspan
+   id="tspan5175-8"
+   style="font-size:64.99999762%;baseline-shift:sub">1</svg:tspan>=</svg:tspan></svg:text>
+  <svg:text
+     id="dT2"
+     y="289.62064"
+     x="230.60052"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-56-1-3-10-6-9-75)"
+     xml:space="preserve"><svg:tspan
+       style="font-size:17.5px"
+       y="289.62064"
+       x="230.60052"
+       id="tspan3344-6-1-9-2-0-5-1-7">10 ºC</svg:tspan></svg:text>
+</svg:svg>

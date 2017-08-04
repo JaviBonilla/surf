@@ -1,0 +1,60 @@
+
+\documentclass{modelica}
+
+\usepackage{textcomp}
+
+\hypersetup{%
+	pdftitle  = {EXAMPLE 1-10 Heat Loss from a Person},
+	pdfauthor = {Javier Bonilla},
+        pdfsubject = {Heat and Mass Transfer - A Practical Approach},
+        pdfkeywords = {Heat transfer, mass transfer, thermodynamics},
+	colorlinks,
+	linkcolor=black,
+	urlcolor=black,
+	citecolor=black,
+	pdfpagelayout = SinglePage,
+	pdfcreator = pdflatex,
+	pdfproducer = pdflatex}
+
+% begin the document
+\begin{document}
+
+\thispagestyle{empty}
+\date{} % <--- leave date empty
+
+\section*{EXAMPLE 1-10 Heat Loss from a Person}
+
+\subsection*{Modelica code}
+
+
+\begin{lstlisting}[mathescape=true] 
+model Example_1_10 " Heat Loss from a Person"
+  import Modelica.Constants;
+  import Modelica.SIunits;
+  import Modelica.SIunits.Conversions;
+  import Modelica.SIunits.Conversions.NonSIunits;
+
+  parameter Real                              epsilon(min=0,max=1) = 0.95 "Emiss. (-)";
+  parameter SIunits.CoefficientOfHeatTransfer h(min=0) =             6    "HTC (W/(m^2 K))";
+  parameter SIunits.Area                      A_s(min=0) =           1.6  "Area (m^2)";
+  parameter NonSIunits.Temperature_degC       T_surr(min=-273.15) =  20   "Surr. T (C)";
+  parameter NonSIunits.Temperature_degC       T_s(min=-273.15) =     29   "Surface T (C)";
+
+  output SIunits.HeatFlowRate Q_rad  "Radiation heat losses (W)";
+  output SIunits.HeatFlowRate Q_conv "Convection heat losses (W)";
+  output SIunits.HeatFlowRate Q_cond "Conduction heat losses (W)";
+  output SIunits.HeatFlowRate Q_t    "Total heat losses (W)";
+
+  SIunits.Temperature T_s_K =    Conversions.from_degC(T_s);
+  SIunits.Temperature T_surr_K = Conversions.from_degC(T_surr);
+
+equation 
+  Q_t    = Q_rad + Q_conv + Q_cond;
+  Q_rad  = epsilon*Constants.sigma*A_s*(T_s_K^4-T_surr_K^4);
+  Q_conv = h*A_s*(T_s-T_surr);
+  Q_cond = 0;
+  
+end Example_1_10;  
+\end{lstlisting}
+
+\end{document}
