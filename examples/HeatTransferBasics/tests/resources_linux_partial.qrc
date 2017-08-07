@@ -1,0 +1,14 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file alias="configfile">#CURRENT_DIR#/surf-config.xml</file>
+    <file alias="logo">#CURRENT_DIR#/resources/fire_icon.png</file>
+    <file alias="icon">#CURRENT_DIR#/resources/fire_icon.png</file>
+    <file alias="fmu_example_1_6">#CURRENT_DIR#/FMU_Linux/HMT_0Chapter1_Example_01_06.fmu</file>
+    <file alias="fmu_example_1_13">#CURRENT_DIR#/FMU_Linux/HMT_0Chapter1_Example_01_013.fmu</file>
+    <file alias="fmu_example_1_14">#CURRENT_DIR#/FMU_Linux/HMT_0Chapter1_Example_01_014.fmu</file>
+    <file alias="diagram_1_6">#CURRENT_DIR#/resources/Example1_6.svg</file>
+    <file alias="diagram_1_13">#CURRENT_DIR#/resources/Example1_13.svg</file>
+    <file alias="diagram_1_14">#CURRENT_DIR#/resources/Example1_14.svg</file>
+    <file alias="example1_1.pdf">#CURRENT_DIR#/Doc/Example 1.1/Example_1_1.pdf</file>
+</qresource>
+</RCC>

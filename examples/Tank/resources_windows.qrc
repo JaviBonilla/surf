@@ -1,19 +1,19 @@
 <!DOCTYPE RCC><RCC version="1.0">
 <qresource>
-    <file alias="configfile">/home/javi/Documents/Git/Surf/Surf/examples/Tank/surf-config.xml</file>
-    <file alias="fmufile_charging">/home/javi/Documents/Git/Surf/Surf/examples/Tank/FMU_Windows/TSFLib_Tests_Tanks_HotTank_simu_0tank_0charging.fmu</file>
-    <file alias="fmufile_discharging">/home/javi/Documents/Git/Surf/Surf/examples/Tank/FMU_Windows/TSFLib_Tests_Tanks_HotTank_simu_0tank_0discharging.fmu</file>
-    <file alias="fmufile_losses">/home/javi/Documents/Git/Surf/Surf/examples/Tank/FMU_Windows/TSFLib_Tests_Tanks_HotTank_simu_0tank_0losses.fmu</file>
-    <file alias="inputfile_charging">/home/javi/Documents/Git/Surf/Surf/examples/Tank/charging.csv</file>
-    <file alias="inputfile_discharging">/home/javi/Documents/Git/Surf/Surf/examples/Tank/discharging.csv</file>
-    <file alias="inputfile_losses">/home/javi/Documents/Git/Surf/Surf/examples/Tank/losses.csv</file>
-    <file alias="dimensions.pdf">/home/javi/Documents/Git/Surf/Surf/examples/Tank/resources/dimensions.pdf</file>
-    <file alias="heatTransfer.pdf">/home/javi/Documents/Git/Surf/Surf/examples/Tank/resources/heatTransfer.pdf</file>
-    <file alias="diagram.svg">/home/javi/Documents/Git/Surf/Surf/examples/Tank/resources/tank.svg</file>
-    <file alias="diagram_min_charging.svg">/home/javi/Documents/Git/Surf/Surf/examples/Tank/resources/tank_min_charging.svg</file>
-    <file alias="diagram_min_discharging.svg">/home/javi/Documents/Git/Surf/Surf/examples/Tank/resources/tank_min_discharging.svg</file>
-    <file alias="diagram_min_losses.svg">/home/javi/Documents/Git/Surf/Surf/examples/Tank/resources/tank_min_losses.svg</file>
-    <file alias="logo.png">/home/javi/Documents/Git/Surf/Surf/examples/Tank/resources/tankLogo.png</file>
-    <file alias="icon.png">/home/javi/Documents/Git/Surf/Surf/examples/Tank/resources/tankLogo.png</file>
+    <file alias="configfile">#CURRENT_DIR#/surf-config.xml</file>
+    <file alias="fmufile_charging">#CURRENT_DIR#/FMU_Windows/TSFLib_Tests_Tanks_HotTank_simu_0tank_0charging.fmu</file>
+    <file alias="fmufile_discharging">#CURRENT_DIR#/FMU_Windows/TSFLib_Tests_Tanks_HotTank_simu_0tank_0discharging.fmu</file>
+    <file alias="fmufile_losses">#CURRENT_DIR#/FMU_Windows/TSFLib_Tests_Tanks_HotTank_simu_0tank_0losses.fmu</file>
+    <file alias="inputfile_charging">#CURRENT_DIR#/resources/charging.csv</file>
+    <file alias="inputfile_discharging">#CURRENT_DIR#/resources/discharging.csv</file>
+    <file alias="inputfile_losses">#CURRENT_DIR#/resources/losses.csv</file>
+    <file alias="dimensions.pdf">#CURRENT_DIR#/resources/dimensions.pdf</file>
+    <file alias="heatTransfer.pdf">#CURRENT_DIR#/resources/heatTransfer.pdf</file>
+    <file alias="diagram.svg">#CURRENT_DIR#/resources/tank.svg</file>
+    <file alias="diagram_min_charging.svg">#CURRENT_DIR#/resources/tank_min_charging.svg</file>
+    <file alias="diagram_min_discharging.svg">#CURRENT_DIR#/resources/tank_min_discharging.svg</file>
+    <file alias="diagram_min_losses.svg">#CURRENT_DIR#/resources/tank_min_losses.svg</file>
+    <file alias="logo.png">#CURRENT_DIR#/resources/tankLogo.png</file>
+    <file alias="icon.png">#CURRENT_DIR#/resources/tankLogo.png</file>
 </qresource>
 </RCC>

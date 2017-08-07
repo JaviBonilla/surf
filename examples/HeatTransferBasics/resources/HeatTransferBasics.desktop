@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=HeatTransferBasics
+Exec=HeatTransferBasics
+Icon=HeatTransferBasics
+Comment=Basic heat transfer problems
+Terminal=true
+Categories=Science

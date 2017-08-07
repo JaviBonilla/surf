@@ -1,13 +1,13 @@
 <!DOCTYPE RCC><RCC version="1.0">
 <qresource>
-    <file alias="configfile">/home/javi/Documents/Git/Surf/Surf/examples/SolarThermoPro/surf-config.xml</file>
-    <file alias="fmu_Therminol55">/home/javi/Documents/Git/Surf/Surf/examples/SolarThermoPro/FMU_Windows/SolarThermoPro_Test_ThermalOil_Therminol55.fmu</file>
-    <file alias="fmu_Therminol59">/home/javi/Documents/Git/Surf/Surf/examples/SolarThermoPro/FMU_Windows/SolarThermoPro_Test_ThermalOil_Therminol59.fmu</file>
-    <file alias="fmu_TherminolVP1">/home/javi/Documents/Git/Surf/Surf/examples/SolarThermoPro/FMU_Windows/SolarThermoPro_Test_ThermalOil_TherminolVP1.fmu</file>
-    <file alias="fmu_SolarSalt">/home/javi/Documents/Git/Surf/Surf/examples/SolarThermoPro/FMU_Windows/SolarThermoPro_Test_MoltenSalt_SolarSalt.fmu</file>
-    <file alias="fmu_Hitec">/home/javi/Documents/Git/Surf/Surf/examples/SolarThermoPro/FMU_Windows/SolarThermoPro_Test_MoltenSalt_HitecReview.fmu</file>
-    <file alias="fmu_HitecXL">/home/javi/Documents/Git/Surf/Surf/examples/SolarThermoPro/FMU_Windows/SolarThermoPro_Test_MoltenSalt_HitecXL.fmu</file>
-    <file alias="logo.png">/home/javi/Documents/Git/Surf/Surf/examples/SolarThermoPro/resources/SolarThermoPro.png</file>
-    <file alias="icon.png">/home/javi/Documents/Git/Surf/Surf/examples/SolarThermoPro/resources/SolarThermoPro.png</file>
+    <file alias="configfile">#CURRENT_DIR#/surf-config.xml</file>
+    <file alias="fmu_Therminol55">#CURRENT_DIR#/FMU_Windows/SolarThermoPro_Test_ThermalOil_Therminol55.fmu</file>
+    <file alias="fmu_Therminol59">#CURRENT_DIR#/FMU_Windows/SolarThermoPro_Test_ThermalOil_Therminol59.fmu</file>
+    <file alias="fmu_TherminolVP1">#CURRENT_DIR#/FMU_Windows/SolarThermoPro_Test_ThermalOil_TherminolVP1.fmu</file>
+    <file alias="fmu_SolarSalt">#CURRENT_DIR#/FMU_Windows/SolarThermoPro_Test_MoltenSalt_SolarSalt.fmu</file>
+    <file alias="fmu_Hitec">#CURRENT_DIR#/FMU_Windows/SolarThermoPro_Test_MoltenSalt_HitecReview.fmu</file>
+    <file alias="fmu_HitecXL">#CURRENT_DIR#/FMU_Windows/SolarThermoPro_Test_MoltenSalt_HitecXL.fmu</file>
+    <file alias="logo.png">#CURRENT_DIR#/resources/SolarThermoPro.png</file>
+    <file alias="icon.png">#CURRENT_DIR#/resources/SolarThermoPro.png</file>
 </qresource>
 </RCC>

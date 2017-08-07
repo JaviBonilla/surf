@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=SolarThermoPro
+Exec=SolarThermoPro
+Icon=SolarThermoPro
+Comment=Mathematical expression for thermodynamic properties of common fluid used in solar thermal applications
+Terminal=true
+Categories=Science

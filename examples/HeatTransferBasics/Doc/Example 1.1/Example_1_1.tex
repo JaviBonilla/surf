@@ -1,0 +1,63 @@
+
+\documentclass{modelica}
+
+\usepackage{textcomp}
+
+\hypersetup{%
+	pdftitle  = {EXAMPLE 1-1 Heating of a Copper Ball},
+	pdfauthor = {Javier Bonilla},
+        pdfsubject = {Heat and Mass Transfer - A Practical Approach},
+        pdfkeywords = {Heat transfer, mass transfer, thermodynamics},
+	colorlinks,
+	linkcolor=black,
+	urlcolor=black,
+	citecolor=black,
+	pdfpagelayout = SinglePage,
+	pdfcreator = pdflatex,
+	pdfproducer = pdflatex}
+
+% begin the document
+\begin{document}
+
+\thispagestyle{empty}
+\date{} % <--- leave date empty
+
+\section*{EXAMPLE 1-1 Heating of a Copper Ball}
+
+\subsection*{Modelica code}
+
+
+\begin{lstlisting}[mathescape=true] 
+model Example_1_1 "Heating a copper ball"
+
+  import Modelica.Constants;
+  import Modelica.SIunits;
+  import Modelica.SIunits.Conversions.NonSIunits;
+
+  parameter SIunits.Density              rho =             8950 "Density (kg/m3)";
+  parameter SIunits.Diameter             D =               0.1  "Diameter (m)";
+  parameter SIunits.SpecificHeatCapacity cp(min=0) =       395  "Heat cap. (J/(kg.C))";
+  parameter NonSIunits.Temperature_degC  T1(min=-273.15) = 100  "Initial temp. (C)";
+  parameter NonSIunits.Temperature_degC  T2(min=-273.15) = 150  "Final temp. (C)";
+  parameter SIunits.Time                 dT(min=1e-9) =    1800 "Time interval (s)";
+
+  output SIunits.Area         A    "Area (m2)";
+  output SIunits.Volume       V    "Volume (m3)";
+  output SIunits.Mass         m    "Mass (kg)";
+  output SIunits.Heat         Q    "Heat transferred (J)";
+  output SIunits.HeatFlowRate Qavg "Heat flow rate (W)";
+  output SIunits.HeatFlux     qavg "Heat flux (W/m2)";
+
+equation 
+
+  A    = Constants.pi*D^2;
+  V    = A*D/6;
+  m    = rho*V;
+  Q    = m*cp*(T2-T1);
+  Q    = Qavg*dT;
+  Qavg = qavg*A;
+  
+end Example_1_1;  
+\end{lstlisting}
+
+\end{document}

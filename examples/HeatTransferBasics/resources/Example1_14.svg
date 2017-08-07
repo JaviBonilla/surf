@@ -1,0 +1,1384 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg:svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg5144"
+   viewBox="0 0 275 250"
+   height="250"
+   width="275"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="Example1_14.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="995"
+     id="namedview1024"
+     showgrid="false"
+     inkscape:zoom="1.9873603"
+     inkscape:cx="247.6563"
+     inkscape:cy="171.71037"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5144" />
+  <svg:defs
+     id="defs5146">
+    <svg:linearGradient
+       y2="527.78998"
+       x2="186.52"
+       y1="578.98999"
+       x1="135.31"
+       gradientTransform="matrix(2.5378,0,0,1.5449,493.19,-190.44)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient6271"
+       href="#XMLID_6_" />
+    <svg:linearGradient
+       x1="37.305"
+       x2="106.52"
+       y1="507.35001"
+       gradientUnits="userSpaceOnUse"
+       y2="438.14001"
+       id="XMLID_6_">
+      <svg:stop
+         offset="0"
+         style="stop-color:#001119;stop-opacity:1"
+         id="stop4313" />
+      <svg:stop
+         offset="1"
+         style="stop-color:#6a7d77;stop-opacity:1"
+         id="stop4315" />
+      <midPointStop
+         offset="0"
+         style="stop-color:#005F19" />
+      <midPointStop
+         offset="0.5"
+         style="stop-color:#005F19" />
+      <midPointStop
+         offset="1"
+         style="stop-color:#BFFF5F" />
+    </svg:linearGradient>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter6064">
+      <svg:feGaussianBlur
+         stdDeviation="1.0342624"
+         id="feGaussianBlur6066" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter6060">
+      <svg:feGaussianBlur
+         stdDeviation="0.84808242"
+         id="feGaussianBlur6062" />
+    </svg:filter>
+    <svg:linearGradient
+       y2="326.51001"
+       x2="587.34998"
+       y1="309.95999"
+       x1="613.03003"
+       gradientTransform="matrix(-0.52919,-0.92314,0.92347,-0.52937,888.5,1403)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient6273"
+       href="#linearGradient5260" />
+    <svg:linearGradient
+       id="linearGradient5260">
+      <svg:stop
+         offset="0"
+         style="stop-color:#56fb38"
+         id="stop5262" />
+      <svg:stop
+         offset=".56609"
+         style="stop-color:#2e8f2a"
+         id="stop5278" />
+      <svg:stop
+         offset="1"
+         style="stop-color:#56a738;stop-opacity:0"
+         id="stop5264" />
+    </svg:linearGradient>
+    <svg:linearGradient
+       y2="327.64999"
+       x2="586.32001"
+       y1="309.95999"
+       x1="613.03003"
+       gradientTransform="matrix(0.8284,-0.66782,0.66805,0.8287,177.97,815.24)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient6275"
+       href="#linearGradient5260" />
+    <svg:linearGradient
+       y2="326.64999"
+       x2="581.42999"
+       y1="309.95999"
+       x1="613.03003"
+       gradientTransform="matrix(1.0639,-0.015682,0.01568,1.0643,260.01,353.36)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient6277"
+       href="#linearGradient5324" />
+    <svg:linearGradient
+       id="linearGradient5324">
+      <svg:stop
+         offset="0"
+         style="stop-color:#56fb38"
+         id="stop5326" />
+      <svg:stop
+         offset=".61834"
+         style="stop-color:#2e8f2a"
+         id="stop5328" />
+      <svg:stop
+         offset="1"
+         style="stop-color:#56a738;stop-opacity:0"
+         id="stop5330" />
+    </svg:linearGradient>
+    <svg:linearGradient
+       y2="527.78998"
+       x2="186.52"
+       y1="578.98999"
+       x1="135.31"
+       gradientTransform="matrix(-2.5378,0,0,1.5449,1189.5,-190.44)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient6279"
+       href="#XMLID_6_" />
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter6076">
+      <svg:feGaussianBlur
+         stdDeviation="1.0305934"
+         id="feGaussianBlur6078" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter6072">
+      <svg:feGaussianBlur
+         stdDeviation="0.85239837"
+         id="feGaussianBlur6074" />
+    </svg:filter>
+    <svg:linearGradient
+       y2="325.17999"
+       x2="578.92999"
+       y1="309.95999"
+       x1="613.03003"
+       gradientTransform="matrix(-0.9165,-0.54061,-0.54079,0.91683,1496.7,705.43)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient6281"
+       href="#linearGradient5352" />
+    <svg:linearGradient
+       id="linearGradient5352">
+      <svg:stop
+         offset="0"
+         style="stop-color:#56fb38"
+         id="stop5354" />
+      <svg:stop
+         offset=".79902"
+         style="stop-color:#2e8f2a"
+         id="stop5356" />
+      <svg:stop
+         offset="1"
+         style="stop-color:#56a738;stop-opacity:0"
+         id="stop5358" />
+    </svg:linearGradient>
+    <svg:linearGradient
+       y2="325.67001"
+       x2="593.42999"
+       y1="311.81"
+       x1="608.98999"
+       gradientTransform="matrix(-0.9165,-0.54061,-0.54079,0.91683,1508,699.7)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient6283"
+       href="#linearGradient5340" />
+    <svg:linearGradient
+       id="linearGradient5340">
+      <svg:stop
+         offset="0"
+         style="stop-color:#56fb38"
+         id="stop5342" />
+      <svg:stop
+         offset=".70687"
+         style="stop-color:#2e8f2a"
+         id="stop5344" />
+      <svg:stop
+         offset="1"
+         style="stop-color:#56a738;stop-opacity:0"
+         id="stop5346" />
+    </svg:linearGradient>
+    <svg:linearGradient
+       y2="333.35001"
+       x2="588.96002"
+       y1="311.81"
+       x1="608.98999"
+       gradientTransform="matrix(-0.29386,-1.0227,-1.023,0.29397,1307.8,1182.8)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient6285"
+       href="#linearGradient5360" />
+    <svg:linearGradient
+       id="linearGradient5360">
+      <svg:stop
+         offset="0"
+         style="stop-color:#56fb38"
+         id="stop5362" />
+      <svg:stop
+         offset=".89643"
+         style="stop-color:#2e8f2a"
+         id="stop5364" />
+      <svg:stop
+         offset="1"
+         style="stop-color:#56a738;stop-opacity:0"
+         id="stop5366" />
+    </svg:linearGradient>
+    <svg:radialGradient
+       r="8.2518997"
+       cy="221.03999"
+       cx="14.207"
+       gradientTransform="matrix(1.2172,0.022628,-0.0072488,0.38992,4.1317,71.915)"
+       gradientUnits="userSpaceOnUse"
+       id="radialGradient6287"
+       href="#linearGradient14755" />
+    <svg:linearGradient
+       id="linearGradient14755">
+      <svg:stop
+         offset="0"
+         style="stop-color:#000000"
+         id="stop14757" />
+      <svg:stop
+         offset=".55844"
+         style="stop-color:#000000;stop-opacity:.16216"
+         id="stop14759" />
+      <svg:stop
+         offset="1"
+         style="stop-color:#000000;stop-opacity:0"
+         id="stop14761" />
+    </svg:linearGradient>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter14747">
+      <svg:feGaussianBlur
+         stdDeviation="0.12024479"
+         id="feGaussianBlur14749" />
+    </svg:filter>
+    <svg:radialGradient
+       r="8.2518997"
+       gradientTransform="matrix(1.2172,0.022628,-0.0072488,0.38992,4.1317,71.915)"
+       cx="14.207"
+       cy="221.03999"
+       gradientUnits="userSpaceOnUse"
+       href="#linearGradient14755"
+       id="radialGradient18184" />
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter6815">
+      <svg:feGaussianBlur
+         stdDeviation="1.0305934"
+         id="feGaussianBlur6817" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter6819">
+      <svg:feGaussianBlur
+         stdDeviation="0.85239837"
+         id="feGaussianBlur6821" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter6857">
+      <svg:feGaussianBlur
+         stdDeviation="1.0342624"
+         id="feGaussianBlur6859" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter6861">
+      <svg:feGaussianBlur
+         stdDeviation="0.84808242"
+         id="feGaussianBlur6863" />
+    </svg:filter>
+    <svg:linearGradient
+       x1="97.845001"
+       y1="52.200001"
+       gradientTransform="matrix(-4.0943,-1.1832,2.9727,4.4541,847.26,-59.895)"
+       x2="106.29"
+       gradientUnits="userSpaceOnUse"
+       href="#linearGradient3098-1"
+       y2="54.43"
+       id="linearGradient26198" />
+    <svg:linearGradient
+       id="linearGradient3098-1">
+      <svg:stop
+         offset="0"
+         style="stop-color:#9e2612"
+         id="stop3100-3" />
+      <svg:stop
+         offset="1"
+         style="stop-color:#bd5032"
+         id="stop3102-5" />
+    </svg:linearGradient>
+    <svg:linearGradient
+       x1="49"
+       y1="16.562"
+       gradientTransform="matrix(-4.0943,-1.1832,2.9727,4.4541,752.3,30.008)"
+       x2="66.561996"
+       gradientUnits="userSpaceOnUse"
+       href="#linearGradient3098-1"
+       y2="42.625"
+       id="linearGradient26200" />
+    <svg:linearGradient
+       x1="204.64999"
+       y1="90.139"
+       gradientTransform="translate(359.48,-2.1179)"
+       x2="195.36"
+       gradientUnits="userSpaceOnUse"
+       y2="108.47"
+       id="linearGradient26202">
+      <svg:stop
+         offset="0"
+         style="stop-color:#a17636"
+         id="stop23157" />
+      <svg:stop
+         offset="1"
+         style="stop-color:#af7c7c;stop-opacity:.43243"
+         id="stop23159" />
+    </svg:linearGradient>
+    <svg:radialGradient
+       r="15.55"
+       gradientTransform="matrix(1,0,0,1.3818,0,-296.27)"
+       cx="-504.06"
+       cy="776"
+       gradientUnits="userSpaceOnUse"
+       id="radialGradient16155">
+      <svg:stop
+         offset="0"
+         style="stop-color:#6a3c1d"
+         id="stop3966" />
+      <svg:stop
+         offset="1"
+         style="stop-color:#8f5127"
+         id="stop3968" />
+    </svg:radialGradient>
+    <svg:linearGradient
+       x1="299.76001"
+       y1="463.85999"
+       x2="484.91"
+       gradientUnits="userSpaceOnUse"
+       href="#linearGradient3417"
+       y2="463.85999"
+       id="linearGradient16157" />
+    <svg:linearGradient
+       id="linearGradient3417">
+      <svg:stop
+         offset="0"
+         style="stop-color:#4e9a06"
+         id="stop3419" />
+      <svg:stop
+         offset="1"
+         style="stop-color:#73d216"
+         id="stop3421" />
+    </svg:linearGradient>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter7885">
+      <svg:feGaussianBlur
+         stdDeviation="3.8635419"
+         id="feGaussianBlur7887" />
+    </svg:filter>
+    <svg:linearGradient
+       x1="99.185997"
+       y1="480.39001"
+       x2="279.92001"
+       gradientUnits="userSpaceOnUse"
+       href="#linearGradient3417"
+       y2="480.39001"
+       id="linearGradient16159" />
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter7889">
+      <svg:feGaussianBlur
+         stdDeviation="3.8635419"
+         id="feGaussianBlur7891" />
+    </svg:filter>
+    <svg:linearGradient
+       x1="59.511002"
+       y1="403.25"
+       x2="251.27"
+       gradientUnits="userSpaceOnUse"
+       href="#linearGradient3417"
+       y2="403.25"
+       id="linearGradient16161" />
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter7897">
+      <svg:feGaussianBlur
+         stdDeviation="3.8635419"
+         id="feGaussianBlur7899" />
+    </svg:filter>
+    <svg:linearGradient
+       x1="438.62"
+       y1="438.51001"
+       x2="632.58002"
+       gradientUnits="userSpaceOnUse"
+       href="#linearGradient3417"
+       y2="438.51001"
+       id="linearGradient16163" />
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter7881">
+      <svg:feGaussianBlur
+         stdDeviation="3.8635419"
+         id="feGaussianBlur7883" />
+    </svg:filter>
+    <svg:linearGradient
+       x1="187.35001"
+       y1="323.89999"
+       x2="368.09"
+       gradientUnits="userSpaceOnUse"
+       href="#linearGradient3417"
+       y2="323.89999"
+       id="linearGradient16165" />
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter7893">
+      <svg:feGaussianBlur
+         stdDeviation="3.8635419"
+         id="feGaussianBlur7895" />
+    </svg:filter>
+    <svg:linearGradient
+       x1="252.34"
+       y1="599.35999"
+       gradientTransform="matrix(0.8221,0,0,0.8221,-1008.9,172.51)"
+       x2="276.06"
+       gradientUnits="userSpaceOnUse"
+       y2="599.35999"
+       id="linearGradient8358">
+      <svg:stop
+         offset="0"
+         style="stop-color:#c87137"
+         id="stop3296" />
+      <svg:stop
+         offset="1"
+         style="stop-color:#c87137;stop-opacity:0"
+         id="stop3298" />
+    </svg:linearGradient>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter7982">
+      <svg:feGaussianBlur
+         stdDeviation="0.970605"
+         id="feGaussianBlur7984" />
+    </svg:filter>
+    <svg:linearGradient
+       x1="124.16"
+       y1="496.51999"
+       gradientTransform="matrix(0.8221,0,0,0.8221,-944.38,202.4)"
+       x2="245.88"
+       gradientUnits="userSpaceOnUse"
+       y2="496.51999"
+       id="linearGradient8360">
+      <svg:stop
+         offset="0"
+         style="stop-color:#55d400"
+         id="stop3233" />
+      <svg:stop
+         offset="1"
+         style="stop-color:#55d400;stop-opacity:0"
+         id="stop3235" />
+    </svg:linearGradient>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter7974">
+      <svg:feGaussianBlur
+         stdDeviation="1.8810689"
+         id="feGaussianBlur7976" />
+    </svg:filter>
+    <svg:linearGradient
+       x1="140.38"
+       y1="531.40997"
+       gradientTransform="matrix(0.8221,0,0,0.8221,-942.97,201.69)"
+       x2="198"
+       gradientUnits="userSpaceOnUse"
+       y2="531.40997"
+       id="linearGradient8362">
+      <svg:stop
+         offset="0"
+         style="stop-color:#00d400"
+         id="stop3225" />
+      <svg:stop
+         offset="1"
+         style="stop-color:#00d400;stop-opacity:0"
+         id="stop3227" />
+    </svg:linearGradient>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter7954">
+      <svg:feGaussianBlur
+         stdDeviation="0.22511983"
+         id="feGaussianBlur7956" />
+    </svg:filter>
+    <svg:linearGradient
+       y2="527.78998"
+       x2="186.52"
+       y1="578.98999"
+       x1="135.31"
+       gradientTransform="matrix(2.5378,0,0,1.5449,493.19,-190.44)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient9969"
+       href="#XMLID_6_" />
+    <svg:linearGradient
+       y2="326.51001"
+       x2="587.34998"
+       y1="309.95999"
+       x1="613.03003"
+       gradientTransform="matrix(-0.52919,-0.92314,0.92347,-0.52937,888.5,1403)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient9971"
+       href="#linearGradient5260" />
+    <svg:linearGradient
+       y2="327.64999"
+       x2="586.32001"
+       y1="309.95999"
+       x1="613.03003"
+       gradientTransform="matrix(0.8284,-0.66782,0.66805,0.8287,177.97,815.24)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient9973"
+       href="#linearGradient5260" />
+    <svg:linearGradient
+       y2="326.64999"
+       x2="581.42999"
+       y1="309.95999"
+       x1="613.03003"
+       gradientTransform="matrix(1.0639,-0.015682,0.01568,1.0643,260.01,353.36)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient9975"
+       href="#linearGradient5324" />
+    <svg:linearGradient
+       y2="527.78998"
+       x2="186.52"
+       y1="578.98999"
+       x1="135.31"
+       gradientTransform="matrix(-2.5378,0,0,1.5449,1189.5,-190.44)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient9977"
+       href="#XMLID_6_" />
+    <svg:linearGradient
+       y2="325.17999"
+       x2="578.92999"
+       y1="309.95999"
+       x1="613.03003"
+       gradientTransform="matrix(-0.9165,-0.54061,-0.54079,0.91683,1496.7,705.43)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient9979"
+       href="#linearGradient5352" />
+    <svg:linearGradient
+       y2="325.67001"
+       x2="593.42999"
+       y1="311.81"
+       x1="608.98999"
+       gradientTransform="matrix(-0.9165,-0.54061,-0.54079,0.91683,1508,699.7)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient9981"
+       href="#linearGradient5340" />
+    <svg:linearGradient
+       y2="333.35001"
+       x2="588.96002"
+       y1="311.81"
+       x1="608.98999"
+       gradientTransform="matrix(-0.29386,-1.0227,-1.023,0.29397,1307.8,1182.8)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient9983"
+       href="#linearGradient5360" />
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter4187">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend4189" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter4191">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend4193" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter4195">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend4197" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter4199">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend4201" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-0">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-9" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter4205">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend4207" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-0-6">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-9-1" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter4211">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend4213" />
+    </svg:filter>
+    <svg:radialGradient
+       r="15.55"
+       gradientTransform="matrix(1,0,0,1.3818,0,-296.27)"
+       cx="-504.06"
+       cy="776"
+       gradientUnits="userSpaceOnUse"
+       id="radialGradient16155-6">
+      <svg:stop
+         offset="0"
+         style="stop-color:#6a3c1d"
+         id="stop3966-7" />
+      <svg:stop
+         offset="1"
+         style="stop-color:#8f5127"
+         id="stop3968-5" />
+    </svg:radialGradient>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-5">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-6" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter4367">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend4369" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-3">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-60" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-5-2">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-6-6" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter4444">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend4446" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-5-2-0">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-6-6-2" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter4485">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend4487" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-5-2-0-2">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-6-6-2-8" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter4526">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend4528" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-5-2-9">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-6-6-7" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter4532">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend4534" />
+    </svg:filter>
+    <svg:radialGradient
+       r="15.55"
+       gradientTransform="matrix(1,0,0,1.3818,0,-296.27)"
+       cx="-504.06"
+       cy="776"
+       gradientUnits="userSpaceOnUse"
+       id="radialGradient16155-6-6">
+      <svg:stop
+         offset="0"
+         style="stop-color:#6a3c1d"
+         id="stop3966-7-7" />
+      <svg:stop
+         offset="1"
+         style="stop-color:#8f5127"
+         id="stop3968-5-5" />
+    </svg:radialGradient>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-56">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-2" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter5064">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend5066" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-5-2-0-9">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-6-6-2-3" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter5105">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend5107" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-56-1">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-2-8" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter5146">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend5148" />
+    </svg:filter>
+    <svg:linearGradient
+       inkscape:collect="always"
+       xlink:href="#XMLID_6_"
+       id="linearGradient5807"
+       x1="145.39247"
+       y1="294.3765"
+       x2="146.29289"
+       y2="208.33272"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0.50318003,-103.52226)" />
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-9-3-3">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-2-6-6" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-9-3-3-3">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-2-6-6-6" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-9-3-3-35">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-2-6-6-62" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-9-3-3-35-6">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-2-6-6-62-0" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-9-3-3-6">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-2-6-6-2" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-9-3-3-35-6-2">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-2-6-6-62-0-0" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-9-3-3-35-2">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-2-6-6-62-3" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-9-3-3-7">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-2-6-6-5" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-9-3-3-35-6-2-1">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-2-6-6-62-0-0-2" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-9-3-3-35-2-9">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-2-6-6-62-3-3" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-9-3-3-35-6-1">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-2-6-6-62-0-9" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-9-3-3-35-4">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-2-6-6-62-7" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-9-3-3-8">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-2-6-6-4" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-9-3-3-35-6-2-1-6">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-2-6-6-62-0-0-2-1" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-9-3-3-35-2-9-5">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-2-6-6-62-3-3-5" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-9-3-3-35-6-1-4">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-2-6-6-62-0-9-7" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-9-3-3-35-4-6">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-2-6-6-62-7-5" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-9-3-3-35-6-2-6">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-2-6-6-62-0-0-9" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-9-3-3-35-2-3">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-2-6-6-62-3-7" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-9-3-3-35-6-4">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-2-6-6-62-0-5" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-9-3-3-35-25">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-2-6-6-62-4" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-9-3-3-74">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-2-6-6-43" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-56-1-4">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-2-8-9" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-4">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-8" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter6196">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend6198" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter68738-6">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend68740-1" />
+    </svg:filter>
+    <svg:filter
+       style="color-interpolation-filters:sRGB"
+       id="filter6237">
+      <svg:feBlend
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend6239" />
+    </svg:filter>
+  </svg:defs>
+  <svg:metadata
+     id="metadata5149">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </svg:metadata>
+  <svg:text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738)"
+     x="110.65466"
+     y="19.044909"
+     id="text3342-3"
+     sodipodi:linespacing="1000%"><svg:tspan
+       id="tspan3344-6"
+       x="110.65466"
+       y="19.044909"
+       style="font-size:17.5px">T<svg:tspan
+   style="font-size:17.5px;baseline-shift:sub"
+   id="tspan3369">surr</svg:tspan> =</svg:tspan></svg:text>
+  <svg:text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738)"
+     x="170.42323"
+     y="20.244936"
+     id="T_surr"
+     sodipodi:linespacing="1000%"
+     inkscape:label="T_surr"><svg:tspan
+       id="tspan6476-1"
+       x="170.42323"
+       y="20.244936"
+       style="font-size:17.5px">40 ºC</svg:tspan></svg:text>
+  <svg:rect
+     style="opacity:1;fill:url(#linearGradient5807);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect4314"
+     width="271.10809"
+     height="88.277191"
+     x="2.9925258"
+     y="102.43581"
+     rx="0" />
+  <svg:text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-56)"
+     x="68.357063"
+     y="242.16644"
+     id="text3342-3-9"
+     sodipodi:linespacing="1000%"><svg:tspan
+       id="tspan3344-6-1"
+       x="68.357063"
+       y="242.16644"
+       style="font-size:17.5px">q<svg:tspan
+   style="font-size:12.5px;baseline-shift:sub"
+   id="tspan3369-2">0</svg:tspan> =</svg:tspan></svg:text>
+  <svg:text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-56)"
+     x="105.08643"
+     y="242.82434"
+     id="q_0"
+     sodipodi:linespacing="1000%"
+     inkscape:label="q_0"><svg:tspan
+       id="tspan6476-1-0"
+       x="105.08643"
+       y="242.82434"
+       style="font-size:17.5px">5000 W/m^2</svg:tspan></svg:text>
+  <svg:text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-56-1)"
+     x="77.147667"
+     y="166.73703"
+     id="text3342-3-9-7"
+     sodipodi:linespacing="1000%"><svg:tspan
+       id="tspan3344-6-1-9"
+       x="77.147667"
+       y="166.73703"
+       style="font-size:17.5px;fill:#ffffff;fill-opacity:1">epsilon =</svg:tspan></svg:text>
+  <svg:text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-56-1)"
+     x="152.46291"
+     y="166.90472"
+     id="epsilon"
+     sodipodi:linespacing="1000%"
+     inkscape:label="epsilon"><svg:tspan
+       id="tspan6476-1-0-2"
+       x="152.46291"
+       y="166.90472"
+       style="font-size:17.5px;fill:#ffffff;fill-opacity:1">0.3</svg:tspan></svg:text>
+  <svg:path
+     style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 15.013066,223.04176 0.18646,-26.45152"
+     id="path4451-7-9"
+     inkscape:connector-type="polyline"
+     inkscape:connector-curvature="0" />
+  <svg:path
+     style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1.35424519;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter68738-9-3-3);enable-background:new"
+     id="path5357-9-2-9-7-5-5-0"
+     d="m -271.11356,97.953693 5.63888,3.245327 6.00432,2.6659 -5.95212,2.75855 -5.5756,3.33214 0.31327,-6.00381 z"
+     transform="matrix(-7.4761898e-4,-0.99999972,0.99999972,-7.4761898e-4,-89.130914,-63.731066)"
+     inkscape:connector-curvature="0" />
+  <svg:path
+     style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 34.207263,223.51563 0.18646,-26.45151"
+     id="path4451-7-9-9"
+     inkscape:connector-type="polyline"
+     inkscape:connector-curvature="0" />
+  <svg:path
+     style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1.35424519;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter68738-9-3-3-35);enable-background:new"
+     id="path5357-9-2-9-7-5-5-0-1"
+     d="m -271.11356,97.953693 5.63888,3.245327 6.00432,2.6659 -5.95212,2.75855 -5.5756,3.33214 0.31327,-6.00381 z"
+     transform="matrix(-7.4761898e-4,-0.99999972,0.99999972,-7.4761898e-4,-69.936717,-63.257187)"
+     inkscape:connector-curvature="0" />
+  <svg:path
+     style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 52.861597,223.24939 0.18646,-26.45151"
+     id="path4451-7-9-9-7"
+     inkscape:connector-type="polyline"
+     inkscape:connector-curvature="0" />
+  <svg:path
+     style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1.35424519;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter68738-9-3-3-35-6);enable-background:new"
+     id="path5357-9-2-9-7-5-5-0-1-9"
+     d="m -271.11356,97.953693 5.63888,3.245327 6.00432,2.6659 -5.95212,2.75855 -5.5756,3.33214 0.31327,-6.00381 z"
+     transform="matrix(-7.4761898e-4,-0.99999972,0.99999972,-7.4761898e-4,-51.282379,-63.523432)"
+     inkscape:connector-curvature="0" />
+  <svg:path
+     style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 71.712517,223.75257 0.18646,-26.45151"
+     id="path4451-7-9-9-8"
+     inkscape:connector-type="polyline"
+     inkscape:connector-curvature="0" />
+  <svg:path
+     style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1.35424519;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter68738-9-3-3-35-2);enable-background:new"
+     id="path5357-9-2-9-7-5-5-0-1-97"
+     d="m -271.11356,97.953693 5.63888,3.245327 6.00432,2.6659 -5.95212,2.75855 -5.5756,3.33214 0.31327,-6.00381 z"
+     transform="matrix(-7.4761898e-4,-0.99999972,0.99999972,-7.4761898e-4,-32.431467,-63.020252)"
+     inkscape:connector-curvature="0" />
+  <svg:path
+     style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 90.366847,223.48633 0.18646,-26.45151"
+     id="path4451-7-9-9-7-3"
+     inkscape:connector-type="polyline"
+     inkscape:connector-curvature="0" />
+  <svg:path
+     style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1.35424519;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter68738-9-3-3-35-6-2);enable-background:new"
+     id="path5357-9-2-9-7-5-5-0-1-9-6"
+     d="m -271.11356,97.953693 5.63888,3.245327 6.00432,2.6659 -5.95212,2.75855 -5.5756,3.33214 0.31327,-6.00381 z"
+     transform="matrix(-7.4761898e-4,-0.99999972,0.99999972,-7.4761898e-4,-13.777129,-63.286492)"
+     inkscape:connector-curvature="0" />
+  <svg:path
+     style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 109.31605,223.13092 0.18646,-26.45151"
+     id="path4451-7-9-9-3"
+     inkscape:connector-type="polyline"
+     inkscape:connector-curvature="0" />
+  <svg:path
+     style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1.35424519;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter68738-9-3-3-35-4);enable-background:new"
+     id="path5357-9-2-9-7-5-5-0-1-6"
+     d="m -271.11356,97.953693 5.63888,3.245327 6.00432,2.6659 -5.95212,2.75855 -5.5756,3.33214 0.31327,-6.00381 z"
+     transform="matrix(-7.4761898e-4,-0.99999972,0.99999972,-7.4761898e-4,5.172072,-63.641903)"
+     inkscape:connector-curvature="0" />
+  <svg:path
+     style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 127.97039,222.86468 0.18646,-26.45151"
+     id="path4451-7-9-9-7-1"
+     inkscape:connector-type="polyline"
+     inkscape:connector-curvature="0" />
+  <svg:path
+     style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1.35424519;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter68738-9-3-3-35-6-1);enable-background:new"
+     id="path5357-9-2-9-7-5-5-0-1-9-0"
+     d="m -271.11356,97.953693 5.63888,3.245327 6.00432,2.6659 -5.95212,2.75855 -5.5756,3.33214 0.31327,-6.00381 z"
+     transform="matrix(-7.4761898e-4,-0.99999972,0.99999972,-7.4761898e-4,23.82641,-63.908143)"
+     inkscape:connector-curvature="0" />
+  <svg:path
+     style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 146.82131,223.36786 0.18646,-26.45151"
+     id="path4451-7-9-9-8-6"
+     inkscape:connector-type="polyline"
+     inkscape:connector-curvature="0" />
+  <svg:path
+     style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1.35424519;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter68738-9-3-3-35-2-9);enable-background:new"
+     id="path5357-9-2-9-7-5-5-0-1-97-3"
+     d="m -271.11356,97.953693 5.63888,3.245327 6.00432,2.6659 -5.95212,2.75855 -5.5756,3.33214 0.31327,-6.00381 z"
+     transform="matrix(-7.4761898e-4,-0.99999972,0.99999972,-7.4761898e-4,42.677322,-63.404963)"
+     inkscape:connector-curvature="0" />
+  <svg:path
+     style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 165.47564,223.10162 0.18646,-26.45151"
+     id="path4451-7-9-9-7-3-2"
+     inkscape:connector-type="polyline"
+     inkscape:connector-curvature="0" />
+  <svg:path
+     style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1.35424519;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter68738-9-3-3-35-6-2-1);enable-background:new"
+     id="path5357-9-2-9-7-5-5-0-1-9-6-0"
+     d="m -271.11356,97.953693 5.63888,3.245327 6.00432,2.6659 -5.95212,2.75855 -5.5756,3.33214 0.31327,-6.00381 z"
+     transform="matrix(-7.4761898e-4,-0.99999972,0.99999972,-7.4761898e-4,61.33166,-63.671203)"
+     inkscape:connector-curvature="0" />
+  <svg:path
+     style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 184.47398,223.72264 0.18646,-26.45151"
+     id="path4451-7-9-9-86"
+     inkscape:connector-type="polyline"
+     inkscape:connector-curvature="0" />
+  <svg:path
+     style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1.35424519;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter68738-9-3-3-35-25);enable-background:new"
+     id="path5357-9-2-9-7-5-5-0-1-8"
+     d="m -271.11356,97.953693 5.63888,3.245327 6.00432,2.6659 -5.95212,2.75855 -5.5756,3.33214 0.31327,-6.00381 z"
+     transform="matrix(-7.4761898e-4,-0.99999972,0.99999972,-7.4761898e-4,80.330004,-63.05018)"
+     inkscape:connector-curvature="0" />
+  <svg:path
+     style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 203.12832,223.4564 0.18646,-26.45151"
+     id="path4451-7-9-9-7-8"
+     inkscape:connector-type="polyline"
+     inkscape:connector-curvature="0" />
+  <svg:path
+     style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1.35424519;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter68738-9-3-3-35-6-4);enable-background:new"
+     id="path5357-9-2-9-7-5-5-0-1-9-4"
+     d="m -271.11356,97.953693 5.63888,3.245327 6.00432,2.6659 -5.95212,2.75855 -5.5756,3.33214 0.31327,-6.00381 z"
+     transform="matrix(-7.4761898e-4,-0.99999972,0.99999972,-7.4761898e-4,98.984342,-63.31642)"
+     inkscape:connector-curvature="0" />
+  <svg:path
+     style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 221.97924,223.95958 0.18646,-26.45151"
+     id="path4451-7-9-9-8-3"
+     inkscape:connector-type="polyline"
+     inkscape:connector-curvature="0" />
+  <svg:path
+     style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1.35424519;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter68738-9-3-3-35-2-3);enable-background:new"
+     id="path5357-9-2-9-7-5-5-0-1-97-1"
+     d="m -271.11356,97.953693 5.63888,3.245327 6.00432,2.6659 -5.95212,2.75855 -5.5756,3.33214 0.31327,-6.00381 z"
+     transform="matrix(-7.4761898e-4,-0.99999972,0.99999972,-7.4761898e-4,117.83525,-62.81324)"
+     inkscape:connector-curvature="0" />
+  <svg:path
+     style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 240.63357,223.69334 0.18646,-26.45151"
+     id="path4451-7-9-9-7-3-4"
+     inkscape:connector-type="polyline"
+     inkscape:connector-curvature="0" />
+  <svg:path
+     style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1.35424519;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter68738-9-3-3-35-6-2-6);enable-background:new"
+     id="path5357-9-2-9-7-5-5-0-1-9-6-9"
+     d="m -271.11356,97.953693 5.63888,3.245327 6.00432,2.6659 -5.95212,2.75855 -5.5756,3.33214 0.31327,-6.00381 z"
+     transform="matrix(-7.4761898e-4,-0.99999972,0.99999972,-7.4761898e-4,136.48959,-63.07948)"
+     inkscape:connector-curvature="0" />
+  <svg:path
+     style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 259.58278,223.33793 0.18646,-26.45151"
+     id="path4451-7-9-9-3-2"
+     inkscape:connector-type="polyline"
+     inkscape:connector-curvature="0" />
+  <svg:path
+     style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1.35424519;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter68738-9-3-3-35-4-6);enable-background:new"
+     id="path5357-9-2-9-7-5-5-0-1-6-0"
+     d="m -271.11356,97.953693 5.63888,3.245327 6.00432,2.6659 -5.95212,2.75855 -5.5756,3.33214 0.31327,-6.00381 z"
+     transform="matrix(-7.4761898e-4,-0.99999972,0.99999972,-7.4761898e-4,155.43879,-63.43489)"
+     inkscape:connector-curvature="0" />
+  <svg:text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-56-1-4)"
+     x="74.923759"
+     y="143.07918"
+     id="text3342-3-9-7-5"
+     sodipodi:linespacing="1000%"><svg:tspan
+       id="tspan3344-6-1-9-0"
+       x="74.923759"
+       y="143.07918"
+       style="font-size:17.5px;fill:#ffffff;fill-opacity:1">Engine housing</svg:tspan></svg:text>
+  <svg:text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-4)"
+     x="8.0424566"
+     y="57.641861"
+     id="text3342-3-7"
+     sodipodi:linespacing="1000%"><svg:tspan
+       id="tspan3344-6-17"
+       x="8.0424566"
+       y="57.641861"
+       style="font-size:17.5px">h =</svg:tspan></svg:text>
+  <svg:text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-4)"
+     x="38.626602"
+     y="57.332352"
+     id="h"
+     sodipodi:linespacing="1000%"
+     inkscape:label="h"><svg:tspan
+       id="tspan6476-1-2"
+       x="38.626602"
+       y="57.332352"
+       style="font-size:17.5px">15 W/(m^2 K)</svg:tspan></svg:text>
+  <svg:text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-6)"
+     x="132.32793"
+     y="95.883537"
+     id="text3342-3-0"
+     sodipodi:linespacing="1000%"><svg:tspan
+       id="tspan3344-6-6"
+       x="132.32793"
+       y="95.883537"
+       style="font-size:17.5px">T<svg:tspan
+   style="font-size:17.5px;baseline-shift:sub"
+   id="tspan3369-1">0</svg:tspan> =</svg:tspan></svg:text>
+  <svg:text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:90px;line-height:1000%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter68738-6)"
+     x="173.47885"
+     y="96.077209"
+     id="T_0"
+     sodipodi:linespacing="1000%"
+     inkscape:label="T_0"><svg:tspan
+       id="tspan6476-1-9"
+       x="173.47885"
+       y="96.077209"
+       style="font-size:17.5px">270 ºC</svg:tspan></svg:text>
+</svg:svg>

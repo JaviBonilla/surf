@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=TankSim
+Exec=TankSim
+Icon=TankSim
+Comment=Simulation of a Thermal Energy Storage (TES) Tank model
+Terminal=true
+Categories=Science

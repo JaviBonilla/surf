@@ -1,0 +1,55 @@
+
+\documentclass{modelica}
+
+\usepackage{textcomp}
+
+\hypersetup{%
+	pdftitle  = {EXAMPLE 1-6 Measuring the Thermal Conductivity of a Material},
+	pdfauthor = {Javier Bonilla},
+        pdfsubject = {Heat and Mass Transfer - A Practical Approach},
+        pdfkeywords = {Heat transfer, mass transfer, thermodynamics},
+	colorlinks,
+	linkcolor=black,
+	urlcolor=black,
+	citecolor=black,
+	pdfpagelayout = SinglePage,
+	pdfcreator = pdflatex,
+	pdfproducer = pdflatex}
+
+% begin the document
+\begin{document}
+
+\thispagestyle{empty}
+\date{} % <--- leave date empty
+
+\section*{EXAMPLE 1-6 Measuring the Thermal Conductivity of a Material}
+
+\subsection*{Modelica code}
+
+
+\begin{lstlisting}[mathescape=true] 
+  import Modelica.Constants;
+  import Modelica.SIunits;
+  import Modelica.SIunits.Conversions.NonSIunits;
+
+  parameter SIunits.Diameter            D =         0.05 "Diameter (m)";
+  parameter SIunits.Length              L(min=0) =  0.03 "Lenght (m)";
+  parameter SIunits.Voltage             V(min=0) =  110  "Voltage (V)";
+  parameter SIunits.Current             I(min=0) =  0.4  "Current (A)";
+  parameter NonSIunits.Temperature_degC dT =        15   "Temperature difference (C)";
+
+  output SIunits.Area                A  "Area (m^2)";
+  output SIunits.Power               We "Power (W)";
+  output SIunits.HeatFlowRate        Q  "Heat flow rate (W)";
+  output SIunits.ThermalConductivity k "Thermal conductivity (W/(m K))";
+
+equation 
+  A  = 1/4*Constants.pi*D^2;
+  We = V*I;
+  Q  = 1/2*We;
+  Q  = k*A*dT/L;
+  
+end Example_1_6;  
+\end{lstlisting}
+
+\end{document}

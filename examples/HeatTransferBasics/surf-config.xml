@@ -1,0 +1,420 @@
+<surf>
+    <app windowname="Basics of Heat Transfer" titlename="Chapter 1 - Basics of Heat Transfer" version="0.1" description="" company="CIEMAT-PSA" conf_integrator="false" conf_experiment="false" conf_outputs="false" section_color="#4d1128" title_color="#2b0916" background_color="#edf2f6" font_title_color="#ffffff" logo=":logo" icon=":icon" steady="true" experiment_text_menu="Examples" experiment_text_title="Example " results="false" store_geo = "true"></app>  
+    <!--  results="true" logo=":logo.png" icon=":icon.png"  background_color="#edf2f6" title_color="#2b3443" section_color="#6f7e95" font_title_color="#ffffff" font_section_color="#ffffff" -->
+    <geometry height = "800" width = "1000" pos_hslider = "0.4"  pos_vslider = "0.6"></geometry>
+    <authors>
+        <author name="Javier Bonilla" email="javier.bonilla@psa.es" website="http://www.psa.es" company="CIEMAT-PSA" role="Modelica package, diagrams, documentation and tool design"></author>
+    </authors>     
+    
+    <experiment name="Example 1.1 - Heating of a copper ball" fmufile=":fmu_example_1_1" fmuname="HMT_0Chapter1_Example_01_01" description = "1.1 - Heating of a copper ball" group="Heat and other forms of energy">
+        <parameters columns="name,value,description" sizes="70,60,150">
+            <!--<parameters columns="name,value,description,type,min,max" sizes="125,60,100,125,40,40">-->        
+            <!--<parameter name="Tstart" value="583.1"></parameter>-->
+        </parameters>           
+        <diagram  description="A 0.1-m diameter (&lt;b&gt;D&lt;/b&gt;) copper ball is to be heated from  100°C  (&lt;b&gt;T1&lt;/b&gt;) to an average temperature of 150°C (&lt;b&gt;T2&lt;/b&gt;) in 1800 seconds (&lt;b&gt;dT&lt;/b&gt;). Taking the average density and specific heat of copper in this temperature range to be 8950 kg/m3 (&lt;b&gt;rho&lt;/b&gt;) and 395 J/(kg °C) (&lt;b&gt;cp&lt;/b&gt;), respectively, determine:
+&lt;ol&gt;
+  &lt;li&gt;The total amount of heat transfer to the copper ball (&lt;b&gt;Q&lt;/b&gt;).&lt;/li&gt;
+  &lt;li&gt;The average rate of heat transfer to the ball (&lt;b&gt;Qavg&lt;/b&gt;).&lt;/li&gt;
+  &lt;li&gt;the average heat flux (&lt;b&gt;qavg&lt;/b&gt;).&lt;/l&gt;
+&lt;/ol&gt;">
+        </diagram>
+        <resources width_name="110" width_document ="120"  pos_hslider = "0.55">
+            <resource type="url" name="Book" document="Heat and Mass Transfer book" link="http://highered.mheducation.com/sites/0073398187/information_center_view0/index.html" description="This example is taken from the following book, Chapter 1, Example 1.1. &lt;p&gt;&lt;b&gt;Heat and Mass Transfer: Fundamentals and Applications, 5&lt;sup&gt;th&lt;/sup&gt; edition&lt;/b&gt; &lt;i&gt;Yunus A. Çengel, Adnan Menderes University&lt;/i&gt; &lt;i&gt;Afshin J. Ghajar, Oklahoma State University&lt;/i&gt;. ISBN: 0073398187. Copyright year: 2015. McGraw-Hill Global Education Holdings, LLC&lt;/p&gt;"></resource>
+            <resource type="file" name="PDF" document="Modelica code" link=":example1_1.pdf" description="Modelica code of this example in PDF format for quick inspection."></resource>
+            <resource type="file" name="Modelica" document="Modelica package" link=":BHT_Chapter1.mo"  description="Modelica package. The code of this example is in the &lt;b&gt;HMT_Chapter1.Example_1_1&lt;/b&gt; class. It can be opened and executed with any Modelica tool."></resource>
+            </resources>          
+        <graphs>
+            <graph name="Example 1.1 - Diagram and results" type="diagram_table" horizontal="true" pos_slider="0.3">
+                <g_diagram picture=":diagram_1_1">
+                    <gd_link type="text" id="T1"  variable="T1" units="ºC"></gd_link>
+                    <gd_link type="text" id="T2"  variable="T2" units="ºC"></gd_link>
+                    <gd_link type="text" id="Q"  variable="Q" units="J"></gd_link>
+                    <gd_link type="text" id="Qavg"  variable="Qavg" units="W"></gd_link>
+                    <gd_link type="text" id="qavg"  variable="qavg" units="W/m^2"></gd_link>
+                    <gd_link type="text" id="dT"  variable="dT" units="s"></gd_link>
+                    <gd_link type="text" id="D"  variable="D" units="m"></gd_link>
+                    <gd_link type="text" id="rho"  variable="rho" units="kg/m^3"></gd_link>
+                    <gd_link type="text" id="cp"  variable="cp" units="J/(kg ºC)"></gd_link>
+                </g_diagram>
+                <g_table width_name="50" width_desc="150" width_value="100" width_units="50">
+                    <gt_link name="A" description="Area" variable="A" units="m^2"></gt_link>
+                    <gt_link name="V" description="Volume" variable="V" units="m^3" ></gt_link>
+                    <gt_link name="m" description="Mass" variable="m" units="kg"></gt_link>
+                    <gt_link name="Q" description="Heat transferred" variable="Q" units="J"></gt_link>
+                    <gt_link name="Qavg" description="Heat flow rate" variable="Qavg" units="W"></gt_link>
+                    <gt_link name="qavg" description="Heat flux" variable="qavg" units="W/m^2"></gt_link>
+                </g_table>
+            </graph>
+        </graphs>   
+    </experiment>
+    
+    <experiment name="Example 1.2 - Cooling of Stainless Steel Sheets" fmufile=":fmu_example_1_2" fmuname="HMT_0Chapter1_Example_01_02" description = "1.2 - Cooling of Stainless Steel Sheets" group="The first law of thermodynamics">
+        <parameters columns="name,value,description" sizes="70,60,150">
+        </parameters>           
+        <diagram  description="A heated continuous AISI 304 stainless steel sheet is being conveyed at a constant speed of 1 cm/s (&lt;b&gt;v&lt;/b&gt;) into a chamber to be cooled . The stainless steel sheet is 5 mm thick (&lt;b&gt;t&lt;/b&gt;) and 2 m wide (&lt;b&gt;w&lt;/b&gt;), and it enters and exits the chamber at 500 K (&lt;b&gt;T_in&lt;/b&gt;) and 300 K (&lt;b&gt;T_out&lt;/b&gt;), respectively. Determine the rate of heat loss from the stainless steel sheet inside the chamber (&lt;b&gt;Q_loss&lt;/b&gt;).">
+        </diagram>
+        <resources width_name="110" width_document ="120"  pos_hslider = "0.55">
+            <resource type="url" name="Book" document="Heat and Mass Transfer book" link="http://highered.mheducation.com/sites/0073398187/information_center_view0/index.html" description="This example is taken from the following book, Chapter 1, Example 1.2. &lt;p&gt;&lt;b&gt;Heat and Mass Transfer: Fundamentals and Applications, 5&lt;sup&gt;th&lt;/sup&gt; edition&lt;/b&gt; &lt;i&gt;Yunus A. Çengel, Adnan Menderes University&lt;/i&gt; &lt;i&gt;Afshin J. Ghajar, Oklahoma State University&lt;/i&gt;. ISBN: 0073398187. Copyright year: 2015. McGraw-Hill Global Education Holdings, LLC&lt;/p&gt;"></resource>
+            <resource type="file" name="PDF" document="Modelica code" link=":example1_2.pdf" description="Modelica code of this example in PDF format for quick inspection."></resource>
+            <resource type="file" name="Modelica" document="Modelica package" link=":BHT_Chapter1.mo"  description="Modelica package. The code of this example is in the &lt;b&gt;HMT_Chapter1.Example_1_2&lt;/b&gt; class. It can be opened and executed with any Modelica tool."></resource>
+            </resources>          
+        <graphs>
+            <graph name="Example 1.2 - Diagram and results" type="diagram_table" pos_slider="0.9">
+                <g_diagram picture=":diagram_1_2">
+                    <gd_link type="text" id="T_in"  variable="T_in" units="K"></gd_link>
+                    <gd_link type="text" id="T_out"  variable="T_out" units="K"></gd_link>
+                    <gd_link type="text" id="Q_loss"  variable="Q_loss" units="W"></gd_link>
+                    <gd_link type="text" id="v"  variable="v" units="m/s"></gd_link>
+                </g_diagram>
+                <g_table width_name="50" width_desc="150" width_value="100" width_units="50">
+                    <gt_link name="m_dot" description="Mass flow rate" variable="m_dot" units="kg/s"></gt_link>
+                    <gt_link name="Q_loss" description="Heat losses" variable="Q_loss" units="W" ></gt_link>
+                </g_table>
+            </graph>
+        </graphs>   
+    </experiment>    
+    
+        <experiment name="Example 1.3 - Heat Loss from Heating Ducts in a Basement" fmufile=":fmu_example_1_3" fmuname="HMT_0Chapter1_Example_01_03" description = "1.3 - Heat Loss from Heating Ducts in a Basement" group="The first law of thermodynamics">
+        <parameters columns="name,value,description" sizes="70,80,150">
+        </parameters>           
+        <diagram  description="A 5-m-long section (&lt;b&gt;len&lt;/b&gt;) of an air heating system of a house passes through an unheated space in the basement. The cross section of the rectangular duct of the heating system is 20 cm (&lt;b&gt;L1&lt;/b&gt;) x 25 cm (&lt;b&gt;L2&lt;/b&gt;). Hot air enters the duct at 100 kPa (&lt;b&gt;p&lt;/b&gt;) and 60°C (&lt;b&gt;T_in&lt;/b&gt;) at an average velocity of 5 m/s (&lt;b&gt;v&lt;/b&gt;). The temperature of the air in the duct drops to 54°C (&lt;b&gt;T_out&lt;/b&gt;) as a result of heat loss to the cool space in the base- ment. Determine the rate of heat loss (&lt;b&gt;Q&lt;/b&gt;) from the air in the duct to the basement under steady conditions. Also, determine the cost of this heat loss per hour (&lt;b&gt;cost&lt;/b&gt;) if the house is heated by a natural gas furnace that has an efficiency of 80 percent (&lt;b&gt;e&lt;/b&gt;), and the cost of the natural gas in that area is $1.60/therm (&lt;b&gt;cost_gas&lt;/b&gt;) (1 therm = 100,000 Btu = 105,500 kJ) (&lt;b&gt;therm&lt;/b&gt;).">
+        </diagram>
+        <resources width_name="110" width_document ="120"  pos_hslider = "0.55">
+            <resource type="url" name="Book" document="Heat and Mass Transfer book" link="http://highered.mheducation.com/sites/0073398187/information_center_view0/index.html" description="This example is taken from the following book, Chapter 1, Example 1.3. &lt;p&gt;&lt;b&gt;Heat and Mass Transfer: Fundamentals and Applications, 5&lt;sup&gt;th&lt;/sup&gt; edition&lt;/b&gt; &lt;i&gt;Yunus A. Çengel, Adnan Menderes University&lt;/i&gt; &lt;i&gt;Afshin J. Ghajar, Oklahoma State University&lt;/i&gt;. ISBN: 0073398187. Copyright year: 2015. McGraw-Hill Global Education Holdings, LLC&lt;/p&gt;"></resource>
+            <resource type="file" name="PDF" document="Modelica code" link=":example1_3.pdf" description="Modelica code of this example in PDF format for quick inspection."></resource>
+            <resource type="file" name="Modelica" document="Modelica package" link=":BHT_Chapter1.mo"  description="Modelica package. The code of this example is in the &lt;b&gt;HMT_Chapter1.Example_1_3&lt;/b&gt; class. It can be opened and executed with any Modelica tool."></resource>
+            </resources>          
+        <graphs>
+            <graph name="Example 1.3 - Diagram and results" type="diagram_table" pos_slider="0.9">
+                <g_diagram picture=":diagram_1_3">
+                    <gd_link type="text" id="T_in"  variable="T_in" units="ºC"></gd_link>
+                    <gd_link type="text" id="p"  variable="p" units="Pa"></gd_link>
+                    <gd_link type="text" id="v"  variable="v" units="m/s"></gd_link>
+                    <gd_link type="text" id="len"  variable="len" units="m"></gd_link>
+                    <gd_link type="text" id="L1"  variable="L1" units="m"></gd_link>
+                    <gd_link type="text" id="L2"  variable="L2" units="m"></gd_link>
+                    <gd_link type="text" id="T_out"  variable="T_out" units="ºC"></gd_link>
+                    <gd_link type="text" id="Q"  variable="Q" units="W"></gd_link>
+                </g_diagram>
+                <g_table width_name="50" width_desc="150" width_value="100" width_units="50">
+                    <gt_link name="A" description="Area" variable="A" units="m^2"></gt_link>
+                    <gt_link name="rho" description="Density" variable="rho" units="kg/m^3"></gt_link>
+                    <gt_link name="m_dot" description="Mass flow rate" variable="m_dot" units="kg/s"></gt_link>
+                    <gt_link name="dT" description="Temperature difference" variable="dT" units="K" ></gt_link>
+                    <gt_link name="Q" description="Heat losses" variable="Q" units="W" ></gt_link>
+                    <gt_link name="cost" description="Cost" variable="cost" units="$/h" ></gt_link>
+                </g_table>
+            </graph>
+        </graphs>   
+    </experiment>    
+    
+        <experiment name="Example 1.4 - Electric Heating of a House at High Elevation" fmufile=":fmu_example_1_4" fmuname="HMT_0Chapter1_Example_01_04" description = "1.4 - Electric Heating of a House at High Elevation" group="The first law of thermodynamics">
+        <parameters columns="name,value,description" sizes="70,80,150">
+        </parameters>           
+        <diagram  description="Consider a house that has a floor space of 200 m^2 (&lt;b&gt;A&lt;/b&gt;) and an average height of 3 m (&lt;b&gt;L&lt;/b&gt;) at 1500 m elevation where the standard atmospheric pressure is 86.4 kPa (&lt;b&gt;P_atm&lt;/b&gt;). Initially the house is at a uniform temperature of 10 °C (&lt;b&gt;T1&lt;/b&gt;). Now the electric heater is turned on, and the heater runs until the air temperature in the house rises to an average value of 20°C (&lt;b&gt;T2&lt;/b&gt;). Determine the amount of energy transferred to the air assuming: 
+                                    &lt;ol&gt;
+                                    &lt;li&gt;The house is air-tight and thus no air escapes during the heating process (&lt;b&gt;E_cte_v&lt;/b&gt;).&lt;/li&gt; 
+                                    &lt;li&gt;Some air escapes through the cracks as the heated air in the house expands at constant pressure (&lt;b&gt;E_cte_p&lt;/b&gt;).&lt;/li&gt; 
+                                    &lt;li&gt;Also determine the cost of this heat for each case (&lt;b&gt;cost_v, cost_p&lt;/b&gt;) if the cost of electricity in that area is $0.075/kWh (&lt;b&gt;cost_e&lt;/b&gt;).&lt;/li&gt; 
+                                    &lt;/ol&gt;">
+        </diagram>
+        <resources width_name="110" width_document ="120"  pos_hslider = "0.55">
+           <resource type="url" name="Book" document="Heat and Mass Transfer book" link="http://highered.mheducation.com/sites/0073398187/information_center_view0/index.html" description="This example is taken from the following book, Chapter 1, Example 1.4. &lt;p&gt;&lt;b&gt;Heat and Mass Transfer: Fundamentals and Applications, 5&lt;sup&gt;th&lt;/sup&gt; edition&lt;/b&gt; &lt;i&gt;Yunus A. Çengel, Adnan Menderes University&lt;/i&gt; &lt;i&gt;Afshin J. Ghajar, Oklahoma State University&lt;/i&gt;. ISBN: 0073398187. Copyright year: 2015. McGraw-Hill Global Education Holdings, LLC&lt;/p&gt;"></resource>
+            <resource type="file" name="PDF" document="Modelica code" link=":example1_4.pdf" description="Modelica code of this example in PDF format for quick inspection."></resource>
+            <resource type="file" name="Modelica" document="Modelica package" link=":BHT_Chapter1.mo"  description="Modelica package. The code of this example is in the &lt;b&gt;HMT_Chapter1.Example_1_4&lt;/b&gt; class. It can be opened and executed with any Modelica tool."></resource>
+            </resources>          
+        <graphs>
+            <graph name="Example 1.4 - Diagram and results" type="diagram_table" horizontal="true" pos_slider="0.4">
+                <g_diagram picture=":diagram_1_4">
+                    <gd_link type="text" id="T1"  variable="T1" units="ºC"></gd_link>
+                    <gd_link type="text" id="T2"  variable="T2" units="ºC"></gd_link>
+                    <gd_link type="text" id="P_atm"  variable="P_atm" units="Pa"></gd_link>
+                    <gd_link type="text" id="L"  variable="L" units="m"></gd_link>
+                    <gd_link type="text" id="A"  variable="A" units="m^2"></gd_link>
+                </g_diagram>
+                <g_table width_name="50" width_desc="150" width_value="100" width_units="50">
+                    <gt_link name="cv" description="Spec. heat cap. cte. volume" variable="cv" units="J/(kg K)"></gt_link>
+                    <gt_link name="V" description="Volume" variable="V" units="m^3"></gt_link>
+                    <gt_link name="dT" description="Temperature difference" variable="dT" units="ºC"></gt_link>
+                    <gt_link name="m" description="Mass" variable="m" units="kg"></gt_link>
+                    <gt_link name="E_cte_v" description="Energy" variable="E_cte_v" units="J"></gt_link>
+                    <gt_link name="E_cte_p" description="Energy" variable="E_cte_p" units="J"></gt_link>
+                    <gt_link name="cost_v" description="Cost" variable="cost_v" units="$"></gt_link>
+                    <gt_link name="cost_p" description="Cost" variable="cost_p" units="$"></gt_link>
+                </g_table>
+            </graph>
+        </graphs>   
+    </experiment>    
+    
+    <experiment name="Example 1.5 - The Cost of Heat Loss through a Roof" fmufile=":fmu_example_1_5" fmuname="HMT_0Chapter1_Example_01_05" description = "1.5 - The Cost of Heat Loss through a Roof" group="Conduction">
+        <parameters columns="name,value,description" sizes="70,80,150">
+        </parameters>           
+        <diagram  description="The roof of an electrically heated home is 6 m long (&lt;b&gt;L1&lt;/b&gt;) , 8 m wide (&lt;b&gt;L2&lt;/b&gt;) , and 0.25 m thick (&lt;b&gt;tck&lt;/b&gt;) , and is made of a flat layer of concrete whose thermal conductivity is k = 0.8 W/(m K) (&lt;b&gt;k&lt;/b&gt;) . The temperatures of the inner and the outer surfaces of the roof one night are measured to be 15°C (&lt;b&gt;T_in&lt;/b&gt;)  and 4°C (&lt;b&gt;T_out&lt;/b&gt;) , respectively, for a period of 10 hours (&lt;b&gt;dt&lt;/b&gt;) . Determine: 
+                  &lt;ol&gt;
+                 &lt;li&gt;The rate of heat loss through the roof that night (&lt;b&gt;Q_dot&lt;/b&gt;).&lt;/li&gt; 
+                 &lt;li&gt;The cost of that heat loss (&lt;b&gt;cost&lt;/b&gt;)  to the home owner if the cost of electricity is $0.08/kWh (&lt;b&gt;cost_e&lt;/b&gt;) .&lt;/li&gt;
+                  &lt;/ol&gt;">
+        </diagram>
+        <resources width_name="110" width_document ="120"  pos_hslider = "0.55">
+            <resource type="url" name="Book" document="Heat and Mass Transfer book" link="http://highered.mheducation.com/sites/0073398187/information_center_view0/index.html" description="This example is taken from the following book, Chapter 1, Example 1.5. &lt;p&gt;&lt;b&gt;Heat and Mass Transfer: Fundamentals and Applications, 5&lt;sup&gt;th&lt;/sup&gt; edition&lt;/b&gt; &lt;i&gt;Yunus A. Çengel, Adnan Menderes University&lt;/i&gt; &lt;i&gt;Afshin J. Ghajar, Oklahoma State University&lt;/i&gt;. ISBN: 0073398187. Copyright year: 2015. McGraw-Hill Global Education Holdings, LLC&lt;/p&gt;"></resource>
+            <resource type="file" name="PDF" document="Modelica code" link=":example1_5.pdf" description="Modelica code of this example in PDF format for quick inspection."></resource>
+            <resource type="file" name="Modelica" document="Modelica package" link=":BHT_Chapter1.mo"  description="Modelica package. The code of this example is in the &lt;b&gt;HMT_Chapter1.Example_1_5&lt;/b&gt; class. It can be opened and executed with any Modelica tool."></resource>
+            </resources>          
+        <graphs>
+            <graph name="Example 1.5 - Diagram and results" type="diagram_table" horizontal="true" pos_slider="0.4">
+                <g_diagram picture=":diagram_1_5">
+                    <gd_link type="text" id="T_in"  variable="T_in" units="ºC"></gd_link>
+                    <gd_link type="text" id="T_out"  variable="T_out" units="ºC"></gd_link>
+                    <gd_link type="text" id="L1"  variable="L1" units="m"></gd_link>
+                    <gd_link type="text" id="L2"  variable="L2" units="m"></gd_link>
+                    <gd_link type="text" id="tck"  variable="tck" units="m"></gd_link>
+                </g_diagram>
+                <g_table width_name="50" width_desc="150" width_value="100" width_units="50">
+                    <gt_link name="A" description="Area" variable="A" units="m^2"></gt_link>
+                    <gt_link name="dT" description="Temperature difference" variable="dT" units="ºC"></gt_link>
+                    <gt_link name="Q_dot" description="Heat flow rate" variable="Q_dot" units="W" ></gt_link>
+                    <gt_link name="Q" description="Heat losses" variable="Q" units="Wh" ></gt_link>
+                    <gt_link name="cost" description="Cost" variable="cost" units="$"></gt_link>
+                </g_table>
+            </graph>
+        </graphs>   
+    </experiment>
+    
+    <experiment name="Example 1.6 -Measuring the Thermal Conductivity of a Material" fmufile=":fmu_example_1_6" fmuname="HMT_0Chapter1_Example_01_06" description = "1.6 - Measuring the Thermal Conductivity of a Material" group="Conduction">
+        <parameters columns="name,value,description" sizes="70,80,150">
+        </parameters>           
+        <diagram  description="A common way of measuring the thermal conductivity of a material is to sandwich an electric thermofoil heater between two identical samples of the material. The thickness of the resistance heater, including its cover, which is made of thin silicon rubber, is usually less than 0.5 mm. A circulating fluid such as tap water keeps the exposed ends of the samples at constant temperature. The lateral surfaces of the samples are well insulated to ensure that heat transfer through the samples is one-dimensional. Two thermocouples are embedded into each sample some distance L apart, and a differential thermometer reads the temperature drop &lt;b&gt;dT&lt;/b&gt; across this distance along each sample. When steady operating conditions are reached, the total rate of heat transfer through both samples becomes equal to the electric power drawn by the heater. In a certain experiment, cylindrical samples of diameter 5 cm (&lt;b&gt;D&lt;/b&gt;) and length 10 cm  are used. The two thermocouples in each sample are placed 3 cm apart (&lt;b&gt;L&lt;/b&gt;). After initial transients, the electric heater is observed to draw 0.4 A (&lt;b&gt;I&lt;/b&gt;) at 110 V (&lt;b&gt;V&lt;/b&gt;), and both differential thermometers read a temperature difference of 15°C (&lt;b&gt;dT&lt;/b&gt;). Determine the thermal conductivity of the sample (&lt;b&gt;k&lt;/b&gt;).">
+        </diagram>
+        <resources width_name="110" width_document ="120"  pos_hslider = "0.55">
+            <resource type="url" name="Book" document="Heat and Mass Transfer book" link="http://highered.mheducation.com/sites/0073398187/information_center_view0/index.html" description="This example is taken from the following book, Chapter 1, Example 1.6. &lt;p&gt;&lt;b&gt;Heat and Mass Transfer: Fundamentals and Applications, 5&lt;sup&gt;th&lt;/sup&gt; edition&lt;/b&gt; &lt;i&gt;Yunus A. Çengel, Adnan Menderes University&lt;/i&gt; &lt;i&gt;Afshin J. Ghajar, Oklahoma State University&lt;/i&gt;. ISBN: 0073398187. Copyright year: 2015. McGraw-Hill Global Education Holdings, LLC&lt;/p&gt;"></resource>
+            <resource type="file" name="PDF" document="Modelica code" link=":example1_6.pdf" description="Modelica code of this example in PDF format for quick inspection."></resource>
+            <resource type="file" name="Modelica" document="Modelica package" link=":BHT_Chapter1.mo"  description="Modelica package. The code of this example is in the &lt;b&gt;HMT_Chapter1.Example_1_6&lt;/b&gt; class. It can be opened and executed with any Modelica tool."></resource>
+            </resources>          
+        <graphs>
+            <graph name="Example 1.6 - Diagram and results" type="diagram_table" horizontal="true" pos_slider="0.4">
+                <g_diagram picture=":diagram_1_6">
+                    <gd_link type="text" id="L1"  variable="L" units="m"></gd_link>
+                    <gd_link type="text" id="L2"  variable="L" units="m"></gd_link>
+                    <gd_link type="text" id="dT1"  variable="dT" units="ºC"></gd_link>
+                    <gd_link type="text" id="dT2"  variable="dT" units="ºC"></gd_link>
+                </g_diagram>
+                <g_table width_name="50" width_desc="150" width_value="100" width_units="50">
+                    <gt_link name="A" description="Area" variable="A" units="m^2"></gt_link>
+                    <gt_link name="We" description="Power" variable="We" units="W" ></gt_link>                    
+                    <gt_link name="Q" description="Heat flow rate" variable="Q" units="W" ></gt_link>
+                    <gt_link name="k" description="Thermal conductivity" variable="k" units="W/(m K)"></gt_link>
+                </g_table>
+            </graph>
+        </graphs>   
+    </experiment>    
+    
+    <experiment name="Example 1.7 - Conversion between SI and English Units" fmufile=":fmu_example_1_7" fmuname="HMT_0Chapter1_Example_01_07" description = "1.7 - Conversion between SI and English Units" group="Conduction">
+        <parameters columns="name,value,description" sizes="70,80,150">
+        </parameters>           
+        <diagram  description="An engineer who is working on the heat transfer analysis of a brick building in English units needs the thermal conductivity of brick (&lt;b&gt;k_IMP&lt;/b&gt;). But the only value he can find from his handbooks is 0.72 W/m·°C (&lt;b&gt;k_SI&lt;/b&gt;), which is in SI units. To make matters worse, the engineer does not have a direct conversion factor between the two unit systems for thermal conductivity. Can you help him out? ">
+        </diagram>
+        <resources width_name="110" width_document ="120"  pos_hslider = "0.55">
+            <resource type="url" name="Book" document="Heat and Mass Transfer book" link="http://highered.mheducation.com/sites/0073398187/information_center_view0/index.html" description="This example is taken from the following book, Chapter 1, Example 1.7. &lt;p&gt;&lt;b&gt;Heat and Mass Transfer: Fundamentals and Applications, 5&lt;sup&gt;th&lt;/sup&gt; edition&lt;/b&gt; &lt;i&gt;Yunus A. Çengel, Adnan Menderes University&lt;/i&gt; &lt;i&gt;Afshin J. Ghajar, Oklahoma State University&lt;/i&gt;. ISBN: 0073398187. Copyright year: 2015. McGraw-Hill Global Education Holdings, LLC&lt;/p&gt;"></resource>
+            <resource type="file" name="PDF" document="Modelica code" link=":example1_7.pdf" description="Modelica code of this example in PDF format for quick inspection."></resource>
+            <resource type="file" name="Modelica" document="Modelica package" link=":BHT_Chapter1.mo"  description="Modelica package. The code of this example is in the &lt;b&gt;HMT_Chapter1.Example_1_7&lt;/b&gt; class. It can be opened and executed with any Modelica tool."></resource>
+            </resources>          
+        <graphs>
+            <graph name="Example 1.7 - Diagram and results" type="diagram_table" horizontal="true" pos_slider="0.37">
+                <g_diagram picture=":diagram_1_7">
+                    <gd_link type="text" id="k_SI"  variable="k_SI" units="W/(m ºC)"></gd_link>
+                    <gd_link type="text" id="k_IMP"  variable="k_IMP" units="Btu/(h ft ºF)"></gd_link>
+                </g_diagram>
+                <g_table width_name="50" width_desc="150" width_value="100" width_units="50">
+                    <gt_link name="k_SI" description="Thermal conductivity" variable="k_SI" units="W/(m ºC)"></gt_link>
+                    <gt_link name="k_IMP" description="Thermal conductivity" variable="k_IMP" units="Btu/(h ft ºF)"></gt_link>
+                </g_table>
+            </graph>
+        </graphs>   
+    </experiment>
+    
+    <experiment name="Example 1.8 - Measuring Convection Heat Transfer Coefficient" fmufile=":fmu_example_1_8" fmuname="HMT_0Chapter1_Example_01_08" description = "1.8 - Measuring Convection Heat Transfer Coefficient" group="Convection">
+        <parameters columns="name,value,description" sizes="70,80,150">
+        </parameters>           
+        <diagram  description="A 2-m-long (&lt;b&gt;l&lt;/b&gt;), 0.3-cm-diameter (&lt;b&gt;D&lt;/b&gt;) electrical wire extends across a room at 15°C (&lt;b&gt;T_surr&lt;/b&gt;). Heat is generated in the wire as a result of resistance heating, and the surface temperature of the wire is measured to be 152°C (&lt;b&gt;T_s&lt;/b&gt;) in steady operation. Also, the voltage drop and electric current through the wire are measured to be 60 V (&lt;b&gt;V&lt;/b&gt;) and 1.5 A (&lt;b&gt;I&lt;/b&gt;), respectively. Disregarding any heat transfer by radiation, determine the convection heat transfer coefficient (&lt;b&gt;h&lt;/b&gt;) for heat transfer between the outer surface of the wire and the air in the room.">
+        </diagram>
+        <resources width_name="110" width_document ="120"  pos_hslider = "0.55">
+            <resource type="url" name="Book" document="Heat and Mass Transfer book" link="http://highered.mheducation.com/sites/0073398187/information_center_view0/index.html" description="This example is taken from the following book, Chapter 1, Example 1.8. &lt;p&gt;&lt;b&gt;Heat and Mass Transfer: Fundamentals and Applications, 5&lt;sup&gt;th&lt;/sup&gt; edition&lt;/b&gt; &lt;i&gt;Yunus A. Çengel, Adnan Menderes University&lt;/i&gt; &lt;i&gt;Afshin J. Ghajar, Oklahoma State University&lt;/i&gt;. ISBN: 0073398187. Copyright year: 2015. McGraw-Hill Global Education Holdings, LLC&lt;/p&gt;"></resource>
+            <resource type="file" name="PDF" document="Modelica code" link=":example1_8.pdf" description="Modelica code of this example in PDF format for quick inspection."></resource>
+            <resource type="file" name="Modelica" document="Modelica package" link=":BHT_Chapter1.mo"  description="Modelica package. The code of this example is in the &lt;b&gt;HMT_Chapter1.Example_1_8&lt;/b&gt; class. It can be opened and executed with any Modelica tool."></resource>
+            </resources>          
+        <graphs>
+            <graph name="Example 1.8 - Diagram and results" type="diagram_table" pos_slider="0.4">
+                <g_diagram picture=":diagram_1_8">
+                    <gd_link type="text" id="T_s"  variable="T_s" units="ºC"></gd_link>
+                    <gd_link type="text" id="T_surr"  variable="T_surr" units="ºC"></gd_link>
+                    <gd_link type="text" id="I"  variable="I" units="A"></gd_link>
+                    <gd_link type="text" id="V"  variable="V" units="V"></gd_link>
+                </g_diagram>
+                <g_table width_name="50" width_desc="150" width_value="100" width_units="50">
+                    <gt_link name="A_s" description="Area" variable="A_s" units="m^2"></gt_link>
+                    <gt_link name="Q_conv" description="Heat transfer" variable="Q_conv" units="W" ></gt_link>
+                    <gt_link name="h" description="Convective coefficient of heat transfer" variable="h" units="W/(m^2 K)" ></gt_link>
+                </g_table>
+            </graph>
+        </graphs>   
+    </experiment>    
+    
+    <experiment name="Example 1.9 -  Radiation Effect on Thermal Comfort" fmufile=":fmu_example_1_9" fmuname="HMT_0Chapter1_Example_01_09" description = "1.9 - Radiation Effect on Thermal Comfort" group="Radiation">
+        <parameters columns="name,value,description" sizes="100,40,120">
+        </parameters>           
+        <diagram  description="It is a common experience to feel “chilly” in winter and “warm” in summer in our homes even when the thermostat setting is kept the same. This is due to the so called “radiation effect” resulting from radiation heat exchange between our bodies and the surrounding surfaces of the walls and the ceiling. Consider a person standing in a room maintained at 22°C at all times (&lt;b&gt;T_surr&lt;/b&gt;). The inner surfaces of the walls, floors, and the ceiling of the house are observed to be at an average temperature of 10°C (&lt;b&gt;T_wall_winter&lt;/b&gt;) in winter and 25°C (&lt;b&gt;T_wall_summer&lt;/b&gt;) in summer . Determine the rate of radiation heat transfer between this person and the surrounding surfaces (&lt;b&gt;Q_rad&lt;/b&gt;) if the exposed surface area and the average outer surface temperature of the person are 1.4 m^2 (&lt;b&gt;A_s&lt;/b&gt;) and 30°C (&lt;b&gt;T_s&lt;/b&gt;), respectively.">
+        </diagram>
+        <resources width_name="110" width_document ="120"  pos_hslider = "0.55">
+            <resource type="url" name="Book" document="Heat and Mass Transfer book" link="http://highered.mheducation.com/sites/0073398187/information_center_view0/index.html" description="This example is taken from the following book, Chapter 1, Example 1.9. &lt;p&gt;&lt;b&gt;Heat and Mass Transfer: Fundamentals and Applications, 5&lt;sup&gt;th&lt;/sup&gt; edition&lt;/b&gt; &lt;i&gt;Yunus A. Çengel, Adnan Menderes University&lt;/i&gt; &lt;i&gt;Afshin J. Ghajar, Oklahoma State University&lt;/i&gt;. ISBN: 0073398187. Copyright year: 2015. McGraw-Hill Global Education Holdings, LLC&lt;/p&gt;"></resource>
+            <resource type="file" name="PDF" document="Modelica code" link=":example1_9.pdf" description="Modelica code of this example in PDF format for quick inspection."></resource>
+            <resource type="file" name="Modelica" document="Modelica package" link=":BHT_Chapter1.mo"  description="Modelica package. The code of this example is in the &lt;b&gt;HMT_Chapter1.Example_1_9&lt;/b&gt; class. It can be opened and executed with any Modelica tool."></resource>
+            </resources>          
+        <graphs>
+            <graph name="Example 1.9 - Diagram and results" type="diagram_table" pos_slider="0.4" horizontal="true">
+                <g_diagram picture=":diagram_1_9">
+                    <gd_link type="text" id="A_s"  variable="A_s" units="m^2"></gd_link>
+                    <gd_link type="text" id="T_s"  variable="T_s" units="ºC"></gd_link>
+                    <gd_link type="text" id="T_surr"  variable="T_surr" units="ºC"></gd_link>
+                    <gd_link type="text" id="T_wall_summer"  variable="T_wall_summer" units="ºC"></gd_link>
+                    <gd_link type="text" id="T_wall_winter"  variable="T_wall_winter" units="ºC"></gd_link>
+                    <gd_link type="text" id="Q_rad_summer"  variable="Q_rad_summer" units="W"></gd_link>
+                    <gd_link type="text" id="Q_rad_winter"  variable="Q_rad_winter" units="W"></gd_link>                    
+                </g_diagram>
+                <g_table width_name="100" width_desc="100" width_value="100" width_units="20">
+                    <gt_link name="Q_rad_summer" description="Heat transfer" variable="Q_rad_summer" units="W" ></gt_link>
+                    <gt_link name="Q_rad_winter" description="Heat transfer" variable="Q_rad_winter" units="W" ></gt_link>
+                </g_table>
+            </graph>
+        </graphs>   
+    </experiment>        
+    
+    <experiment name="Example 1.10 -  Heat Loss from a Person" fmufile=":fmu_example_1_10" fmuname="HMT_0Chapter1_Example_01_010" description = "1.10 -  Heat Loss from a Person" group="Simultaneous heat transfer mechanisms">
+        <parameters columns="name,value,description" sizes="100,40,120">
+        </parameters>           
+        <diagram  description="Consider a person standing in a breezy room at 20°C (&lt;b&gt;T_surr&lt;/b&gt;). Determine the total rate of heat transfer from this person (&lt;b&gt;Q_t&lt;/b&gt;) if the exposed surface area and the average outer surface temperature of the person are 1.6 m^2 (&lt;b&gt;A_s&lt;/b&gt;) and 29°C (&lt;b&gt;T_s&lt;/b&gt;), respectively, and the convection heat transfer coefficient is 6 W/(m^2·K) (&lt;b&gt;h&lt;/b&gt;).">
+        </diagram>
+        <resources width_name="110" width_document ="120"  pos_hslider = "0.55">
+            <resource type="url" name="Book" document="Heat and Mass Transfer book" link="http://highered.mheducation.com/sites/0073398187/information_center_view0/index.html" description="This example is taken from the following book, Chapter 1, Example 1.10. &lt;p&gt;&lt;b&gt;Heat and Mass Transfer: Fundamentals and Applications, 5&lt;sup&gt;th&lt;/sup&gt; edition&lt;/b&gt; &lt;i&gt;Yunus A. Çengel, Adnan Menderes University&lt;/i&gt; &lt;i&gt;Afshin J. Ghajar, Oklahoma State University&lt;/i&gt;. ISBN: 0073398187. Copyright year: 2015. McGraw-Hill Global Education Holdings, LLC&lt;/p&gt;"></resource>
+            <resource type="file" name="PDF" document="Modelica code" link=":example1_10.pdf" description="Modelica code of this example in PDF format for quick inspection."></resource>
+            <resource type="file" name="Modelica" document="Modelica package" link=":BHT_Chapter1.mo"  description="Modelica package. The code of this example is in the &lt;b&gt;HMT_Chapter1.Example_1_10&lt;/b&gt; class. It can be opened and executed with any Modelica tool."></resource>
+            </resources>          
+        <graphs>
+            <graph name="Example 1.10 - Diagram and results" type="diagram_table" pos_slider="0.4" horizontal="true">
+                <g_diagram picture=":diagram_1_10">
+                    <gd_link type="text" id="A_s"  variable="A_s" units="m^2"></gd_link>
+                    <gd_link type="text" id="T_s"  variable="T_s" units="ºC"></gd_link>
+                    <gd_link type="text" id="T_surr"  variable="T_surr" units="ºC"></gd_link>
+                    <gd_link type="text" id="Q_rad"  variable="Q_rad" units="W"></gd_link>
+                    <gd_link type="text" id="Q_conv"  variable="Q_conv" units="W"></gd_link>                    
+                    <gd_link type="text" id="Q_cond"  variable="Q_cond" units="W"></gd_link>
+                </g_diagram>
+                <g_table width_name="100" width_desc="100" width_value="100" width_units="20">
+                    <gt_link name="Q_rad" description="Radiation heat transfer" variable="Q_rad" units="W" ></gt_link>
+                    <gt_link name="Q_conv" description="Convection heat transfer" variable="Q_conv" units="W" ></gt_link>
+                    <gt_link name="Q_cond" description="Conduction heat transfer" variable="Q_cond" units="W" ></gt_link>
+                    <gt_link name="Q_t" description="Total heat transfer" variable="Q_t" units="W" ></gt_link>
+                </g_table>
+            </graph>
+        </graphs>   
+    </experiment>
+    
+    <experiment name="Example 1.11 -   Heat Transfer between Two Isothermal Plates" fmufile=":fmu_example_1_11" fmuname="HMT_0Chapter1_Example_01_011" description = "1.11 -  Heat Transfer between Two Isothermal Plates" group="Simultaneous heat transfer mechanisms">
+        <parameters columns="name,value,description" sizes="100,40,120">
+        </parameters>           
+        <diagram  description="Consider steady heat transfer between two large parallel plates at constant temperatures of &lt;b&gt;T1&lt;/b&gt; = 300 K and &lt;b&gt;T2&lt;/b&gt; = 200 K that are &lt;b&gt;L&lt;/b&gt; = 1 cm apart. Assuming the surfaces to be black (emissivity &lt;b&gt;epsilon&lt;/b&gt; = 1), determine the rate of heat transfer between the plates per unit surface area assuming the gap between the plates is:
+                 &lt;ol&gt;
+                  &lt;li&gt;Filled with atmospheric air (&lt;b&gt;k_air&lt;/b&gt; =0.0219 W/(m·K)) (&lt;b&gt;Q_a&lt;/b&gt;). &lt;/li&gt;
+                  &lt;li&gt;Evacuated (&lt;b&gt;Q_b&lt;/b&gt;).&lt;/li&gt;
+                  &lt;li&gt;Filled with urethane insulation (&lt;b&gt;k_ure&lt;/b&gt; =0.026 W/(m·K)) (&lt;b&gt;Q_c&lt;/b&gt;).&lt;/li&gt;
+                  &lt;li&gt;Filled with superinsulation (&lt;b&gt;k_sup&lt;/b&gt; =0.00002 W/(m·K)) (&lt;b&gt;Q_d&lt;/b&gt;).&lt;/li&gt;
+                 &lt;/ol&gt;
+">
+        </diagram>
+        <resources width_name="110" width_document ="120"  pos_hslider = "0.55">
+            <resource type="url" name="Book" document="Heat and Mass Transfer book" link="http://highered.mheducation.com/sites/0073398187/information_center_view0/index.html" description="This example is taken from the following book, Chapter 1, Example 1.11. &lt;p&gt;&lt;b&gt;Heat and Mass Transfer: Fundamentals and Applications, 5&lt;sup&gt;th&lt;/sup&gt; edition&lt;/b&gt; &lt;i&gt;Yunus A. Çengel, Adnan Menderes University&lt;/i&gt; &lt;i&gt;Afshin J. Ghajar, Oklahoma State University&lt;/i&gt;. ISBN: 0073398187. Copyright year: 2015. McGraw-Hill Global Education Holdings, LLC&lt;/p&gt;"></resource>
+            <resource type="file" name="PDF" document="Modelica code" link=":example1_11.pdf" description="Modelica code of this example in PDF format for quick inspection."></resource>
+            <resource type="file" name="Modelica" document="Modelica package" link=":BHT_Chapter1.mo"  description="Modelica package. The code of this example is in the &lt;b&gt;HMT_Chapter1.Example_1_11&lt;/b&gt; class. It can be opened and executed with any Modelica tool."></resource>
+            </resources>          
+        <graphs>
+            <graph name="Example 1.11 - Diagram and results" type="diagram_table" pos_slider="0.4" horizontal="true">
+                <g_diagram picture=":diagram_1_11">
+                    <gd_link type="text" id="A"  variable="A" units="m^2"></gd_link>
+                    <gd_link type="text" id="T1"  variable="T1" units="K"></gd_link>
+                    <gd_link type="text" id="T2"  variable="T2" units="K"></gd_link>
+                    <gd_link type="text" id="L"  variable="L" units="m"></gd_link>
+                    <gd_link type="text" id="epsilon"  variable="epsilon" units=""></gd_link>
+                    <gd_link type="text" id="Q_a"  variable="Q_a" units="W"></gd_link>
+                    <gd_link type="text" id="Q_b"  variable="Q_b" units="W"></gd_link>
+                    <gd_link type="text" id="Q_c"  variable="Q_c" units="W"></gd_link>
+                    <gd_link type="text" id="Q_d"  variable="Q_d" units="W"></gd_link>
+                </g_diagram>
+                <g_table width_name="60" width_desc="190" width_value="50" width_units="20">
+                    <gt_link name="Q_rad" description="Radiation heat transfer" variable="Q_rad" units="W" ></gt_link>
+                    <gt_link name="Q_cond_a" description="Case a conduction heat transfer" variable="Q_cond_a" units="W" ></gt_link>
+                    <gt_link name="Q_cond_c" description="Case c conduction heat transfer" variable="Q_cond_c" units="W" ></gt_link>
+                    <gt_link name="Q_cond_d" description="Case d conduction heat transfer" variable="Q_cond_d" units="W" ></gt_link>                    
+                    <gt_link name="Q_a" description="Case a total heat transfer" variable="Q_a" units="W" ></gt_link>
+                    <gt_link name="Q_b" description="Case b total heat transfer" variable="Q_b" units="W" ></gt_link>
+                    <gt_link name="Q_c" description="Case c total heat transfer" variable="Q_c" units="W" ></gt_link>
+                    <gt_link name="Q_d" description="Case d total heat transfer" variable="Q_d" units="W" ></gt_link>
+                </g_table>
+            </graph>
+        </graphs>   
+    </experiment>      
+    
+    <experiment name="Example 1.13 - Heating of a Plate by Solar Energy" fmufile=":fmu_example_1_13" fmuname="HMT_0Chapter1_Example_01_013" description = "1.13 -   Heating of a Plate by Solar Energy" group="Simultaneous heat transfer mechanisms">
+        <parameters columns="name,value,description" sizes="100,40,120">
+        </parameters>           
+        <diagram  description="A thin metal plate is insulated on the back and exposed to solar radiation at the front surface. The exposed surface of the plate has an absorptivity of 0.6 (&lt;b&gt;alpha&lt;/b&gt;) for solar radiation. If solar radiation is incident on the plate at a rate of 700 W/m^2 (&lt;b&gt;Irr&lt;/b&gt;) and the surrounding air temperature is 25°C  (&lt;b&gt;T_surr&lt;/b&gt;), determine the surface temperature of the plate  (&lt;b&gt;T_s&lt;/b&gt;) when the heat loss by convection and radiation equals the solar energy absorbed by the plate. Assume the combined convection and radiation heat transfer coefficient to be 50 W/(m^2·K).  (&lt;b&gt;h&lt;/b&gt;)">
+        </diagram>
+        <resources width_name="110" width_document ="120"  pos_hslider = "0.55">
+            <resource type="url" name="Book" document="Heat and Mass Transfer book" link="http://highered.mheducation.com/sites/0073398187/information_center_view0/index.html" description="This example is taken from the following book, Chapter 1, Example 1.13. &lt;p&gt;&lt;b&gt;Heat and Mass Transfer: Fundamentals and Applications, 5&lt;sup&gt;th&lt;/sup&gt; edition&lt;/b&gt; &lt;i&gt;Yunus A. Çengel, Adnan Menderes University&lt;/i&gt; &lt;i&gt;Afshin J. Ghajar, Oklahoma State University&lt;/i&gt;. ISBN: 0073398187. Copyright year: 2015. McGraw-Hill Global Education Holdings, LLC&lt;/p&gt;"></resource>
+            <resource type="file" name="PDF" document="Modelica code" link=":example1_13.pdf" description="Modelica code of this example in PDF format for quick inspection."></resource>
+            <resource type="file" name="Modelica" document="Modelica package" link=":BHT_Chapter1.mo"  description="Modelica package. The code of this example is in the &lt;b&gt;HMT_Chapter1.Example_1_13&lt;/b&gt; class. It can be opened and executed with any Modelica tool."></resource>
+            </resources>          
+        <graphs>
+            <graph name="Example 1.13 - Diagram and results" type="diagram_table" pos_slider="0.4" horizontal="true">
+                <g_diagram picture=":diagram_1_13">
+                    <gd_link type="text" id="Irr"  variable="Irr" units="W/m^2"></gd_link>
+                    <gd_link type="text" id="alpha"  variable="alpha" units=""></gd_link>                    
+                    <gd_link type="text" id="T_surr"  variable="T_surr" units="ºC"></gd_link>
+                    <gd_link type="text" id="T_s"  variable="T_s" units="ºC"></gd_link>
+                </g_diagram>
+                <g_table width_name="60" width_desc="190" width_value="50" width_units="20">
+                    <gt_link name="E_gain" description="Gained energy flow rate" variable="E_gain" units="J/m^2" ></gt_link>
+                    <gt_link name="E_lost" description="Lost energy flow rate" variable="E_lost" units="J/m^2" ></gt_link>
+                    <gt_link name="T_s" description="Plate surface temperature" variable="T_s" units="ºC" ></gt_link>
+                </g_table>
+            </graph>
+        </graphs>   
+    </experiment>       
+    
+    <experiment name="Example 1.14 - Fire Hazard Prevention of Oil Leakage on Hot Engine Surface" fmufile=":fmu_example_1_14" fmuname="HMT_0Chapter1_Example_01_014" description = "1.14 - Fire Hazard Prevention of Oil Leakage on Hot Engine Surface" group="Prevention Through Design">
+        <parameters columns="name,value,description" sizes="100,40,120">
+        </parameters>           
+        <diagram  description="Oil leakage and spillage on hot engine surface can lead to fire hazards. Some engine oils have an autoignition temperature of approximately above 250°C. When oil leakage comes in contact with a hot engine surface that has a higher temperature than its autoignition temperature, the oil can ignite spontaneously. Consider the outer surface of an engine situated in a place where there is a possibility of being in contact with oil leakage. The engine surface has an emissivity of 0.3 (&lt;b&gt;epsilon&lt;/b&gt;), and when it is in operation, its inner surface is subjected to 5 kW/m^2 of heat flux (&lt;b&gt;q_0&lt;/b&gt;). The engine is in an environment where the ambient air and surrounding temperature is 40°C (&lt;b&gt;T_surr&lt;/b&gt;), while the convection heat transfer coefficient is 15 W/(m^2 K) (&lt;b&gt;h&lt;/b&gt;). To prevent a fire hazard in the event of oil leakage being in contact with the engine surface, the temperature of the engine surface (&lt;b&gt;T_0&lt;/b&gt;) should be kept below 200°C. Determine whether oil leakage drops on the engine surface are at a risk of autoignition. If there is a risk of autoignition, discuss a possible prevention measure that can be implemented.">
+        </diagram>
+        <resources width_name="110" width_document ="120"  pos_hslider = "0.55">
+            <resource type="url" name="Book" document="Heat and Mass Transfer book" link="http://highered.mheducation.com/sites/0073398187/information_center_view0/index.html" description="This example is taken from the following book, Chapter 1, Example 1.14. &lt;p&gt;&lt;b&gt;Heat and Mass Transfer: Fundamentals and Applications, 5&lt;sup&gt;th&lt;/sup&gt; edition&lt;/b&gt; &lt;i&gt;Yunus A. Çengel, Adnan Menderes University&lt;/i&gt; &lt;i&gt;Afshin J. Ghajar, Oklahoma State University&lt;/i&gt;. ISBN: 0073398187. Copyright year: 2015. McGraw-Hill Global Education Holdings, LLC&lt;/p&gt;"></resource>
+            <resource type="file" name="PDF" document="Modelica code" link=":example1_14.pdf" description="Modelica code of this example in PDF format for quick inspection."></resource>
+            <resource type="file" name="Modelica" document="Modelica package" link=":BHT_Chapter1.mo"  description="Modelica package. The code of this example is in the &lt;b&gt;HMT_Chapter1.Example_1_14&lt;/b&gt; class. It can be opened and executed with any Modelica tool."></resource>
+            </resources>          
+        <graphs>
+            <graph name="Example 1.14 - Diagram and results" type="diagram_table" pos_slider="0.4" horizontal="true">
+                <g_diagram picture=":diagram_1_14">
+                    <gd_link type="text" id="T_surr"  variable="T_surr" units="ºC"></gd_link>
+                    <gd_link type="text" id="T_0"  variable="T_0" units="ºC"></gd_link>
+                    <gd_link type="text" id="epsilon"  variable="epsilon" units=""></gd_link>
+                    <gd_link type="text" id="h"  variable="h" units="W/(m^2 K)"></gd_link>
+                    <gd_link type="text" id="q_0"  variable="q_0" units="W/m^2"></gd_link>
+                </g_diagram>
+                <g_table width_name="60" width_desc="190" width_value="50" width_units="20">
+                    <gt_link name="T_0" description="Surface temperature" variable="T_0" units="ºC" ></gt_link>                    
+                    <gt_link name="T_0_K" description="Surface temperature" variable="T_0_K" units="K" ></gt_link>
+                    <gt_link name="T_surr_K" description="Surrounding temperature" variable="T_surr_K" units="K" ></gt_link>
+                </g_table>
+            </graph>
+        </graphs>   
+    </experiment>           
+    
+</surf>
