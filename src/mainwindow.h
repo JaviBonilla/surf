@@ -73,6 +73,7 @@ private:
     QList<QChartView *> qcvs;
     QList<QValueAxis *> axis;
     QList<QLineSeries*> qlss;
+    QList<QAreaSeries*> qlas;
     simulation         *sim;
     QThread            *thrSim;
     QList<QLayout *>   llayouts;
@@ -97,6 +98,7 @@ private:
 
     // Plotting
     QList<QList<QPointF>> qlss_points;
+    QList<QList<QPointF>> qlas_points;
     QList<bool>           qlss_ignored;
     QList<double>         qlss_ignored_val;
     int                   antPos;
@@ -114,6 +116,7 @@ private:
     void sendToGUI(QString msg, QString styleSheet = "");
     void updatePlots(int count = -1);
     void addSeries(QChartView *qcv, QString name, int varIndex, QList<double> xvals, QList<double> yvals, int count, unsigned lineStyle, QString lineColor, Qt::AlignmentFlag af, bool ignored, double ignored_val);
+    void addArea(QChartView *qcv, QString name, int varIndex, QList<double> xvals, QList<double> yvals, int count, unsigned lineStyle, QString lineColor, unsigned brushStyle, QString brushColor, Qt::AlignmentFlag af, bool ignored, double ignored_val);
     void adjustsSim();
     void adjustSeries(int position);
     void configureConMenus();

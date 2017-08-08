@@ -531,13 +531,11 @@ void MainWindow::experimentMenuActionTriggered(QAction *action)
     // ------------------- //
     // Set current project //
     // ------------------- //
-
     indexPrj = action->data().toInt();
 
     // ---------------- //
     // Get project data //
     // ---------------- //
-
     experiment  exp = xmlData.getExps()[indexPrj];
     opt_project prj = xmlData.getPrjs()[indexPrj];
 
@@ -562,9 +560,11 @@ void MainWindow::experimentMenuActionTriggered(QAction *action)
     qDeleteAll(ltabs);
     qDeleteAll(axis);
     qDeleteAll(qlss);
+    qDeleteAll(qlas);
     qDeleteAll(qcvs);
     qDeleteAll(tabs);
     axis.clear();
+    qlas.clear();
     qlss.clear();
     qcvs.clear();
     tabs.clear();
@@ -574,6 +574,7 @@ void MainWindow::experimentMenuActionTriggered(QAction *action)
     lwidget.clear();
     lspliter.clear();
     qlss_points.clear();
+    qlas_points.clear();
     qlss_ignored.clear();
     qlss_ignored_val.clear();
     lar.clear();
@@ -1400,6 +1401,7 @@ MainWindow::~MainWindow()
     qDeleteAll(ltabs);
     qDeleteAll(tabs);
     qDeleteAll(qlss);
+    qDeleteAll(qlas);
     qDeleteAll(licon);
     qDeleteAll(lemail);
     qDeleteAll(lname);
@@ -1656,7 +1658,9 @@ void MainWindow::updatePlots(int count)
     // Delete previous series & axes
     qDeleteAll(axis);
     qDeleteAll(qlss);
+    qDeleteAll(qlas);
     qlss.clear();
+    qlas.clear();
     axis.clear();
 
     // Set previous position
@@ -1674,12 +1678,15 @@ void MainWindow::updatePlots(int count)
         for(int j=0;j<qcvs[i]->chart()->axes(Qt::Horizontal).count();j++)
             qcvs[i]->chart()->axes(Qt::Horizontal)[j]->setTitleText(graphs[i].getXaxis());
 
+        double sum = 0;
+
         // For each var in each graph
         for(int j=0;j<vars.count();j++)
         {
             // Get variable index
             int indexy = findVar(vars[j].getName(),mvars);
             int indexx = !vars[j].getX().isEmpty() ? findVar(vars[j].getX(),mvars) : -1;
+
 
             if (indexy>=0)
             {
@@ -1692,9 +1699,21 @@ void MainWindow::updatePlots(int count)
                 // Plot the graph in the time interval
                 if (indexy<values_output.count())
                 {
+                    // Vertical alignment flag
                     Qt::AlignmentFlag af = vars[j].getYalign().toLower() == algRight.toLower() ? Qt::AlignRight : Qt::AlignLeft;
-                    addSeries(qcvs[i],name,indexy,values_x,values_output[indexy],count,vars[j].getLineStyle(),vars[j].getLineColor(),
-                              af,vars[j].getIgnored(),vars[j].getIgnored_val().toDouble());
+
+                    if (graphs[i].getType() == PRO_AREA)
+                    {
+                        // Plot area
+                        qDebug() << values_output[indexy].last();
+                        sum = sum + values_output[indexy].last();
+                        addArea(qcvs[i],name,indexy,values_x,values_output[indexy],count,vars[j].getLineStyle(),vars[j].getLineColor(),
+                                vars[j].getBrushStyle(),vars[j].getBrushColor(),af,vars[j].getIgnored(),vars[j].getIgnored_val().toDouble());
+                    }
+                    else
+                        // Plot series
+                        addSeries(qcvs[i],name,indexy,values_x,values_output[indexy],count,vars[j].getLineStyle(),vars[j].getLineColor(),
+                                  af,vars[j].getIgnored(),vars[j].getIgnored_val().toDouble());
 
                     // Add y axis label, if there is one
                     if (!vars[j].getYaxis().isEmpty())
@@ -1708,6 +1727,7 @@ void MainWindow::updatePlots(int count)
                 }
             }
         }
+        qDebug() << "Suma: " << sum;
 
         // Add missing y axis labels from graph
         for(int j=0;j<qcvs[i]->chart()->axes(Qt::Vertical).count();j++)
@@ -1726,6 +1746,81 @@ void MainWindow::updatePlots(int count)
         // Show legend
         qcvs[i]->chart()->legend()->show();
     }
+}
+
+void MainWindow::addArea(QChartView *qcv, QString name, int varIndex, QList<double> xvals, QList<double> yvals, int count,
+                         unsigned lineStyle, QString lineColor, unsigned brushStyle, QString brushColor,
+                         Qt::AlignmentFlag af, bool ignored, double ignored_val)
+{
+    QAreaSeries *qas = new QAreaSeries(qcv);
+    QLineSeries *qus = new QLineSeries(qas);
+    QLineSeries *qls = new QLineSeries(qas);
+    QList<QPointF> sp;
+    int last = count>=0 ? count : xvals.count();
+
+    Q_UNUSED(ignored);
+    Q_UNUSED(ignored_val);
+
+    // Add to list for deleting when necessary
+    qlas.append(qas);
+
+    // Min & max values
+    double minX = std::numeric_limits<double>::max();
+    double maxX = std::numeric_limits<double>::lowest();
+    double minY = std::numeric_limits<double>::max();
+    double maxY = std::numeric_limits<double>::lowest();
+
+    // Get min and max values for current series
+    for(int i=0;i<last;i++)
+    {
+        long double yvalLower = qlas_points.count()>0 ? qlas_points.last()[i].y() : 0;
+        long double yvalUpper = yvals[i]+yvalLower;
+
+        qls->append(xvals[i],yvalLower);
+        qus->append(xvals[i],yvalUpper);
+        if (xvals[i]  < minX) minX = xvals[i];
+        if (xvals[i]  > maxX) maxX = xvals[i];
+        if (yvalUpper < minY) minY = yvalUpper;
+        if (yvalUpper > maxY) maxY = yvalUpper;
+        sp.append(QPointF(xvals[i],yvalUpper));
+    }
+
+    qlas_points.append(sp);
+
+    // Add series to area
+    qas->setUpperSeries(qus);
+    qas->setLowerSeries(qlas.count()>1 ? qlas[qlas.count()-2]->upperSeries() : qls);
+
+    // Add current series to chart
+    qcv->chart()->addSeries(qas);
+
+    // Use OpenGL
+    qls->setUseOpenGL(false);
+
+    // Set properties in series
+    qas->setName(name);
+    qas->setProperty(MIN_T.toStdString().c_str(),minX);
+    qas->setProperty(MIN_Y.toStdString().c_str(),minY);
+    qas->setProperty(MAX_T.toStdString().c_str(),maxX);
+    qas->setProperty(MAX_Y.toStdString().c_str(),maxY);
+    qas->setProperty(VAR_INDEX.toStdString().c_str(),varIndex);
+    //qas->installEventFilter(this);
+
+    // Area brush style
+    QBrush b = qas->brush();
+    b.setStyle(static_cast<Qt::BrushStyle>(brushStyle));
+    if (!brushColor.isEmpty()) b.setColor(QColor(brushColor));
+    qas->setBrush(b);
+
+    // Area line style
+    QPen p = qas->pen();
+    p.setStyle(static_cast<Qt::PenStyle>(lineStyle));
+    if (!lineColor.isEmpty())  p.setColor(QColor(lineColor));
+    else                       p.setColor(b.color());
+    qas->setPen(p);
+
+    // Set axes range
+    setAxesRange(qcv,af);
 }
 
 void MainWindow::addSeries(QChartView *qcv, QString name, int varIndex, QList<double> xvals, QList<double> yvals, int count,

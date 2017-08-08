@@ -39,6 +39,12 @@ const QString RT_URL  = "url";
 const QString LINK_ASSIGN = "assign";
 const QString LINK_TEXT   = "text";
 
+// Graph types
+const QString PRO_AREA     = "area";
+const QString PRO_BAR      = "bar";
+const QString PRO_SCATTER  = "scatter";
+const QString PRO_PIE      = "pie";
+
 class RenderLinkDelegate : public QStyledItemDelegate
 {
     void paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const;
@@ -191,8 +197,8 @@ class var
 {
 
 public:
-    var(QString n, QString d, unsigned l, QString c, QString y, QString ya, bool i = false, QString iv=0, QString x="")
-    {setName(n); setDescription(d); setLineStyle(l); setLineColor(c); setYalign(y); setYaxis(ya); setIgnored(i); setIgnored_val(iv); setX(x);}
+    var(QString n, QString d, unsigned l, QString c, unsigned b, QString cb, QString y, QString ya, bool i = false, QString iv=0, QString x="")
+    {setName(n); setDescription(d); setLineStyle(l); setLineColor(c); setBrushStyle(b); setBrushColor(cb); setYalign(y); setYaxis(ya); setIgnored(i); setIgnored_val(iv); setX(x);}
     QString getName() const;
     void setName(const QString &value);
     QString getDescription() const;
@@ -211,6 +217,10 @@ public:
     void setIgnored_val(const QString &value);
     QString getX() const;
     void setX(const QString &value);
+    unsigned getBrushStyle() const;
+    void setBrushStyle(const unsigned &value);
+    QString getBrushColor() const;
+    void setBrushColor(const QString &value);
 
 private:
     QString  name;
@@ -222,12 +232,14 @@ private:
     QString  yaxis;
     bool     ignored;
     QString  ignored_val;
+    unsigned brushStyle;
+    QString  brushColor;
 };
 
 class graph
 {
 public:
-    graph(QString n, QString xa, QString ya){setName(n); setXaxis(xa); setYaxis(ya);}
+    graph(QString t, QString n, QString xa, QString ya){setType(t); setName(n); setXaxis(xa); setYaxis(ya);}
     QString getName() const;
     void setName(const QString &value);
     QString getXaxis() const;
@@ -237,8 +249,11 @@ public:
     QList<var> getVars() const;
     void setVars(const QList<var> &value);
     void addVar(const var value);
+    QString getType() const;
+    void setType(const QString &value);
 
 private:
+    QString type;
     QString name;
     QString xaxis;
     QString yaxis;

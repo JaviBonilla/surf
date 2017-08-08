@@ -100,6 +100,8 @@ const QString PRO_DESCRIPTION = "description";
 const QString PRO_VERSION     = "version";
 const QString PRO_LINESTYLE   = "linestyle";
 const QString PRO_LINECOLOR   = "linecolor";
+const QString PRO_BRUSHSTYLE  = "brushstyle";
+const QString PRO_BRUSHCOLOR  = "brushcolor";
 const QString PRO_GROUP       = "group";
 const QString PRO_STEADY      = "steady";
 const QString PRO_EXP_MENU    = "experiment_text_menu";
@@ -148,6 +150,7 @@ const QString PRO_VAR_MIN  = "var_min";
 const QString PRO_VAR_MAX  = "var_max";
 const QString PRO_UNITS    = "units";
 
+// Graph types
 const QString PRO_DIAGRAM_TABLE = "diagram_table";
 
 const QString PRO_TEXT        = "text";
@@ -285,9 +288,9 @@ bool XmlContentHandler::startElement(const QString &namespaceURI, const QString 
 
             if (type == PRO_DIAGRAM_TABLE)
                 exps.last().addDiaTab(diagramTable(getPro(atts,PRO_NAME),getProDouble(atts,PRO_POS_SLIDER),
-                                                   getPro(atts,PRO_HORIZONTAL).toLower() == sTrue.toLower()));
+                                                   getPro(atts,PRO_HORIZONTAL).toLower() == sTrue.toLower()));                
             else
-                exps.last().addGraph(graph(getPro(atts,PRO_NAME),getPro(atts,PRO_XAXIS),getPro(atts,PRO_YAXIS)));
+                exps.last().addGraph(graph(type,getPro(atts,PRO_NAME),getPro(atts,PRO_XAXIS),getPro(atts,PRO_YAXIS)));
         }
     }
     // Tag - graph diagram
@@ -340,10 +343,12 @@ bool XmlContentHandler::startElement(const QString &namespaceURI, const QString 
             bool ignored = !val.isEmpty() ? true : false;
             QString ignored_val = ignored ? val : sEmpty;
             QString x = getPro(atts,PRO_X);
+            val = getPro(atts,PRO_BRUSHSTYLE);
+            unsigned bstyle = val.isEmpty() ? 1 : val.toUInt();
 
             graphs.last().addVar(var(getPro(atts,PRO_NAME),getPro(atts,PRO_DESCRIPTION),lstyle,
-                                     getPro(atts,PRO_LINECOLOR),yalign,getPro(atts,PRO_YAXIS),
-                                     ignored,ignored_val,x));
+                                     getPro(atts,PRO_LINECOLOR),bstyle,getPro(atts,PRO_BRUSHCOLOR),
+                                     yalign,getPro(atts,PRO_YAXIS),ignored,ignored_val,x));
             exps.last().setGraphs(graphs);
         }
     }
@@ -1146,6 +1151,26 @@ void var::setX(const QString &value)
     x = value;
 }
 
+unsigned var::getBrushStyle() const
+{
+    return brushStyle;
+}
+
+void var::setBrushStyle(const unsigned &value)
+{
+    brushStyle = value;
+}
+
+QString var::getBrushColor() const
+{
+    return brushColor;
+}
+
+void var::setBrushColor(const QString &value)
+{
+    brushColor = value;
+}
+
 QString graph::getName() const
 {
     return name;
@@ -1189,6 +1214,16 @@ void graph::setVars(const QList<var> &value)
 void graph::addVar(const var value)
 {
     vars.append(value);
+}
+
+QString graph::getType() const
+{
+    return type;
+}
+
+void graph::setType(const QString &value)
+{
+    type = value;
 }
 
 QString experiment::getName() const

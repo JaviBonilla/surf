@@ -15,18 +15,18 @@ COMMONGUI_SRC = $${PWD}/FMI_common/common_gui
 #-------------------------------------------------------------------------#
 unix{
     QUAZIP_SRC = /usr/include/quazip5/
-    FMIPP_LIB  = $${PWD}/../../../ThirdParty/build/fmipp-build
+    FMIPP_LIB  = $${PWD}/../../ThirdParty/build/fmipp-build
 }
 
 win32-g++{
     DEFINES      += QUAZIP_STATIC
-    QUAZIP_SRC    = $${PWD}/../../../ThirdParty/src/quazip-0.7.3/quazip
-    QUAZIP_LIB    = $${PWD}/../../../ThirdParty/build-win/quazip-build
-    FMIPP_LIB     = $${PWD}/../../../ThirdParty/build-win/fmipp-build
-    SUNDIALS_LIB  = $${PWD}/../../../ThirdParty/build-win/sundials-build
+    QUAZIP_SRC    = $${PWD}/../../ThirdParty/src/quazip-0.7.3/quazip
+    QUAZIP_LIB    = $${PWD}/../../ThirdParty/build-win/quazip-build
+    FMIPP_LIB     = $${PWD}/../../ThirdParty/build-win/fmipp-build
+    SUNDIALS_LIB  = $${PWD}/../../ThirdParty/build-win/sundials-build
 }
 
-FMIPP_SRC  = $${PWD}/../../../ThirdParty/src/fmipp-code
+FMIPP_SRC  = $${PWD}/../../ThirdParty/src/fmipp-code
 #-------------------------------------------------------------------------#
 
 QT          += core gui xml charts datavisualization printsupport svg
