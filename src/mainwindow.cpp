@@ -1678,8 +1678,6 @@ void MainWindow::updatePlots(int count)
         for(int j=0;j<qcvs[i]->chart()->axes(Qt::Horizontal).count();j++)
             qcvs[i]->chart()->axes(Qt::Horizontal)[j]->setTitleText(graphs[i].getXaxis());
 
-        double sum = 0;
-
         // For each var in each graph
         for(int j=0;j<vars.count();j++)
         {
@@ -1705,8 +1703,6 @@ void MainWindow::updatePlots(int count)
                     if (graphs[i].getType() == PRO_AREA)
                     {
                         // Plot area
-                        qDebug() << values_output[indexy].last();
-                        sum = sum + values_output[indexy].last();
                         addArea(qcvs[i],name,indexy,values_x,values_output[indexy],count,vars[j].getLineStyle(),vars[j].getLineColor(),
                                 vars[j].getBrushStyle(),vars[j].getBrushColor(),af,vars[j].getIgnored(),vars[j].getIgnored_val().toDouble());
                     }
@@ -1727,7 +1723,6 @@ void MainWindow::updatePlots(int count)
                 }
             }
         }
-        qDebug() << "Suma: " << sum;
 
         // Add missing y axis labels from graph
         for(int j=0;j<qcvs[i]->chart()->axes(Qt::Vertical).count();j++)

@@ -1699,7 +1699,7 @@ bool XML_to_QDom(QString filename, QDomDocument &doc)
         // Load svg contents to xml document
         if (!doc.setContent(baData,true,&errorStr, &errorLine,&errorColumn))
         {
-            qDebug() << errorStr << errorLine << errorColumn;
+            //qDebug() << errorStr << errorLine << errorColumn;
             return false;
         }
         return true;
