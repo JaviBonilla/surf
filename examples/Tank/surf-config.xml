@@ -1,5 +1,5 @@
 <surf>
-<app windowname="TES tank simulator" titlename="Dynamic Thermal Energy Storage Tank Simulator" version="0.1" description="" company="CIEMAT-PSA" logo=":logo.png" icon=":icon.png"  background_color="#edf2f6" title_color="#2b3443" section_color="#6f7e95" font_title_color="#ffffff" font_section_color="#ffffff" conf_integrator="true" conf_experiment="false" conf_outputs="true"></app>
+<app windowname="TES tank simulator" titlename="Dynamic Thermal Energy Storage Tank Simulator" version="0.1" description="" company="CIEMAT-PSA" logo=":logo.png" icon=":icon.png"  background_color="#edf2f6" title_color="#2b3443" section_color="#6f7e95" font_title_color="#ffffff" font_section_color="#ffffff" conf_integrator="true" conf_experiment="false" conf_outputs="true" store_geo="true"></app>
 <geometry height = "700" width = "1000" pos_hslider = "0.5"  pos_vslider = "0.6"></geometry>
 <authors>
     <author name="Javier Bonilla" email="javier.bonilla@psa.es" website="http://www.psa.es" company="CIEMAT-PSA" role="Model development, simulations and tool design"></author>
@@ -70,7 +70,7 @@
             <variable name="per_Q_rad_l_f"  description="Qrad_l_f" linestyle="4" linecolor="#FF5500"></variable>
             <variable name="per_Q_rad_l_r"  description="Qrad_l_r" linestyle="4" linecolor="#00007F"></variable>
         </graph>         
-        <graph type="area" name = "Molten salt heat flow rates"  xaxis="Simulation time (s)" yaxis="Percentage (%)">
+        <graph type="area" name = "Molten salt heat flow rates (areas)"  xaxis="Simulation time (s)" yaxis="Percentage (%)">
             <variable name="per_Q_conv_l_g"  description="Qconv_l_g"></variable>
             <variable name="per_Q_conv_l_f"  description="Qconv_l_f"></variable>
             <variable name="per_Q_conv_l_w"  description="Qconv_l_w"></variable>

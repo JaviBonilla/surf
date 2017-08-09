@@ -574,7 +574,8 @@ void MainWindow::experimentMenuActionTriggered(QAction *action)
     lwidget.clear();
     lspliter.clear();
     qlss_points.clear();
-    qlas_points.clear();
+    qll_points.clear();
+    qlu_points.clear();
     qlss_ignored.clear();
     qlss_ignored_val.clear();
     lar.clear();
@@ -1655,13 +1656,16 @@ void MainWindow::updatePlots(int count)
     QList<variable> mvars = xmlData.getPrjs()[indexPrj].getModel().outputs;
     QList<graph>    graphs = xmlData.getExps()[indexPrj].getGraphs();
 
-    // Delete previous series & axes
+    // Delete previous series, axes and data
     qDeleteAll(axis);
     qDeleteAll(qlss);
     qDeleteAll(qlas);
     qlss.clear();
     qlas.clear();
     axis.clear();
+    qlss_points.clear();
+    qll_points.clear();
+    qlu_points.clear();
 
     // Set previous position
     antPos = ui->sSim->value();
@@ -1748,9 +1752,8 @@ void MainWindow::addArea(QChartView *qcv, QString name, int varIndex, QList<doub
                          Qt::AlignmentFlag af, bool ignored, double ignored_val)
 {
     QAreaSeries *qas = new QAreaSeries(qcv);
-    QLineSeries *qus = new QLineSeries(qas);
-    QLineSeries *qls = new QLineSeries(qas);
-    QList<QPointF> sp;
+    QLineSeries *qus = new QLineSeries(qas); // Owned and delete with qas
+    QLineSeries *qls = new QLineSeries(qas); // Owned and delete with qas
     int last = count>=0 ? count : xvals.count();
 
     Q_UNUSED(ignored);
@@ -1768,7 +1771,7 @@ void MainWindow::addArea(QChartView *qcv, QString name, int varIndex, QList<doub
     // Get min and max values for current series
     for(int i=0;i<last;i++)
     {
-        long double yvalLower = qlas_points.count()>0 ? qlas_points.last()[i].y() : 0;
+        long double yvalLower = qlu_points.count()>0 ? qlu_points.last()[i].y() : 0;
         long double yvalUpper = yvals[i]+yvalLower;
 
         qls->append(xvals[i],yvalLower);
@@ -1777,20 +1780,21 @@ void MainWindow::addArea(QChartView *qcv, QString name, int varIndex, QList<doub
         if (xvals[i]  > maxX) maxX = xvals[i];
         if (yvalUpper < minY) minY = yvalUpper;
         if (yvalUpper > maxY) maxY = yvalUpper;
-        sp.append(QPointF(xvals[i],yvalUpper));
     }
-
-    qlas_points.append(sp);
 
     // Add series to area
     qas->setUpperSeries(qus);
     qas->setLowerSeries(qlas.count()>1 ? qlas[qlas.count()-2]->upperSeries() : qls);
 
+    // Cache for fast plotting
+    qll_points.append(qas->lowerSeries()->points());
+    qlu_points.append(qas->upperSeries()->points());
+
     // Add current series to chart
     qcv->chart()->addSeries(qas);
 
     // Use OpenGL
-    qls->setUseOpenGL(false);
+    qas->setUseOpenGL(false);
 
     // Set properties in series
     qas->setName(name);
@@ -1799,7 +1803,10 @@ void MainWindow::addArea(QChartView *qcv, QString name, int varIndex, QList<doub
     qas->setProperty(MAX_T.toStdString().c_str(),maxX);
     qas->setProperty(MAX_Y.toStdString().c_str(),maxY);
     qas->setProperty(VAR_INDEX.toStdString().c_str(),varIndex);
-    //qas->installEventFilter(this);
+    qas->installEventFilter(this);
+
+    // Signals and slots
+    connect(qas, SIGNAL(hovered(QPointF, bool)), this, SLOT(serie_hover(QPointF,bool)));
 
     // Area brush style
     QBrush b = qas->brush();
@@ -1883,7 +1890,7 @@ void MainWindow::addSeries(QChartView *qcv, QString name, int varIndex, QList<do
 
 void MainWindow::adjustSeries(int position)
 {
-    // For each series
+    // For each line series
     for(int i=0;i<qlss.count();i++)
     {
         // Add points
@@ -1929,6 +1936,41 @@ void MainWindow::adjustSeries(int position)
                 }
             }
         }
+    }
+
+    // WARNING: line series are shared between area series,
+    // therefore they must be deleted only once.
+
+    // Previous parent
+    QObject *prev_parent = NULL;
+
+    // For each area series
+    for(int i=0;i<qlas.count();i++)
+    {
+        // To determine if are in the same chart
+        QObject *parent = qlas[i]->parent();
+
+        // Add points
+        if (position>antPos)
+        {
+            int count_l = qlas[i]->lowerSeries()->count();
+            int count_u = qlas[i]->upperSeries()->count();
+            qlas[i]->lowerSeries()->append(qll_points[i].mid(count_l,position-(count_l-1)));
+            qlas[i]->upperSeries()->append(qlu_points[i].mid(count_u,position-(count_u-1)));
+        }
+        // Remove points
+        if (position<antPos)
+        {
+
+            for(int j=antPos;j>position;j--)
+            {
+                if (prev_parent != parent) qlas[i]->lowerSeries()->remove(qlas[i]->lowerSeries()->points().last());
+                qlas[i]->upperSeries()->remove(qlas[i]->upperSeries()->points().last());
+            }
+        }
+
+        // Set pervious parent
+        prev_parent = parent;
     }
 
     // Previous position
@@ -2291,7 +2333,7 @@ void MainWindow::on_actionSerieClipboardText_triggered()
 
     serieToData(pSerie,time,v,n);
     values.append(v);
-    names.append(axisName(pSerie,Qt::AlignBottom));
+    names.append(axisName(pSerie->attachedAxes(),Qt::AlignBottom));
     names.append(n);
     copyVarsClipboard(time,values,names);
 }
@@ -2308,7 +2350,7 @@ void MainWindow::on_actionSerieFileText_triggered()
 
     serieToData(pSerie,time,v,n);
     values.append(v);
-    names.append(axisName(pSerie,Qt::AlignBottom));
+    names.append(axisName(pSerie->attachedAxes(),Qt::AlignBottom));
     names.append(n);
     copyVarsFile(this,time,values,names);
 }

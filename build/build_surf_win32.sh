@@ -14,7 +14,7 @@ SURF_SRC="$PATHS/../src"
 # User defined directory for MXE                                                 #
 # Or add mxe/usr/bin to path                                                      #
 # ----------------------------------------------------------------------------- #
-MXE_SRC="$PATHS/../../../ThirdParty/src/mxe/"
+MXE_SRC="$PATHS/../../ThirdParty/src/mxe/"
 # ----------------------------------------------------------------------------- #
 
 # Include MXE to PATH

@@ -98,7 +98,8 @@ private:
 
     // Plotting
     QList<QList<QPointF>> qlss_points;
-    QList<QList<QPointF>> qlas_points;
+    QList<QList<QPointF>> qll_points;
+    QList<QList<QPointF>> qlu_points;
     QList<bool>           qlss_ignored;
     QList<double>         qlss_ignored_val;
     int                   antPos;
