@@ -344,7 +344,7 @@ bool XmlContentHandler::startElement(const QString &namespaceURI, const QString 
             QString ignored_val = ignored ? val : sEmpty;
             QString x = getPro(atts,PRO_X);
             val = getPro(atts,PRO_BRUSHSTYLE);
-            unsigned bstyle = val.isEmpty() ? 1 : val.toUInt();
+            unsigned bstyle = val.isEmpty() ? -1 : val.toUInt();
 
             graphs.last().addVar(var(getPro(atts,PRO_NAME),getPro(atts,PRO_DESCRIPTION),lstyle,
                                      getPro(atts,PRO_LINECOLOR),bstyle,getPro(atts,PRO_BRUSHCOLOR),
@@ -1151,12 +1151,12 @@ void var::setX(const QString &value)
     x = value;
 }
 
-unsigned var::getBrushStyle() const
+int var::getBrushStyle() const
 {
     return brushStyle;
 }
 
-void var::setBrushStyle(const unsigned &value)
+void var::setBrushStyle(const int &value)
 {
     brushStyle = value;
 }

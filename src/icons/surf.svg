@@ -13,7 +13,10 @@
    height="500"
    width="515"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="surf.svg">
+   sodipodi:docname="surf.svg"
+   inkscape:export-filename="/home/javi/Documents/Git/Surf/src/icons/surf.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -27,8 +30,8 @@
      inkscape:window-height="995"
      id="namedview10"
      showgrid="false"
-     inkscape:zoom="0.96"
-     inkscape:cx="238.01671"
+     inkscape:zoom="0.69933919"
+     inkscape:cx="395.18779"
      inkscape:cy="277.85884"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -51,8 +54,8 @@
   <path
      inkscape:connector-curvature="0"
      id="path3695"
-     style="fill:#1ebee6;fill-opacity:1"
-     d="m 170.58276,54.41253 c 47.92763,-0.0912 96.2153,96.02368 95.34037,140.8056 C 263.0039,344.69699 107.62826,455.32215 1.04073,500.76255 l 512.58577,-0.4772 C 516.23995,353.45705 424.17785,60.29657 301.48958,8.60275 260.15579,-8.81228 187.61826,-7.55778 170.81774,54.50419" />
+     style="fill:#46afba;fill-opacity:1;stroke:none;stroke-width:1.99397576;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 170.58191,56.347677 C 218.51,56.257026 266.79815,151.79282 265.92321,196.30494 263.00395,344.8832 107.62678,454.84186 1.0382092,500.00848 L 513.62902,499.53416 C 516.24249,353.59049 424.17949,62.196266 301.49001,10.813895 260.15582,-6.4962105 187.61757,-5.2492687 170.81689,56.438785" />
   <text
      sodipodi:linespacing="1000%"
      xml:space="preserve"

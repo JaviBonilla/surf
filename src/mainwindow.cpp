@@ -561,10 +561,12 @@ void MainWindow::experimentMenuActionTriggered(QAction *action)
     qDeleteAll(axis);
     qDeleteAll(qlss);
     qDeleteAll(qlas);
+    qDeleteAll(qlps);
     qDeleteAll(qcvs);
     qDeleteAll(tabs);
     axis.clear();
     qlas.clear();
+    qlps.clear();
     qlss.clear();
     qcvs.clear();
     tabs.clear();
@@ -1403,6 +1405,7 @@ MainWindow::~MainWindow()
     qDeleteAll(tabs);
     qDeleteAll(qlss);
     qDeleteAll(qlas);
+    qDeleteAll(qlps);
     qDeleteAll(licon);
     qDeleteAll(lemail);
     qDeleteAll(lname);
@@ -1660,8 +1663,10 @@ void MainWindow::updatePlots(int count)
     qDeleteAll(axis);
     qDeleteAll(qlss);
     qDeleteAll(qlas);
+    qDeleteAll(qlps);
     qlss.clear();
     qlas.clear();
+    qlps.clear();
     axis.clear();
     qlss_points.clear();
     qll_points.clear();
@@ -1710,6 +1715,12 @@ void MainWindow::updatePlots(int count)
                         addArea(qcvs[i],name,indexy,values_x,values_output[indexy],count,vars[j].getLineStyle(),vars[j].getLineColor(),
                                 vars[j].getBrushStyle(),vars[j].getBrushColor(),af,vars[j].getIgnored(),vars[j].getIgnored_val().toDouble());
                     }
+                    else if (graphs[i].getType() == PRO_PIE)
+                    {
+                        // Plot pie
+                        addPie(qcvs[i],name,indexy,values_x,values_output[indexy],count,vars[j].getLineStyle(),vars[j].getLineColor(),
+                               vars[j].getBrushStyle(),vars[j].getBrushColor(),af,vars[j].getIgnored(),vars[j].getIgnored_val().toDouble());
+                    }
                     else
                         // Plot series
                         addSeries(qcvs[i],name,indexy,values_x,values_output[indexy],count,vars[j].getLineStyle(),vars[j].getLineColor(),
@@ -1747,8 +1758,78 @@ void MainWindow::updatePlots(int count)
     }
 }
 
+QString sliceLabel(QString name, double val)
+{
+    return name + " ( " + QString::number(val,'G',4) + " % ) ";
+}
+
+void MainWindow::addPie(QChartView *qcv, QString name, int varIndex, QList<double> xvals, QList<double> yvals, int count,
+                         unsigned lineStyle, QString lineColor, int brushStyle, QString brushColor,
+                         Qt::AlignmentFlag af, bool ignored, double ignored_val)
+{
+    QPieSeries *qps = NULL;
+    QPieSlice  *qs  = new QPieSlice();
+    QPen        p;
+    QBrush      b;
+    QFont       f;
+    int         i   = 0;
+
+    Q_UNUSED(ignored);
+    Q_UNUSED(ignored_val);
+    Q_UNUSED(af);
+    Q_UNUSED(count);
+    Q_UNUSED(xvals);
+
+    // Delete axes
+    while (qcv->chart()->axes().count()>0)
+        qcv->chart()->removeAxis(qcv->chart()->axes()[0]);
+
+    // Set time in properties
+    qcv->chart()->setProperty(VAR_TIME_VAL.toStdString().c_str(),xvals.last());
+
+    // Find a pie serie in chart
+    while(qps == NULL && i<qcv->chart()->series().count())
+    {
+        qps = dynamic_cast<QPieSeries *>(qcv->chart()->series()[i]);
+        i++;
+    }
+
+    // If there is no one, create a new one
+    if (qps == NULL)
+    {
+        qps = new QPieSeries(qcv);
+        qlps.append(qps);
+        qps->setUseOpenGL(false);
+        qps->installEventFilter(this);
+        qcv->chart()->addSeries(qps);
+    }
+
+    // New slice properties
+    qs->setLabel(sliceLabel(name,yvals.last()));
+    qs->setValue(yvals.last());
+    if (!lineColor.isEmpty())  qs->setBorderColor(QColor(lineColor));
+    if (!brushColor.isEmpty()) qs->setColor(QColor(brushColor));
+    p = qs->pen();
+    p.setStyle(static_cast<Qt::PenStyle>(lineStyle));
+    qs->setPen(p);
+    b = qs->brush();
+    if (brushStyle>=0) b.setStyle(static_cast<Qt::BrushStyle>(brushStyle));
+    qs->setBrush(b);
+    f = qs->labelFont();
+    f.setBold(true);
+    qs->setLabelFont(f);
+    qs->setLabelPosition(QPieSlice::LabelPosition::LabelOutside);
+    qs->setProperty(VAR_INDEX.toStdString().c_str(),varIndex);
+    qs->setProperty(VAR_NAME.toStdString().c_str(),name);
+    connect(qs, SIGNAL(hovered(bool)), this, SLOT(slice_hover(bool)));
+
+    // Add slice to pie series
+    qps->append(qs);
+
+}
+
 void MainWindow::addArea(QChartView *qcv, QString name, int varIndex, QList<double> xvals, QList<double> yvals, int count,
-                         unsigned lineStyle, QString lineColor, unsigned brushStyle, QString brushColor,
+                         unsigned lineStyle, QString lineColor, int brushStyle, QString brushColor,
                          Qt::AlignmentFlag af, bool ignored, double ignored_val)
 {
     QAreaSeries *qas = new QAreaSeries(qcv);
@@ -1810,7 +1891,7 @@ void MainWindow::addArea(QChartView *qcv, QString name, int varIndex, QList<doub
 
     // Area brush style
     QBrush b = qas->brush();
-    b.setStyle(static_cast<Qt::BrushStyle>(brushStyle));
+    if (brushStyle>=0) b.setStyle(static_cast<Qt::BrushStyle>(brushStyle));
     if (!brushColor.isEmpty()) b.setColor(QColor(brushColor));
     qas->setBrush(b);
 
@@ -1947,7 +2028,7 @@ void MainWindow::adjustSeries(int position)
     // For each area series
     for(int i=0;i<qlas.count();i++)
     {
-        // To determine if are in the same chart
+        // To determine if they are in the same chart
         QObject *parent = qlas[i]->parent();
 
         // Add points
@@ -1971,6 +2052,28 @@ void MainWindow::adjustSeries(int position)
 
         // Set pervious parent
         prev_parent = parent;
+    }
+
+    // For each pie series
+    for(int i=0;i<qlps.count();i++)
+    {
+        QPieSeries *pie = qlps[i];
+
+        // Set property for time value
+        pie->chart()->setProperty(VAR_TIME_VAL.toStdString().c_str(), values_output[0][position]);
+
+        // Set value for each slice
+        for(int j=0;j<pie->count();j++)
+        {
+            QPieSlice *slice = pie->slices()[j];
+            QString    name  = slice->property(VAR_NAME.toStdString().c_str()).toString();
+            int        index = slice->property(VAR_INDEX.toStdString().c_str()).toInt();
+            double     value = index>=0 && index<values_output.count() && position>=0 && position<values_output[index].count() ?
+                               values_output[index][position] : 0;
+
+            slice->setValue(value);
+            slice->setLabel(sliceLabel(name,value));
+        }
     }
 
     // Previous position
@@ -2000,6 +2103,11 @@ void MainWindow::on_actionExit_triggered()
 void MainWindow::serie_hover(QPointF point, bool state)
 {
     serieHover(point,state,sender(),&cmSerie);
+}
+
+void MainWindow::slice_hover(bool state)
+{
+    sliceHover(state,sender());
 }
 
 void MainWindow::on_actionZoomReset_triggered()
@@ -2131,10 +2239,10 @@ void MainWindow::on_actionConfigureGraph_triggered()
                 chart->legend()->setGeometry(geo);
             }
             // Axis captions
-            QValueAxis *ax = (QValueAxis *)chart->axes(Qt::Horizontal)[0];
-            QValueAxis *ay = (QValueAxis *)chart->axes(Qt::Vertical)[0];
-            ax->setTitleText(gc.getXcaption());
-            ay->setTitleText(gc.getYcaption());
+            QValueAxis *ax = chart->axes(Qt::Horizontal).count()>0 ? (QValueAxis *)chart->axes(Qt::Horizontal)[0] : NULL;
+            QValueAxis *ay = chart->axes(Qt::Vertical).count()>0   ? (QValueAxis *)chart->axes(Qt::Vertical)[0]   : NULL;
+            if (ax!=NULL) ax->setTitleText(gc.getXcaption());
+            if (ay!=NULL) ay->setTitleText(gc.getYcaption());
         }
     }
 }

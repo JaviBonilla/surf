@@ -217,8 +217,8 @@ public:
     void setIgnored_val(const QString &value);
     QString getX() const;
     void setX(const QString &value);
-    unsigned getBrushStyle() const;
-    void setBrushStyle(const unsigned &value);
+    int getBrushStyle() const;
+    void setBrushStyle(const int &value);
     QString getBrushColor() const;
     void setBrushColor(const QString &value);
 
@@ -232,7 +232,7 @@ private:
     QString  yaxis;
     bool     ignored;
     QString  ignored_val;
-    unsigned brushStyle;
+    int      brushStyle;
     QString  brushColor;
 };
 

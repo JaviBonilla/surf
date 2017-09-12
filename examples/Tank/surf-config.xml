@@ -70,7 +70,7 @@
             <variable name="per_Q_rad_l_f"  description="Qrad_l_f" linestyle="4" linecolor="#FF5500"></variable>
             <variable name="per_Q_rad_l_r"  description="Qrad_l_r" linestyle="4" linecolor="#00007F"></variable>
         </graph>         
-        <graph type="area" name = "Molten salt heat flow rates (areas)"  xaxis="Simulation time (s)" yaxis="Percentage (%)">
+        <graph type="area" name = "Molten salt heat flow rates (area)"  xaxis="Simulation time (s)" yaxis="Percentage (%)">
             <variable name="per_Q_conv_l_g"  description="Qconv_l_g"></variable>
             <variable name="per_Q_conv_l_f"  description="Qconv_l_f"></variable>
             <variable name="per_Q_conv_l_w"  description="Qconv_l_w"></variable>
@@ -81,6 +81,18 @@
             <variable name="per_Q_rad_l_pg"  description="Qrad_l_pg" linecolor="#005500" brushcolor="#005500"></variable>
             <variable name="per_Q_rad_l_f"  description="Qrad_l_f" linecolor="#FF5500" brushcolor="#FF5500"></variable>
             <variable name="per_Q_rad_l_r"  description="Qrad_l_r" linecolor="#00007F" brushcolor="#00007F"></variable>
+        </graph>        
+        <graph type="pie" name = "Molten salt heat flow rates (pie)"  xaxis="Simulation time (s)" yaxis="Percentage (%)">
+            <variable name="per_Q_conv_l_g"  description="Qconv_l_g"  brushcolor="#209fdf"></variable>
+            <variable name="per_Q_conv_l_f"  description="Qconv_l_f" brushcolor="#99ca53"></variable>
+            <variable name="per_Q_conv_l_w"  description="Qconv_l_w" brushcolor="#f6a625"></variable>
+            <variable name="per_Q_conv_l_p"  description="Qconv_l_p" brushcolor="#6d5fd5"></variable>
+            <variable name="per_Q_rad_l_wl"  description="Qrad_l_wl" brushcolor="#bf593e"></variable>
+            <variable name="per_Q_rad_l_wg"  description="Qrad_l_wg" brushcolor="#FF0000"></variable>
+            <variable name="per_Q_rad_l_pl"  description="Qrad_l_pl"  brushcolor="#FFFF00"></variable>
+            <variable name="per_Q_rad_l_pg"  description="Qrad_l_pg" brushcolor="#005500"></variable>
+            <variable name="per_Q_rad_l_f"  description="Qrad_l_f" brushcolor="#FF5500"></variable>
+            <variable name="per_Q_rad_l_r"  description="Qrad_l_r" brushcolor="#00007F"></variable>
         </graph>        
         <graph name = "Gas heat flow rates"  xaxis="Simulation time (s)" yaxis="Percentage (%)">
             <variable name="per_Q_conv_g_l"  description="Qconv_g_l" linestyle="4"></variable>

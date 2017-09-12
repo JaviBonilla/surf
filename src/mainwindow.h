@@ -74,6 +74,7 @@ private:
     QList<QValueAxis *> axis;
     QList<QLineSeries*> qlss;
     QList<QAreaSeries*> qlas;
+    QList<QPieSeries*>  qlps;
     simulation         *sim;
     QThread            *thrSim;
     QList<QLayout *>   llayouts;
@@ -117,7 +118,8 @@ private:
     void sendToGUI(QString msg, QString styleSheet = "");
     void updatePlots(int count = -1);
     void addSeries(QChartView *qcv, QString name, int varIndex, QList<double> xvals, QList<double> yvals, int count, unsigned lineStyle, QString lineColor, Qt::AlignmentFlag af, bool ignored, double ignored_val);
-    void addArea(QChartView *qcv, QString name, int varIndex, QList<double> xvals, QList<double> yvals, int count, unsigned lineStyle, QString lineColor, unsigned brushStyle, QString brushColor, Qt::AlignmentFlag af, bool ignored, double ignored_val);
+    void addArea(QChartView *qcv, QString name, int varIndex, QList<double> xvals, QList<double> yvals, int count, unsigned lineStyle, QString lineColor, int brushStyle, QString brushColor, Qt::AlignmentFlag af, bool ignored, double ignored_val);
+    void addPie(QChartView *qcv, QString name, int varIndex, QList<double> xvals, QList<double> yvals, int count, unsigned lineStyle, QString lineColor, int brushStyle, QString brushColor, Qt::AlignmentFlag af, bool ignored, double ignored_val);
     void adjustsSim();
     void adjustSeries(int position);
     void configureConMenus();
@@ -190,6 +192,7 @@ private slots:
     // Chart / series
     void onCustomContextMenu(const QPoint &p);
     void serie_hover(QPointF point, bool state);
+    void slice_hover(bool);
     void on_actionZoomReset_triggered();
     void on_actionZoomOut_triggered();
     void on_actionLight_triggered();
